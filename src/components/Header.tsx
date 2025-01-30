@@ -25,7 +25,7 @@ export default function Header() {
 
                 {/* Name dropdown - socials*/}
 
-                <div aria-label="submenu" className='border border-gray-400 absolute left-0 top-0 flex-col gap-4 rounded-2xl shadow-xl p-4 ml-4 mt-28 bg-herobackgroundhover hidden peer-has-checked:flex'>
+                <div aria-label="submenu" className='border speechbubble border-gray-400 absolute left-0 top-0 flex-col gap-4 rounded-2xl shadow-xl p-4 ml-4 mt-28 bg-herobackgroundhover hidden peer-has-checked:flex'>
                     <p className="text-herotext font-bold px-7">Get in touch with me</p>
 
                     <div className="flex flex-col gap-3 w-full">

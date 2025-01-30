@@ -7,6 +7,7 @@
   --color-wavebackground: #00000046;
   --color-primary: #678704;
   --color-primary-hover: #4f6c00;
+
   --color-cardbackground: #f8fdeb;
   --color-cardbackgroundhover: #f1f8e0;
 }
@@ -34,3 +35,23 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+ .speechbubble:after {
+  z-index: 999;
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-left: -20px;
+  margin-top: -20px;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  box-shadow: none;
+  text-shadow: none;
+  background: var(--color-herobackgroundhover);
+  transform: rotate(45deg);
+  border-top:inherit;
+  border-left:inherit;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+  
