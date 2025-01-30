@@ -1,18 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-herobackground: #fff9f5;
+  --color-herobackgroundhover: #f6f0eb;
+  --color-herotext: #332E2E;
+  --color-wavebackground: #00000046;
+  --color-primary: #678704;
+  --color-primary-hover: #4f6c00;
+  --color-cardbackground: #f8fdeb;
+  --color-cardbackgroundhover: #f1f8e0;
 }
 
-@media (prefers-color-scheme: dark) {
+:root {
+  --background: #fff9f5;
+  --foreground: #171717;
+  --test: #f1f8e0;
+  
+  overflow-x: hidden;
+}
+
+/*@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+  */
+
+
 
 body {
   color: var(--foreground);
