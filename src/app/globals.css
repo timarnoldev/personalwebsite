@@ -5,7 +5,7 @@
   --color-herobackgroundhover: #f6f0eb;
   --color-herotext: #332E2E;
   --color-wavebackground: #00000046;
-  --color-primary: #678704;
+  --color-primary: #607f05;
   --color-primary-hover: #4f6c00;
 
   --color-cardbackground: #f8fdeb;
@@ -15,7 +15,7 @@
 :root {
   --background: #fff9f5;
   --foreground: #171717;
-  --test: #f1f8e0;
+  --test: #607f05;
   
   overflow-x: hidden;
 }
@@ -55,3 +55,9 @@ body {
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
   
+@media screen and (max-width: 640px) {
+  .speechbubble:after {
+    left: 17%;
+  }
+  
+}

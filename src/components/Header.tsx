@@ -2,7 +2,7 @@ import { ExternalLink, Github, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Header() {
-    return <nav className="bg-herobackground shadow-lg w-dvw h-24 flex items-center fixed top-0 z-50 overscroll-y-none"> {/* Header */}
+    return <nav className="bg-herobackground shadow-lg w-dvw sm:h-24 h-22 flex items-center fixed top-0 z-50 overscroll-y-none"> {/* Header */}
 
         <div className="my-3 sm:mx-10 mx-3 flex-grow flex flex-row items-center justify-between">
 
@@ -76,12 +76,12 @@ export default function Header() {
             <div className="flex flex-row items-center gap-6"> {/* Header Links */}
 
                 <div className="flex-row items-center gap-6 hidden sm:flex">
-                    <a href="#" className="hover:underline underline-offset-4 transition-all">About me</a>
-                    <a href="#" className="hover:underline underline-offset-4 transition-all">Projects</a>
-                    <a href="#" className="hover:underline underline-offset-4 transition-all">More Info</a>
+                    <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">About me</a>
+                    <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">Achievements</a>
+                    <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">Projects</a>
                 </div>
 
-                <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer">Contact me</a>
+                <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">Contact me</a>
 
             </div>
 
