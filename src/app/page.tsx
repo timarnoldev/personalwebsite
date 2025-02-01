@@ -1,6 +1,7 @@
 import CollaborationSection from "@/components/CollaborationSecion";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
      <Header/>
      <HeroSection/>
      <CollaborationSection/>
+     <Projects/>
     </div>
   );
 }
