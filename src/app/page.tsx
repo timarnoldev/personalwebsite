@@ -1,3 +1,4 @@
+import CollaborationSection from "@/components/CollaborationSecion";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 
@@ -6,6 +7,7 @@ export default function Home() {
    <div className="flex flex-col">
      <Header/>
      <HeroSection/>
+     <CollaborationSection/>
     </div>
   );
 }

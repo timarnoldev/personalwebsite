@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Linkedin, Mail } from 'lucide-react'
+import { ExternalLink, Github, Globe, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Header() {
@@ -73,7 +73,7 @@ export default function Header() {
 
 
 
-            <div className="flex flex-row items-center gap-6"> {/* Header Links */}
+            <div className="flex flex-row items-center sm:gap-6 gap-2"> {/* Header Links */}
 
                 <div className="flex-row items-center gap-6 hidden sm:flex">
                     <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">About me</a>
@@ -82,7 +82,7 @@ export default function Header() {
                 </div>
 
                 <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">Contact me</a>
-
+                <Globe className="text-gray-500 cursor-pointer"/>
             </div>
 
 
