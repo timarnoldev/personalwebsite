@@ -1,5 +1,5 @@
-import CollaborationSection from "@/components/CollaborationSecion";
-import Header from "@/components/Header";
+import CollaborationSection from "@/components/CollaborationSection";
+import CVHighlights from "@/components/cvhighlights";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 
@@ -9,6 +9,7 @@ export default function Home() {
      <HeroSection/>
      <CollaborationSection/>
      <Projects/>
+     <CVHighlights/>
     </div>
   );
 }

@@ -34,8 +34,10 @@ const projects = [
     
 ];
 
+
+
 const ListImte = (item:any) => {
-    return <div className="flex flex-col rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
+    return <div className="flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
         
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">
             <p className='text-l text-white font-bold'>{item.desc}</p>
