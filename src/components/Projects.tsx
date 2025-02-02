@@ -4,7 +4,7 @@ import Image from 'next/image'
 const projects = [
     {
         id: 0,
-        img: "/projects/ekes.webp",
+        img: "/projects/rekari.webp",
         title: "Rekari",
         desc: "Empower the team",
         link: "https://www.rekari.de",
@@ -35,7 +35,7 @@ const projects = [
 ];
 
 const ListImte = (item:any) => {
-    return <div className="flex flex-col rounded-3xl w-93 min-h-170 relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
+    return <div className="flex flex-col rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
         
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">
             <p className='text-l text-white font-bold'>{item.desc}</p>
@@ -51,7 +51,7 @@ const ListImte = (item:any) => {
 
         <div className="absolute textreadabilityGradient w-full h-full rounded-3xl -z-5"></div>
  
-        <div className="w-93 h-full overflow-hidden absolute rounded-3xl textreadabilityGradient -z-10">
+        <div className="h-full overflow-hidden absolute rounded-3xl textreadabilityGradient -z-10">
         <Image src={item.img} width={744} height={1360} alt='asd' className=""/>
         </div>
 
@@ -67,11 +67,12 @@ export default function Projects() {
         </div>
 
         {/*Has page width*/}
-        <div className="w-dvw  overflow-x-scroll pl-12 pr-12">
-        <div className="flex flex-row w-max gap-8 pt-5 pb-5"> {/*Has width of all children*/}
+        <div className="w-dvw  overflow-x-scroll pl-12">
+        <div className="flex flex-row w-max gap-8 pt-5 pb-5 pr-12"> {/*Has width of all children*/}
             {projects.map((project) => (
                 <ListImte key={project.id} {...project} />
             ))}
+
         </div>
 
     </div>
