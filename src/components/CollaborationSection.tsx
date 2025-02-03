@@ -15,7 +15,7 @@ export default function CollaborationSection() {
         </div>
 
         <div className="fade-out-container overflow-hidden max-w-full">
-            <div className=" flex flex-row gap-16 overflow-hidden items-center w-max autoscroll shri</div>nk-1 grow">
+            <div className=" flex flex-row gap-16 overflow-hidden items-center w-max autoscroll shrink-1 grow">
                 <div className='pl-4'></div>
                 <Logo src="/logos/microsoft.svg" alt="Microsoft Logo - Trademark of microsoft" height={43.65} />
                 <Logo src="/logos/framatome.svg" alt="Framatome Logo - Trademark of framatome" height={31.25}/>

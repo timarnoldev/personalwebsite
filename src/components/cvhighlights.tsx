@@ -1,7 +1,8 @@
 "use client";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Pause, Play } from "lucide-react";
 import Image from 'next/image'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSwipeable } from "react-swipeable";
 
 const cvHighlights = [
 
@@ -15,7 +16,7 @@ const cvHighlights = [
 
     {
         id: 1,
-        img: "/projects/ekes.webp",
+        img: "/cv/isef.webp",
         headline: "ISEF Finalist",
         text: "In 2024, I participated in the Regeneron International Science and Engineering Fair (ISEF), the world's largest pre-university science competition in Los Angeles. Competing among top young researchers globally, I had the opportunity to present my project on an international stage and exchange ideas with leading scientists."
 
@@ -47,23 +48,99 @@ interface CVSectionProps {
     text: string;
 }
 
-function CVSection(section: CVSectionProps) {
-    return <div className="flex flex-row justify-between grow items-center">
-        <Image src={section.img} alt={section.headline} width={500} height={300} />
-        <article className="flex flex-col">
-            <h1 className="text-3xl">{section.headline}</h1>
+function CVSection(props: { section: CVSectionProps }) {
+    const { section } = props;
+    return <>
 
-            <p>{section.text}</p>
+        <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-15">
+            <div className="text-white sm:text-5xl text-2xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
+            <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
+            <a href="#" className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit">More Information <ExternalLink /></a>
+        </div>
 
-            <p className="">Learn more</p>
+        <div className="cvGradient h-full w-full absolute -z-10" />
+        <div className="absolute h-fullrounded-3xl -z-20">
+            <Image src={section.img} alt="Image" width={3000} height={1333} className="aspect-[1.5]  object-cover" />
+        </div>
 
-        </article>
+
+    </>
+}
+
+function Carousel() {
+
+    const [page, setPage] = useState(0);
+    const [autoSlide, setAutoSlide] = useState(true);
+
+    const next = ()=> setPage((page)=>(page===cvHighlights.length-1?0:page+1));
+    const prev = ()=> setPage((page)=>(page===0?cvHighlights.length-1:page-1));
+
+    const handlers = useSwipeable({
+        onSwipedLeft: ()=>{
+            setAutoSlide(false);
+            next();
+        },
+        onSwipedRight: ()=>{
+            setAutoSlide(false);
+            prev();
+        },
+        swipeDuration: 250,
+        trackMouse: true
+    });
+
+
+    useEffect(()=>{
+        const slideInterval = setInterval(()=>{
+            if(autoSlide) next();
+        }, 4000);
+
+        return ()=> clearInterval(slideInterval);
+    }, [autoSlide])
+
+    return <div className="w-fit relative flex flex-col rounded-3xl overflow-hidden"> {/*View box wrapper*/}
+    <div className="flex flex-col justify-end xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px] relative overflow-hidden"> {/*View box*/}
+        <div {...handlers} className="flex h-full transition-transform ease-out duration-500" style={{ transform: `translateX(-${(page) * 100}%)` }}> {/*Large Container*/}
+
+            {
+                cvHighlights.map(highlight => {
+                    return <div key={highlight.id} className="flex h-full relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
+
+
+                        <CVSection section={highlight} ></CVSection>
+
+                    </div>
+                })
+            }
+        </div>
+
     </div>
+
+    <div onClick={()=>{
+        setAutoSlide(!autoSlide);
+    }} className="absolute self-end mr-5 p-2 mt-5 bg-gray-200 rounded-full cursor-pointer opacity-80">
+        {autoSlide?<Pause/>:<Play/>}
+
+    </div>
+
+    {/*Buttons*/}
+    <div className="absolute self-center mt-auto bottom-0 flex flex-row gap-2 mb-5">
+
+        {
+            cvHighlights.map(highlight => {
+                return <div className={`h-2 w-7 ${page === highlight.id ? "bg-white" : "bg-gray-500"} rounded-2xl cursor-pointer`} onClick={() => {
+                    setPage(highlight.id);
+                    setAutoSlide(false);
+                }} key={highlight.id}></div>
+            })
+        }
+
+    </div>
+
+</div>
 }
 
 export default function CVHighlights() {
 
-    const [page, setPage] = useState(1);
 
     return <div className="flex flex-col mb-10 gap-8">
 
@@ -71,35 +148,12 @@ export default function CVHighlights() {
             Highlights from my CV
         </div>
 
-        <div className="flex flex-col gap-2">
-            <div className="flex relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
+        <div className="flex flex-col gap-2 self-center">
 
-                <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-5 sm:mb-10 mb-5">
-                    <div className="text-white sm:text-5xl text-2xl font-bold md:max-w-[80%] w-full">{cvHighlights[page].headline}</div>
-                    <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{cvHighlights[page].text}</p>
-                    <a href="#" className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit">More Information <ExternalLink /></a>
-                </div>
+            
+            <Carousel></Carousel>
 
-                <div className="self-center flex flex-row gap-2 mb-5">
-
-                    {
-                        cvHighlights.map(highlight => {
-                            return <div className={`h-2 w-7 ${page === highlight.id ? "bg-white" : "bg-gray-500"} rounded-2xl cursor-pointer`} onClick={() => {
-                                setPage(highlight.id)
-                            }} key={highlight.id}></div>
-                        })
-                    }
-
-                </div>
-
-                <div className="h-full w-full cvGradient absolute rounded-2xl -z-10" />
-                <div className="absolute rounded-3xl -z-20">
-                    <Image src={cvHighlights[page].img} alt="Image" width={3000} height={1333} className="aspect-[1.5] rounded-3xl object-cover" />
-                </div>
-
-            </div>
-
-            <div className="xl:w-[80vw] w-[95vw] self-center">
+            <div className="xl:w-[80vw] w-[95vw] max-w-[1160px] self-center">
                 <a href="https://www.linkedin.com/in/timarnold-/" className="hover:underline underline-offset-4 font-bold text-gray-500 flex flex-row gap-2 items-center w-fit">
 
                     See complete CV on LinkedIn
@@ -109,6 +163,7 @@ export default function CVHighlights() {
             </div>
         </div>
 
-    </div>
+    </div >
 
 }
+
