@@ -126,7 +126,7 @@ body {
   background:
 
     linear-gradient(
-      to bottom,
+      to top,
       hsla(0, 0%, 0%, 0) 0%,
       hsla(0, 0%, 0%, 0.005) 8.1%,
       hsla(0, 0%, 0%, 0.019) 15.5%,

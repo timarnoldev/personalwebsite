@@ -3,6 +3,7 @@ import { ExternalLink, Pause, Play } from "lucide-react";
 import Image from 'next/image'
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import Modal from "./modal";
 
 const cvHighlights = [
 
@@ -55,7 +56,7 @@ function CVSection(props: { section: CVSectionProps }) {
         <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-15">
             <div className="text-white sm:text-5xl text-2xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
             <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
-            <a href="#" className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit">More Information <ExternalLink /></a>
+            <Modal><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit cursor-pointer">More Information <ExternalLink /></div></Modal>
         </div>
 
         <div className="cvGradient h-full w-full absolute -z-10" />
@@ -72,15 +73,15 @@ function Carousel() {
     const [page, setPage] = useState(0);
     const [autoSlide, setAutoSlide] = useState(true);
 
-    const next = ()=> setPage((page)=>(page===cvHighlights.length-1?0:page+1));
-    const prev = ()=> setPage((page)=>(page===0?cvHighlights.length-1:page-1));
+    const next = () => setPage((page) => (page === cvHighlights.length - 1 ? 0 : page + 1));
+    const prev = () => setPage((page) => (page === 0 ? cvHighlights.length - 1 : page - 1));
 
     const handlers = useSwipeable({
-        onSwipedLeft: ()=>{
+        onSwipedLeft: () => {
             setAutoSlide(false);
             next();
         },
-        onSwipedRight: ()=>{
+        onSwipedRight: () => {
             setAutoSlide(false);
             prev();
         },
@@ -89,54 +90,58 @@ function Carousel() {
     });
 
 
-    useEffect(()=>{
-        const slideInterval = setInterval(()=>{
-            if(autoSlide) next();
+    useEffect(() => {
+        const slideInterval = setInterval(() => {
+            if (autoSlide) next();
         }, 4000);
 
-        return ()=> clearInterval(slideInterval);
+        return () => clearInterval(slideInterval);
     }, [autoSlide])
 
     return <div className="w-fit relative flex flex-col rounded-3xl overflow-hidden"> {/*View box wrapper*/}
-    <div className="flex flex-col justify-end xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px] relative overflow-hidden"> {/*View box*/}
-        <div {...handlers} className="flex h-full transition-transform ease-out duration-500" style={{ transform: `translateX(-${(page) * 100}%)` }}> {/*Large Container*/}
+
+
+        <div tabIndex={0} onClick={() => {
+            setAutoSlide(!autoSlide);
+        }} className="absolute self-end mr-5 p-2 mt-5 bg-gray-200 rounded-full cursor-pointer opacity-80 z-30">
+            {autoSlide ? <Pause /> : <Play />}
+
+        </div>
+
+
+        <div className="flex flex-col justify-end xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px] relative overflow-hidden"> {/*View box*/}
+            <div {...handlers} className="flex h-full transition-transform ease-out duration-500" style={{ transform: `translateX(-${(page) * 100}%)` }}> {/*Large Container*/}
+
+                {
+                    cvHighlights.map(highlight => {
+                        return <div key={highlight.id} className="flex h-full relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
+
+
+                            <CVSection section={highlight} ></CVSection>
+
+                        </div>
+                    })
+                }
+            </div>
+
+        </div>
+
+
+        {/*Buttons*/}
+        <div className="absolute self-center mt-auto bottom-0 flex flex-row gap-2 mb-5">
 
             {
                 cvHighlights.map(highlight => {
-                    return <div key={highlight.id} className="flex h-full relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
-
-
-                        <CVSection section={highlight} ></CVSection>
-
-                    </div>
+                    return <div className={`h-2 w-7 ${page === highlight.id ? "bg-white" : "bg-gray-500"} rounded-2xl cursor-pointer`} onClick={() => {
+                        setPage(highlight.id);
+                        setAutoSlide(false);
+                    }} key={highlight.id}></div>
                 })
             }
+
         </div>
 
     </div>
-
-    <div onClick={()=>{
-        setAutoSlide(!autoSlide);
-    }} className="absolute self-end mr-5 p-2 mt-5 bg-gray-200 rounded-full cursor-pointer opacity-80">
-        {autoSlide?<Pause/>:<Play/>}
-
-    </div>
-
-    {/*Buttons*/}
-    <div className="absolute self-center mt-auto bottom-0 flex flex-row gap-2 mb-5">
-
-        {
-            cvHighlights.map(highlight => {
-                return <div className={`h-2 w-7 ${page === highlight.id ? "bg-white" : "bg-gray-500"} rounded-2xl cursor-pointer`} onClick={() => {
-                    setPage(highlight.id);
-                    setAutoSlide(false);
-                }} key={highlight.id}></div>
-            })
-        }
-
-    </div>
-
-</div>
 }
 
 export default function CVHighlights() {
@@ -144,13 +149,13 @@ export default function CVHighlights() {
 
     return <div className="flex flex-col mb-10 gap-8">
 
-        <div className="mt-12 sm:ml-12 ml-6 text-5xl text-primary font-bold self-start">
+        <div className="sm:ml-12 ml-6 mt-20 text-5xl text-primary font-bold self-start">
             Highlights from my CV
         </div>
 
         <div className="flex flex-col gap-2 self-center">
 
-            
+
             <Carousel></Carousel>
 
             <div className="xl:w-[80vw] w-[95vw] max-w-[1160px] self-center">

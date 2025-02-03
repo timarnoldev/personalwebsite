@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import Modal from './modal'
 
 function Logo(props: { src: string, alt: string, enlarge?: boolean, height: number, width?: number }) {
     if (props.enlarge) {
-        return <Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" />
+        return <Modal><Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
     } else {
-        return <Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" />
+        return <Modal><Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
     }
 }
 
@@ -27,7 +28,7 @@ export default function CollaborationSection() {
                 <Logo src="/logos/nordicsemi.svg" alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
                 <Logo src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
-                <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/>
+              {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
                 <Logo src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
                 <Logo src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
 
@@ -44,8 +45,8 @@ export default function CollaborationSection() {
                 <Logo src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
                 <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/>
-                <Logo src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
-                <Logo src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
+              {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
+              <Logo src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
 
           </div>
         </div>
