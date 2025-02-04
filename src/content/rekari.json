@@ -1,0 +1,49 @@
+{
+    "title": "Rekari: A New Era of Collaborative Documentation",
+    "image": "/content/rekari-large.webp",
+    "content_en": [
+      {
+        "type": "text",
+        "text": "In an increasingly digital world, effective documentation and real-time data sharing are crucial. Rekari offers an intuitive, cloud-based solution designed to streamline collaborative data collection and analysis. By leveraging smartphone sensors and a drone integration, Rekari transforms traditional workflows into seamless, efficient operations."
+      },
+      {
+        "type": "text",
+        "text": "The primary goal of Rekari is to enhance teamwork and coordination, ensuring that documentation efforts are not only accurate but also effortlessly accessible. With an emphasis on location-dependent data, Rekari enables teams to visualize and analyze collected information directly in relation to their geographical surroundings. Whether working on infrastructure projects, short-term missions, or large-scale documentation efforts, Rekari ensures that every team member remains in sync."
+      },
+      {
+        "type": "headline",
+        "text": "The Rekari Action: A Game-Changer for Teamwork"
+      },
+      {
+        "type": "text",
+        "text": "Traditional documentation systems often fall short when dealing with geographically distributed teams. This is where the Rekari Action concept comes in - a comprehensive approach that bundles all relevant data into a single, centralized mission. Through a user-friendly mobile application, team members can access live updates, interact with AI-based analytics, and retrieve critical information effortlessly."
+      },
+      {
+        "type": "text",
+        "text": "Rekari optimizes data collection by ensuring real-time collaboration, where every team member sees the same live information, reducing miscommunication and delays. Additionally, automated data classification and mission planning enhances operational efficiency. Seamless drone and sensor integration simplifies the process of capturing high-precision geographical data. Efficient workflow structuring ensures that each step, from mission planning to data analysis, is optimized for accuracy and clarity."
+      },
+      {
+        "type": "headline",
+        "text": "Smart Documentation for Comprehensive Tasks"
+      },
+      {
+        "type": "text",
+        "text": "Rekari is more than just a documentation tool; it is an ecosystem that empowers teams to work smarter. Its mobile-first design eliminates the need for additional hardware, allowing users to conduct full-scale documentation using their smartphones. For applications like fawn rescue those considerations are crucial. The user-friendly interface is designed for both technical and non-technical users, ensuring that even complex data collection tasks are simple and intuitive."
+      },
+      {
+        "type": "text",
+        "text": "Advanced mission planning, driven by intelligent algorithms, adapts workflows to project-specific needs, streamlining operations on-site. Remote quality management enables supervisors to access real-time data, making quality assurance and compliance tracking effortless."
+      },
+
+      {
+        "type": "text",
+        "text": "Learn more about Rekari and its potential use-cases:"
+      },
+      {
+        "type": "link",
+        "text": "rekari.de",
+        "href": "https://rekari.de"
+      }
+    ]
+  }
+  

@@ -4,12 +4,14 @@ import { AnimatePresence } from 'motion/react';
 import React, { useEffect, useState } from 'react';
 import { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
+import BlogEntry, { Blog } from './BlogEntry';
 
 interface ModalProps {
     children: ReactNode;
+    data?: Blog
 }
 
-export default function Modal({ children }: ModalProps) {
+export default function Modal({ children, data }: ModalProps) {
 
     const [open, setOpen] = useState(false)
 
@@ -47,11 +49,13 @@ export default function Modal({ children }: ModalProps) {
                     <div onClick={close} tabIndex={-1} className="inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center bg-[#00000080] backdrop-blur-lg">
                         <div onClick={(e) => {
                             e.stopPropagation();
-                        }} className='w-[88%] max-w-300 bg-white h-[200vh] overflow-hidden rounded-4xl my-10 border-2 border-gray-500 flex flex-col'>
+                        }} className='w-[88%] md:w-[68%] max-w-300 bg-white h-fit overflow-hidden rounded-4xl my-10 border-2 border-gray-500 flex flex-col'>
+
+                            <BlogEntry data={data!} ></BlogEntry>
 
 
                             <div className="absolute overflow-visible h-[120dvh] mr-5 mt-5 self-end">
-                                <div onClick={close} className='sticky top-5  p-2 bg-gray-200 rounded-full cursor-pointer'>
+                                <div onClick={close} tabIndex={0} className='sticky top-5  p-2 bg-gray-200 rounded-full cursor-pointer'>
                                     <X />
                                 </div>
                             </div>
