@@ -24,7 +24,7 @@ export default function HeroSection() {
             </div>
 
             <div className="md:block hidden">
-                <SocialButtons />
+                <SocialButtons enableMotion />
             </div>
         </div>
         <div className="w-1/2 flex justify-center items-center select-none">
@@ -39,7 +39,7 @@ export default function HeroSection() {
         <div className="flex flex-col justify-center sm:hidden items-center px-10">
             <Introduction />
 
-            <SocialButtons />
+            <SocialButtons enableMotion={false}/>
 
         </div>
     </div>
@@ -50,7 +50,7 @@ export default function HeroSection() {
         <div className="flex flex-col justify-center max-sm:hidden md:hidden items-center px-20">
             <Introduction />
 
-            <SocialButtons />
+            <SocialButtons enableMotion={false}/>
 
         </div>
     </>

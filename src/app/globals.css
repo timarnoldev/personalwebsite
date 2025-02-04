@@ -10,12 +10,15 @@
 
   --color-cardbackground: #f8fdeb;
   --color-cardbackgroundhover: #f1f8e0;
+
+  --color-test: #e8f1ce;
 }
 
 :root {
   --background: #fff9f5;
   --foreground: #171717;
-  --test: #d3e0ab;
+  --color-test: #e8f1ce;
+
   
   overflow-x: hidden;
 

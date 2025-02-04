@@ -22,7 +22,7 @@ const setTransform = (item: HTMLElement & EventTarget, event: React.PointerEvent
 
 }
 
-export default function SocialButtons() {
+export default function SocialButtons(props: {enableMotion: boolean}) {
     
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -32,8 +32,10 @@ export default function SocialButtons() {
     return <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
 
         <motion.a style={{x,y}} onPointerMove={(event) =>{
-            const item = event.currentTarget;
-            setTransform(item, event, x, y);
+            if(props.enableMotion) {
+                const item = event.currentTarget;
+                setTransform(item, event, x, y);
+            }
         }} onPointerLeave={()=>{
             x.set(0)
             y.set(0)

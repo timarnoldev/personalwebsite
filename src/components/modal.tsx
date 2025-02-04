@@ -41,8 +41,9 @@ export default function Modal({ children }: ModalProps) {
 
 
         {
+            open && 
             ReactDOM.createPortal(<>
-                {open &&
+               
                     <div onClick={close} tabIndex={-1} className="inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center bg-[#00000080] backdrop-blur-lg">
                         <div onClick={(e) => {
                             e.stopPropagation();
@@ -56,7 +57,7 @@ export default function Modal({ children }: ModalProps) {
                             </div>
 
                         </div>
-                    </div>}</>,
+                    </div></>,
                 document.body
             )
         }
