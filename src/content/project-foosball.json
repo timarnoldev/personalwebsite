@@ -1,0 +1,87 @@
+{
+  "title": "The AI Table Football Robot: Outplaying Humans with Precision and Speed",
+  "image": "/content/foosball-large.webp",
+  "content_en": [
+    {
+      "type": "text",
+      "text": "Imagine a game of foosball where the human opponent is replaced by a robot that can predict your next move and outplay you. This project aims to build such a robot, powered by artificial intelligence (AI) and advanced sensors, to transform the traditional game. It’s about creating a machine that not only mimics the human ability to control the foosball players but also can outperform them with split-second precision."
+    },
+    {
+      "type": "headline",
+      "text": "The Challenge: Designing the Robot"
+    },
+    {
+      "type": "text",
+      "text": "To get started, the core mechanical design focuses on enabling the robot to move and control the players just like a human would. The idea is simple: the robot needs to control the rods on the table, moving the figures horizontally and rotating them for shots. The first prototype used a threaded spindle running through the hollow rods, with a nut connected to each player. This system allows for precise movement when the rod is rotated by a motor."
+    },
+    {
+      "type": "text",
+      "text": "A key challenge was to ensure that the player figures could rotate on their axes to perform shots. To do this, the design includes a second motor at the opposite end of the rod that can spin the rod, rotating the player figures. With these motors, the robot can replicate every move a human player would do—moving players into position and executing shots."
+    },
+    {
+      "type": "headline",
+      "text": "Using AI to Track the Game"
+    },
+    {
+      "type": "text",
+      "text": "The next critical component of the project is using AI to track the ball and players on the field in real-time. A high-speed camera is mounted above the table to monitor the game. The camera's job is to capture the movement of the ball and the players, while AI, specifically a YOLOv8 network, processes the image data. This network can detect and track the ball, even when it’s partially obstructed by players or moving quickly."
+    },
+    {
+      "type": "text",
+      "text": "To train the AI, over 3,000 images were manually labeled to ensure the system could reliably identify both the players and the ball from a top-down perspective. After training, the system achieved an impressive accuracy of 98%. Even with fast-moving balls or partially hidden positions, the AI still tracked everything precisely, allowing the robot to respond accurately."
+    },
+    {
+      "type": "image",
+      "src": "/content/foosball-ai.webp",
+      "text": "Players and the ball are getting detected by the AI"
+    },
+    {
+      "type": "headline",
+      "text": "Overcoming the Hardware and Latency Challenges"
+    },
+    {
+      "type": "text",
+      "text": "The real-time processing and control are crucial. For the robot to respond quickly enough to be competitive, the system needs to operate with minimal latency. The current hardware setup allows the AI to process images at around 200 frames per second (fps). This is more than sufficient to ensure the robot can react in real-time."
+    },
+    {
+      "type": "text",
+      "text": "Additionally, careful attention was given to the camera setup, ensuring it had a clear view of the entire playing field. The camera’s placement and mounting were designed to minimize vibrations, which could misalign the field and affect the robot’s performance. Fiducial markers placed at the corners of the table help the system identify the exact position of the field and correct any misalignments."
+    },
+    {
+      "type": "headline",
+      "text": "Building the Control System"
+    },
+    {
+      "type": "text",
+      "text": "The robot’s motor control system is another key challenge. The movement of the figures requires precise coordination between motors, encoders, and servos. Each rod is controlled by a motor, which moves the player left and right. The encoders track the position of the player, while the servo motors allow for rotational movement to execute shots. The robot is powered by a custom-designed PCB that houses all the electronics. It allows the system to track the position of each player on the rods and adjust the motors accordingly."
+    },
+    
+    {
+      "type": "image",
+      "src": "/content/foosball-prototype.webp",
+      "text": "Current prototype of a control pcb"
+    },
+    
+    {
+      "type": "headline",
+      "text": "Looking Ahead"
+    },
+    {
+      "type": "text",
+      "text": "Now, the focus is on refining the robot’s ability to move quickly and accurately, particularly during rotations when taking a shot. A significant portion of the ongoing work involves optimizing the software to manage the high-frequency calculations needed to maintain 200 Hz updates, ensuring that the robot is always one step ahead of its human opponent."
+    },
+    {
+      "type": "text",
+      "text": "As the project progresses, the next steps include finalizing the control systems, further fine-tuning the AI, and completing the integration of all components. The goal is to create a robot that not only plays foosball but does so in a way that challenges and eventually defeats human players."
+    },
+    {
+      "type": "text",
+      "text": "More updates on the Football Table Blog:"
+    },
+    {
+      "type": "link",
+      "href": "https://fussball.arnold-tim.de/",
+      "text": "fussball.arnold-tim.de"
+    }
+  ]
+}

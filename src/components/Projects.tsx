@@ -1,7 +1,9 @@
 import { Plus } from 'lucide-react';
 import Image from 'next/image'
 import Modal from './modal';
-import data from "@/content/rekari.json"
+import rekariBlog from "@/content/project-rekari.json"
+import foosballBlog from "@/content/project-foosball.json"
+import ekesBlog from "@/content/project-ekes.json"
 
 const projects = [
     {
@@ -11,6 +13,7 @@ const projects = [
         desc: "Empower the team",
         link: "https://www.rekari.de",
         linkText: "Visit Rekari",
+        blogContent: rekariBlog
     },
 
     {
@@ -20,6 +23,7 @@ const projects = [
         desc: "Robot vs. Human",
         link: "https://www.rekari.de",
         linkText: "Visit Rekari",
+        blogContent: foosballBlog
     },
 
 
@@ -30,6 +34,7 @@ const projects = [
         desc: "AI visualized",
         link: "https://www.rekari.de",
         linkText: "Visit Rekari",
+        blogContent: ekesBlog
     },
 
 
@@ -39,7 +44,7 @@ const projects = [
 
 
 const ListItem = (item: any) => {
-    return <Modal data={data}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
+    return <Modal data={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
 
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">
             <p className='text-l text-white font-bold'>{item.desc}</p>
