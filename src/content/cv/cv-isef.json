@@ -1,0 +1,83 @@
+{
+    "title": "Representing at ISEF 2024 in Los Angeles: A Global Stage for Innovation",
+    "image": "/cv/isef.webp",
+    "content_en": [
+        {
+            "type": "text",
+            "text": "The Regeneron International Science and Engineering Fair (ISEF) is known as the world’s largest and most prestigious science fair for young researchers. Every year, thousands of young innovators compete for scholarships, awards, and the opportunity to exchange with field experts."
+        },
+        {
+            "type": "text",
+            "text": "Being selected to present our project, Rekari, at ISEF 2024 in Los Angeles was a remarkable milestone. Having already earned recognition at the national level in Germany through the Jugend forscht competition, followed by the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG) and participation in the European Union Contest for Young Scientists (EUCYS), our selection for ISEF marked the culmination of years of hard work, research, and dedication."
+        },
+        {
+            "type": "image",
+            "src": "/content/isef-building.webp",
+            "text": "ISEF fair building with large posters"
+        },
+        
+        {
+            "type": "headline",
+            "text": "Showcasing Rekari at ISEF"
+        },
+        {
+            "type": "text",
+            "text": "At ISEF, we had the opportunity to present Rekari - an innovative platform that integrates drone mission planning, execution, and data analysis through real-time collaboration into a mobile app. Our project received significant attention not only for its technological innovation but also for its wide range of practical applications in fields like emergency services, environmental research, and documentation efforts. Whether it’s helping emergency responders monitor disaster zones or assisting farmers detect fawns before harvesting, Rekari demonstrated how technology can be used to address real-world problems efficiently and collaboratively."
+        },
+        {
+            "type":"image",
+            "src": "/content/isef-rekari-booth.webp",
+            "text": "Finanlized Rekari Booth shortly before the jury meeting"
+        },
+        {
+            "type": "text",
+            "text": "Students from all corners of the world presented their projects, ranging from biology and engineering to social sciences and environmental solutions. The fair was a vibrant hub of creativity, ideas, and collaboration. The chance to interact with fellow competitors all over the world who were equally passionate about innovation made the experience even more enriching. Especially exploring Los Angeles with the other ISEF-Award winners from Germany was a remarkable experience."
+        },
+        {
+            "type": "headline",
+            "text": "Learning from the Best: Networking and Mentorship at ISEF"
+        },
+        {
+            "type": "text",
+            "text": "One of the most rewarding aspects of our participation was the opportunity to engage directly with leading scientists, engineers, and entrepreneurs. The mentors and judges at ISEF are some of the most respected figures in their respective fields, and having the chance to discuss our viewpoints with them was both educational and inspiring. Their feedback, insights, and encouragement helped refine our understanding of the project and opened up new avenues for potential development."
+        },
+        {
+            "type": "text",
+            "text": "A standout moment during the competition was meeting George D. Yancopoulos, the Chief Technology Officer of Regeneron. His guidance on scientific innovation and the intersection of technology and entrepreneurship was invaluable. For us, interacting with professionals who had turned their scientific breakthroughs into successful ventures was a crucial lesson in both the scientific and business aspects of innovation. These conversations offered a glimpse into what is possible with hard work and dedication, as well as an understanding of the path to turning scientific ideas into tangible real-world solutions."
+        },
+        {
+            "type": "image",
+            "src": "/content/jufo-yancopoulos.webp",
+            "text": "Discussing the details about Rekari with Regeneron CTO Yancopoulos"
+        },
+        {
+            "type": "text",
+            "text": "As the category sponsor, Microsoft sent an engineer to discuss cutting-edge research in artificial intelligence with us. His talk was not only highly insightful but also outlined a clear path for achieving groundbreaking developments."
+        },
+        {
+            "type": "text",
+            "text": "In addition to networking with industry leaders, we had the chance to interact with hundreds of talented peers who shared a similar passion for scientific research. The collaboration and idea exchange that took place were both motivating and energizing."
+        },
+        {
+            "type": "headline",
+            "text": "Global Recognition and Future Pathways"
+        },
+        {
+            "type": "text",
+            "text": "The experience at ISEF 2024 in Los Angeles not only gave us a global stage to present our work but also provided the platform for continued learning, mentorship, and future collaborations. The fair exemplified how scientific competitions like ISEF foster a culture of excellence and exploration."
+        },
+        {
+            "type": "text",
+            "text": "In the end I am confident that our journey at ISEF will serve as a springboard for new opportunities and groundbreaking advancements."
+        },
+        {
+            "type": "text",
+            "text": "Learn more about our project Rekari:"
+        },
+        {
+            "type": "link",
+            "text": "rekari.de",
+            "href": "https://rekari.com"
+        }
+    ]
+}

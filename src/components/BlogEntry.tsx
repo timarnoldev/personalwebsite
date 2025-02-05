@@ -8,9 +8,9 @@ export interface Blog {
 }
 export default function BlogEntry(props: { data: Blog }) {
     return <div className="w-full flex flex-col gap-4">
-        <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" />
+        <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"}/>
 
-        <article className="flex flex-col gap-4 p-12 w-[70%] self-center">
+        <article className="flex flex-col gap-4 p-12 w-[70%] self-center" key={"article"}>
             <div className="text-4xl font-bold text-gray-800 mb-4" key={"title"}>{props.data.title}</div>
 
 
@@ -30,7 +30,7 @@ export default function BlogEntry(props: { data: Blog }) {
                     }
 
                     if(element.type === "image") {
-                        return <div className="w-full flex flex-col gap-0">
+                        return <div className="w-full flex flex-col gap-0" key={index}>
                             <Image src={element.src!} alt={element.text??"Blog post image"} width={1966} height={1106} className="w-full h-auto rounded-xl"/>
                             <div className=" text-gray-700">{element.text}</div>
                         </div>

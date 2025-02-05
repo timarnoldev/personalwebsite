@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react"
-import data from "@/content/project-rekari.json"
+import data from "@/content/projects/project-foosball.json"
 import BlogEntry from "@/components/BlogEntry"
 
 

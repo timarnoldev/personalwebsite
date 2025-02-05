@@ -1,9 +1,9 @@
 import { Plus } from 'lucide-react';
 import Image from 'next/image'
 import Modal from './modal';
-import rekariBlog from "@/content/project-rekari.json"
-import foosballBlog from "@/content/project-foosball.json"
-import ekesBlog from "@/content/project-ekes.json"
+import rekariBlog from "@/content/projects/project-rekari.json"
+import foosballBlog from "@/content/projects/project-foosball.json"
+import ekesBlog from "@/content/projects/project-ekes.json"
 
 const projects = [
     {
@@ -75,7 +75,7 @@ export default function Projects() {
         </div>
 
         {/*Has page width*/}
-        <div className="w-dvw  overflow-x-scroll pl-12">
+        <div className="w-dvw  overflow-x-auto pl-12">
             <div className="flex flex-row w-max gap-8 pt-5 pb-5 pr-12"> {/*Has width of all children*/}
                 {projects.map((project) => (
                     <ListItem key={project.id} {...project} />

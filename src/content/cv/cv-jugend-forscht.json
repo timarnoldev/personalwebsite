@@ -1,0 +1,84 @@
+{
+    "title": "Jugend forscht: From National Award to the International Stage",
+    "image": "/cv/jufo.jpg",
+    "content_en": [
+        {
+          "type": "text",
+          "text": "What started as an idea to make drone missions more intuitive and collaborative has now become an award-winning project, recognized on both national and international levels. From winning the prestigious Jugend forscht Bundeswettbewerb in Bremen to receiving the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG), and finally earning a spot at the Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles—this journey has been nothing short of extraordinary."
+        },
+        {
+          "type": "headline",
+          "text": "Winning the National Prize in Bremen"
+        },
+        {
+          "type": "text",
+          "text": "The first major milestone came at the 58th Bundeswettbewerb Jugend forscht, held in Bremen. Competing in the Technology category, we presented Rekari—a groundbreaking platform that simplifies drone mission planning, execution, and data analysis. The jury was impressed by how Rekari integrates real-time collaboration, automated mission planning, and AI-based analytics to make drone operations more efficient. Whether used by emergency services, environmental researchers, or farmers detecting fawns before harvesting, Rekari proved to be a versatile and impactful solution."
+        },
+        {
+            "type": "image",
+            "src": "/content/jufo-presented-to-polticians.webp",
+            "text": "The Rekari Drone gets presented to German politicians"
+        },
+        {
+            "type": "text",
+            "text": "Winning the Bundessieg in Technik (National Winner in Technology) was an incredible honor, but the recognition didn’t stop there."
+        },
+        {
+          "type": "headline",
+          "text": "Receiving the Europa-Preis from the DFG"
+        },
+        {
+          "type": "text",
+          "text": "On top of our national victory, we were awarded the Europa-Preis by the DFG. This prestigious award is given to outstanding young scientists and researchers, preparing them for the European stage. The award came with expert mentoring from DFG-funded scientists and presentation coaching to refine our skills for the next step: the European Union Contest for Young Scientists (EUCYS) in Brussels."
+        },
+        {
+            "type": "image",
+            "src": "/content/eucys-flags.webp",
+            "text": "Amazing atmosphere at the EUCYS opening ceremony"
+        },
+        {
+          "type": "text",
+          "text": "At EUCYS, we had the opportunity to showcase Rekari alongside Europe’s most promising young scientists. The experience was invaluable, allowing us to receive feedback from leading experts and further refine our project. But the journey didn’t end there—EUCYS opened another incredible door."
+        },
+        {
+          "type": "headline",
+          "text": "From Europe to the World: Representing at ISEF 2024 in Los Angeles"
+        },
+        {
+          "type": "text",
+          "text": "Thanks to our success in Brussels, we qualified for the Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles—the world’s largest and most prestigious science competition for young researchers. Being selected to compete at ISEF was a dream come true, as it provided the platform to present Rekari to a truly global audience, network with like-minded innovators, and engage with industry leaders in technology and science. One of the highlights was meeting George D. Yancopoulos, the CTO of Regeneron. His insights into scientific innovation and entrepreneurship were truly inspiring."
+        },
+        {
+            "type": "image",
+            "src": "/content/jufo-yancopoulos.webp",
+            "text": "Discussing the details about Rekari with Regeneron CTO Yancopoulos"
+        },
+        {
+          "type": "text",
+          "text": "At ISEF, Rekari was recognized not just for its technological innovation, but also for its real-world applications. The opportunity to discuss our project with top-tier scientists, engineers, and entrepreneurs was both inspiring and educative."
+        },
+        {
+            "type": "link",
+            "text": "Read more about my experience at ISEF",
+            "href": "#"
+        },
+        {
+          "type": "headline",
+          "text": "Looking Ahead"
+        },
+        {
+          "type": "text",
+          "text": "From Bremen to Brussels to Los Angeles, this experience has been an incredible opportunity for growth. Rekari started as a vision to simplify drone missions, and through our work and recognition on the national and international stages, it has grown into a project that has taught us invaluable skills. Each step has deepened our understanding of technology, teamwork, and problem-solving, equipping us with knowledge that will undoubtedly benefit us in future endeavors. We are incredibly thankful for all the support and attention we have received throughout this journey—it has truly made a difference and motivated us to keep pushing forward."
+        },
+        {
+            "type": "text",
+            "text": "Learn more about our project Rekari:"
+        },
+        {
+          "type": "link",
+          "text": "rekari.de",
+          "href": "https://rekari.com"
+        }
+      ]
+  }
+  
