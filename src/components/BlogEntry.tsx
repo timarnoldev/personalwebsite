@@ -4,11 +4,13 @@ import Image from "next/image"
 export interface Blog {
     title: string,
     content_en: Array<{ type: string, text?: string, href?: string, src?: string }>,
-    image: string
+    image: string | null
 }
 export default function BlogEntry(props: { data: Blog }) {
     return <div className="w-full flex flex-col gap-4">
-        <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"}/>
+        {
+            props.data.image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"}/>
+        }
 
         <article className="flex flex-col gap-4 p-12 w-[70%] self-center" key={"article"}>
             <div className="text-4xl font-bold text-gray-800 mb-4" key={"title"}>{props.data.title}</div>
