@@ -1,7 +1,7 @@
 {
     "title": "Jugend forscht: From National Award to the International Stage",
     "image": "/cv/jufo.jpg",
-    "content_en": [
+    "content": [
         {
           "type": "text",
           "text": "What started as an idea to make drone missions more intuitive and collaborative has now become an award-winning project, recognized on both national and international levels. From winning the prestigious Jugend forscht Bundeswettbewerb in Bremen to receiving the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG), and finally earning a spot at the Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles—this journey has been nothing short of extraordinary."
@@ -22,6 +22,19 @@
         {
             "type": "text",
             "text": "Winning the Bundessieg in Technik (National Winner in Technology) was an incredible honor, but the recognition didn’t stop there."
+        },
+        {
+          "type": "headline",
+          "text": "Meeting the German Federal Chancellor"
+        },
+        {
+          "type": "image",
+          "src": "/content/jufo-scholz.webp",
+          "text": "Rekari-Team meeting the German Federal Chancellor Scholz"
+        },
+        {
+          "type": "text",
+          "text": "As part of our award, we had the opportunity to meet with the German Federal Chancellor, Olaf Scholz, who congratulated us on our success and expressed his support for the competition. The chance to discuss with the Chancellor was a surreal experience, and his encouragement further motivated to continue researching."
         },
         {
           "type": "headline",

@@ -1,0 +1,59 @@
+{
+    "title": "Abitur 2024: Graduating with Great Success",
+    "image": "/cv/abitur.webp",
+    "content": [
+        {
+            "type": "headline",
+            "text": "Receiving the MINT-EC Certificate"
+        },
+        {
+            "type": "text",
+            "text": "Alongside my Abitur in 2024 I received the prestigious MINT-EC certificate for excellence in STEM subjects with honoration. This certification is awarded to students who have demonstrated exceptional performance in mathematics, computer science, natural sciences, and technology. The MINT-EC network connects schools, universities, and research institutions to promote STEM education and foster collaboration among students and educators."
+        },
+        {
+            "type": "image",
+            "src": "/content/abitur-mintec-cluster.webp",
+            "text": "Group photo of the MINT-EC AI cluster"
+        },
+        {
+            "type": "text",
+            "text": "Also I'm part of the ongoing MINT-EC AI cluster, working on the vision of bringing AI education into classrooms. As this cluster is in deep collaboration with important German companies like SAP or Airbus, I'm excited to be part of this project. My work group is in active development of collecting AI resources to create a project kit for students to start their own AI projects."
+        },
+        {
+            "type": "link",
+            "text": "Learn more about MINT-EC",
+            "href": "https://mint-ec.de"
+        },
+
+        {
+            "type": "headline",
+            "text": "The Best in Physics: Recognition by the DPG"
+        },
+        {
+            "type": "text",
+            "text": "In addition to the MINT-EC certificate, I was honored with the Physics Award by the German Physical Society (DPG) for my achievements in the field of physics. The DPG is one of the largest physics societies in the world, and receiving this award in combination with a book prize was a great honor. I'm trilled to be part of this community and to get in contact with cutting-edge research."
+        },
+        {
+            "type": "link",
+            "text": "Learn more about the DPG",
+            "href": "https://dpg-physik.de"
+        },
+
+        {
+            "type":"headline",
+            "text": "Invitation to the DMV"
+        },
+        {
+            "type": "text",
+            "text": "As a result of my success in mathematics, I was invited to a membership in the German Mathematical Society (DMV). The DMV is one of the oldest and most renowned mathematical societies in the world, and I am honored to be part of this community. Allowing me to connect with leading mathematicians and researchers."
+        },
+        {
+            "type": "link",
+            "text": "Learn more about the DMV",
+            "href": "https://www.mathematik.de/"
+        }
+
+
+       
+    ]
+}

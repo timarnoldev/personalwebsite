@@ -1,0 +1,57 @@
+{
+    "title": "Empowering Young Minds: My Gap Year as a STEM Tutor",
+    "image": "/cv/bufdi.webp",
+    "content": [
+      {
+        "type": "text",
+        "text": "Taking a gap year is often seen as a time for exploration, learning, and growth. For me, this year has been an incredible opportunity to contribute to STEM education while gaining invaluable experience through my role as a voluntary STEM tutor at the Walter-Reis-Institut (WRI). Through hands-on workshops and mentorship, I have had the privilege of inspiring young minds and fostering a passion for science and technology."
+      },
+      {
+        "type": "headline",
+        "text": "Bringing STEM to Life: Workshops and Hands-on Learning"
+      },
+      {
+        "type": "text",
+        "text": "One of the core aspects of my role has been organizing and conducting STEM workshops as part of the MINTbayU initiative. This program, initiated by the TH Aschaffenburg University of Applied Sciences, the Regionalmanagement-Initiative Bayerischer Untermain and the Walter Reis Institut, is funded by the Federal Ministry of Education and Research. It offers free extracurricular activities in mathematics, computer science, natural sciences, and engineering. By making STEM accessible to children and teenagers, the initiative aims to equip them with essential skills for the future."
+      },
+      {
+        "type": "image",
+        "src": "/content/stem-handson.webp",
+        "text": "Students participating in a hands-on STEM workshop"
+      },
+      {
+        "type": "text",
+        "text": "A highlight of my experience has been teaching courses on electrical engineering and programming. In one such workshop, participants built a Wi-Fi-enabled LED matrix and programmed their own animations and games. Seeing the enthusiasm of students as they transformed theoretical concepts into functional projects has been deeply rewarding. The preparation for these courses was intensive, but witnessing the positive impact on students made every effort worthwhile."
+      },
+      {
+        "type": "headline",
+        "text": "A Community of Innovators"
+      },
+      {
+        "type": "text",
+        "text": "Beyond teaching, my involvement at WRI has allowed me to engage with experts and industry leaders. I have had the chance to interact with professionals from diverse fields, including members of the Walter Reis Foundation's board. These conversations have provided me with insights into technological advancements, entrepreneurship, and the broader impact of STEM education."
+      },
+      {
+        "type": "headline",
+        "text": "Inspiring the Next Generation of Innovators"
+      },
+      {
+        "type": "text",
+        "text": "Through my work, I have seen firsthand how early exposure to STEM can spark curiosity and confidence in young learners. The workshops at MINTbayU cater to students from different educational backgrounds, ensuring that anyone with an interest in science and technology can participate without prior knowledge. By creating an inclusive and supportive learning environment, we are helping to shape the next generation of problem-solvers and innovators."
+      },
+      {
+        "type": "text",
+        "text": "As I continue this journey, I look forward to further expanding my role, developing new workshops, and continuing to learn from both students and mentors. This experience has reaffirmed my passion for education and innovation, and I am excited to see where it leads me in the future."
+      },
+      {
+        "type": "text",
+        "text": "Learn more about the MINTbayU initiative"
+      },
+      {
+        "type": "link",
+        "text": "MINTbayU",
+        "href": "https://mintbayu.de"
+      }
+    ]
+  }
+  

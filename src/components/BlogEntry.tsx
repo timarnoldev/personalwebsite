@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export interface Blog {
     title: string,
-    content_en: Array<{ type: string, text?: string, href?: string, src?: string }>,
+    content: Array<{ type: string, text?: string, href?: string, src?: string }>,
     image: string | null
 }
 export default function BlogEntry(props: { data: Blog }) {
@@ -17,7 +17,7 @@ export default function BlogEntry(props: { data: Blog }) {
 
 
             {
-                props.data.content_en.map((element, index) => {
+                props.data.content.map((element, index) => {
 
                     if (element.type === "headline") {
                         return <div className="text-2xl font-bold mt-6" key={index}>{element.text}</div>

@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row gap-14  text-lg ">
                     <a className="text-white hover:underline underline-offset-4" href="/articles">Articles</a>
-                    <Modal data={technicalDetails}><div className="text-white hover:underline underline-offset-4">Technical Details</div></Modal>
+                    <Modal data={technicalDetails}><div className="text-white hover:underline underline-offset-4 cursor-pointer">Technical Details</div></Modal>
                     <a className="text-white hover:underline underline-offset-4" href="https://github.com/timarnoldev">Imprint</a>
                 </div>
             </div>

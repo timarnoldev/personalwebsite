@@ -1,7 +1,41 @@
 {
     "title": "Technical Details",
     "image": null,
-    "content_en": [
-        
+    "content": [
+        {
+            "type": "headline",
+            "text": "Techstack"
+        },
+        {
+            "type": "text",
+            "text": "This website was built using NextJS, a javascript framwork based on React. Styling was done using no template, but rather custom CSS combined with TailwindCSS. The website is hosted on Vercel, which also provides the CI/CD pipeline for the project."
+        },
+        {
+            "type": "headline",
+            "text": "Reporting Errors"
+        },
+        {
+            "type": "text",
+            "text": "If you find any errors or issues with the website, please report them to me via the following link. I will try to fix them as soon as possible. I also appreciate any feedback on the website design or content."
+        },
+        {
+            "type": "link",
+            "text": "Report Issue: bugs@tim-arnold.de",
+            "href": "mailto:bugs@tim-arnold.de"
+        },
+        {
+            "type": "headline",
+            "text": "More Information"
+        },
+        {
+            "type": "text",
+            "text": "If you are interested in the technical details of a specific project or want to know more about my work, feel free to reach out to me. I am always happy to discuss my projects and share insights into the development process. I'm also inviting you checking out my GitHub profile for more projects and contributions."
+        },
+        {
+            "type": "link",
+            "text": "GitHub: @timarnoldev",
+            "href": "https://github.com/timarnoldev"
+        }
+
     ]
 }

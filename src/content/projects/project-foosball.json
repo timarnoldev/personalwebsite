@@ -1,7 +1,7 @@
 {
   "title": "The AI Table Football Robot: Outplaying Humans with Precision and Speed",
   "image": "/content/foosball-large.webp",
-  "content_en": [
+  "content": [
     {
       "type": "text",
       "text": "Imagine a game of foosball where the human opponent is replaced by a robot that can predict your next move and outplay you. This project aims to build such a robot, powered by artificial intelligence (AI) and advanced sensors, to transform the traditional game. It’s about creating a machine that not only mimics the human ability to control the foosball players but also can outperform them with split-second precision."

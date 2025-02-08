@@ -1,7 +1,7 @@
 {
     "title": "Representing at ISEF 2024 in Los Angeles: A Global Stage for Innovation",
     "image": "/cv/isef.webp",
-    "content_en": [
+    "content": [
         {
             "type": "text",
             "text": "The Regeneron International Science and Engineering Fair (ISEF) is known as the world’s largest and most prestigious science fair for young researchers. Every year, thousands of young innovators compete for scholarships, awards, and the opportunity to exchange with field experts."
@@ -77,7 +77,7 @@
         {
             "type": "link",
             "text": "rekari.de",
-            "href": "https://rekari.com"
+            "href": "https://rekari.de"
         }
     ]
 }
