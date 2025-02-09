@@ -33,16 +33,16 @@ const cvHighlights = (lang:Dictionary) => {
         {
             id: 2,
             img: "/cv/bufdi.webp",
-            headline: "STEM-Tutor at Institut for Technology",
-            text: "As a tutor at the Walter Reis Foundation, I design courses and workshops to introduce students to key engineering concepts. The focus is on practical skills like designing, soldering, and programming, while also covering AI applications to give students a broader understanding of modern technology.",
+            headline: lang.cvBufdiHeadline,
+            text: lang.cvBufdiText,
             blogPost: stemtutor
         },
     
         {
             id: 3,
             img: "/projects/ekes.webp",
-            headline: "Abitur prize winner",
-            text: "With my Abitur, I was awarded the prize for the best math Abitur by the Deutsche Mathematiker-Vereinigung and the prize for the best physics Abitur by the Deutsche Physikalische Gesellschaft. Additionally, I received the STEM Excellence Certificate from MINT-EC, Germany’s national excellence initiative for STEM education.",
+            headline: lang.cvAbiturHeadline,
+            text: lang.cvAbiturText,
             blogPost: abitur
         }
     
