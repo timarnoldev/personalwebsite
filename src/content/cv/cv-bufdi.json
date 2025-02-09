@@ -1,57 +1,68 @@
 {
-    "title": "Empowering Young Minds: My Gap Year as a STEM Tutor",
-    "image": "/cv/bufdi.webp",
-    "content": [
-      {
-        "type": "text",
-        "text": "Taking a gap year is often seen as a time for exploration, learning, and growth. For me, this year has been an incredible opportunity to contribute to STEM education while gaining invaluable experience through my role as a voluntary STEM tutor at the Walter-Reis-Institut (WRI). Through hands-on workshops and mentorship, I have had the privilege of inspiring young minds and fostering a passion for science and technology."
-      },
-      {
-        "type": "headline",
-        "text": "Bringing STEM to Life: Workshops and Hands-on Learning"
-      },
-      {
-        "type": "text",
-        "text": "One of the core aspects of my role has been organizing and conducting STEM workshops as part of the MINTbayU initiative. This program, initiated by the TH Aschaffenburg University of Applied Sciences, the Regionalmanagement-Initiative Bayerischer Untermain and the Walter Reis Institut, is funded by the Federal Ministry of Education and Research. It offers free extracurricular activities in mathematics, computer science, natural sciences, and engineering. By making STEM accessible to children and teenagers, the initiative aims to equip them with essential skills for the future."
-      },
-      {
-        "type": "image",
-        "src": "/content/stem-handson.webp",
-        "text": "Students participating in a hands-on STEM workshop"
-      },
-      {
-        "type": "text",
-        "text": "A highlight of my experience has been teaching courses on electrical engineering and programming. In one such workshop, participants built a Wi-Fi-enabled LED matrix and programmed their own animations and games. Seeing the enthusiasm of students as they transformed theoretical concepts into functional projects has been deeply rewarding. The preparation for these courses was intensive, but witnessing the positive impact on students made every effort worthwhile."
-      },
-      {
-        "type": "headline",
-        "text": "A Community of Innovators"
-      },
-      {
-        "type": "text",
-        "text": "Beyond teaching, my involvement at WRI has allowed me to engage with experts and industry leaders. I have had the chance to interact with professionals from diverse fields, including members of the Walter Reis Foundation's board. These conversations have provided me with insights into technological advancements, entrepreneurship, and the broader impact of STEM education."
-      },
-      {
-        "type": "headline",
-        "text": "Inspiring the Next Generation of Innovators"
-      },
-      {
-        "type": "text",
-        "text": "Through my work, I have seen firsthand how early exposure to STEM can spark curiosity and confidence in young learners. The workshops at MINTbayU cater to students from different educational backgrounds, ensuring that anyone with an interest in science and technology can participate without prior knowledge. By creating an inclusive and supportive learning environment, we are helping to shape the next generation of problem-solvers and innovators."
-      },
-      {
-        "type": "text",
-        "text": "As I continue this journey, I look forward to further expanding my role, developing new workshops, and continuing to learn from both students and mentors. This experience has reaffirmed my passion for education and innovation, and I am excited to see where it leads me in the future."
-      },
-      {
-        "type": "text",
-        "text": "Learn more about the MINTbayU initiative"
-      },
-      {
-        "type": "link",
-        "text": "MINTbayU",
-        "href": "https://mintbayu.de"
-      }
-    ]
-  }
-  
+  "title": "Junge Köpfe begeistern: Mein Gap Year als MINT-Tutor",
+  "title_de": "Begeisterung wecken: Mein Bundesfreiwilligendienst als MINT-Tutor",
+  "image": "/cv/bufdi.webp",
+  "content": [
+    {
+      "type": "text",
+      "text": "Taking a gap year is often seen as a time for exploration, learning, and growth. For me, this year has been an incredible opportunity to contribute to STEM education while gaining invaluable experience through my role as a voluntary STEM tutor at the Walter-Reis-Institut (WRI). Through hands-on workshops and mentorship, I have had the privilege of inspiring young minds and fostering a passion for science and technology.",
+      "text_de": "Ein Gap Year wird oft als eine Zeit der Erkundung, des Lernens und des persönlichen Wachstums betrachtet. Für mich war dieses Jahr eine unglaubliche Chance, die MINT-Bildung zu verstehe, mitzugestalten und gleichzeitig wertvolle Erfahrungen als MINT-Tutor am Walter-Reis-Institut (WRI) zu sammeln. Durch praxisnahe Workshops hatte ich die Möglichkeit, Technikinteressierte zu inspirieren und ihre Begeisterung für Wissenschaft und Technik zu wecken."
+    },
+    {
+      "type": "headline",
+      "text": "Bringing STEM to Life: Workshops and Hands-on Learning",
+      "text_de": "MINT erlebbar machen: Workshops und praktisches Lernen"
+    },
+    {
+      "type": "text",
+      "text": "One of the core aspects of my role has been organizing and conducting STEM workshops as part of the MINTbayU initiative. This program, initiated by the TH Aschaffenburg University of Applied Sciences, the Regionalmanagement-Initiative Bayerischer Untermain and the Walter Reis Institut, is funded by the Federal Ministry of Education and Research. It offers free extracurricular activities in mathematics, computer science, natural sciences, and engineering. By making STEM accessible to children and teenagers, the initiative aims to equip them with essential skills for the future.",
+      "text_de": "Ein zentraler Bestandteil meiner Tätigkeit war die Organisation und Durchführung von MINT-Workshops im Rahmen der MINTbayU-Initiative. Dieses Programm, das von der Technischen Hochschule Aschaffenburg, der Regionalmanagement-Initiative Bayerischer Untermain und dem Walter-Reis-Institut ins Leben gerufen wurde, wird vom Bundesministerium für Bildung und Forschung gefördert. Es bietet kostenlose außerschulische Aktivitäten in Mathematik, Informatik, Naturwissenschaften und Technik. Indem MINT-Themen für Kinder und Jugendliche zugänglich gemacht wird, will die Initiative ihnen wichtige Zukunftskompetenzen vermitteln."
+    },
+    {
+      "type": "image",
+      "src": "/content/stem-handson.webp",
+      "text": "Students participating in a hands-on STEM workshop",
+      "text_de": "Schülerinnen und Schüler nehmen an einem praxisnahen MINT-Workshop teil"
+    },
+    {
+      "type": "text",
+      "text": "A highlight of my experience has been teaching courses on electrical engineering and programming. In one such workshop, participants built a Wi-Fi-enabled LED matrix and programmed their own animations and games. Seeing the enthusiasm of students as they transformed theoretical concepts into functional projects has been deeply rewarding. The preparation for these courses was intensive, but witnessing the positive impact on students made every effort worthwhile.",
+      "text_de": "Ein besonderes Highlight war das Unterrichten von Kursen zu Elektrotechnik und Programmierung. In einem Workshop bauten die Teilnehmer eine WLAN-fähige LED-Matrix und programmierten eigene Animationen und Spiele. Besonders toll war für mich die Begeisterung der Schülerinnen und Schüler zu sehen, wenn sie theoretische Konzepte in funktionierende Projekte umsetzen. Die Vorbereitung dieser Kurse war stellenweise sehr aufwendig, aber die positiven Rückmeldungen der Teilnehmer machte es den Aufwand wert."
+    },
+    {
+      "type": "headline",
+      "text": "A Community of Innovators",
+      "text_de": "Eine Gemeinschaft von Innovatoren"
+    },
+    {
+      "type": "text",
+      "text": "Beyond teaching, my involvement at WRI has allowed me to engage with experts and industry leaders. I have had the chance to interact with professionals from diverse fields, including members of the Walter Reis Foundation's board. These conversations have provided me with insights into technological advancements, entrepreneurship, and the broader impact of STEM education.",
+      "text_de": "Über das Unterrichten hinaus ermöglichte mir meine Tätigkeit am WRI den Austausch mit Experten und führenden Persönlichkeiten aus der Industrie. Ich hatte die Gelegenheit, mit Fachleuten aus verschiedenen Bereichen, darunter Mitglieder des Stiftungsrat der Walter-Reis-Stiftung, ins Gespräch zu kommen. Diese Gespräche gaben mir wertvolle Einblicke in technologische Entwicklungen, Unternehmertum und die weitreichenden Auswirkungen der MINT-Bildung."
+    },
+    {
+      "type": "headline",
+      "text": "Inspiring the Next Generation of Innovators",
+      "text_de": "Die nächste Generation von MINT-begeisterten inspirieren"
+    },
+    {
+      "type": "text",
+      "text": "Through my work, I have seen firsthand how early exposure to STEM can spark curiosity and confidence in young learners. The workshops at MINTbayU cater to students from different educational backgrounds, ensuring that anyone with an interest in science and technology can participate without prior knowledge. By creating an inclusive and supportive learning environment, we are helping to shape the next generation of problem-solvers and innovators.",
+      "text_de": "Durch meine Arbeit habe ich hautnah erlebt, wie frühe Berührungspunkte mit MINT-Themen Neugier und Selbstvertrauen bei jungen Lernenden wecken können. Die Workshops von MINTbayU richten sich an Schülerinnen und Schüler mit unterschiedlichen Bildungshintergründen und ermöglichen eine Teilnahme ohne Vorkenntnisse. Durch ein inklusives und unterstützendes Lernumfeld trägt die Initiative dazu bei, die nächste Generation von Problemlösern und Innovatoren zu fördern."
+    },
+    {
+      "type": "text",
+      "text": "In the coming months of my gap year, I am looking forward to developing new workshops and gaining exciting experiences. The impressions I have gained so far have definitely strengthened my decision to continue engaging with STEM topics in the future.",
+      "text_de": "In den nächsten Monaten meines Bundesfreiwilligendiensts freue ich mich darauf, neue Workshops zu entwickeln und spannende Erfahrungen zu sammeln. Die bisherigen Eindrücke haben mich auf jeden Fall in meiner Entscheidung gestärkt, mich auch in Zukunft mit Themen aus dem MINT-Bereich zu beschäftigen."
+    },
+    {
+      "type": "text",
+      "text": "Learn more about the MINTbayU initiative",
+      "text_de": "Erfahre mehr über die MINTbayU-Initiative"
+    },
+    {
+      "type": "link",
+      "text": "MINTbayU",
+      "href": "https://mintbayu.de"
+    }
+  ]
+}

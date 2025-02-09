@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Modal from './modal'
 import { Blog } from './BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"
+import { Dictionary } from '@/i18n/get-dictionaries'
 
 function Logo(props: { src: string, alt: string, enlarge?: boolean, height: number, width?: number, blog?:Blog}) {
     if (props.enlarge) {
@@ -11,7 +12,7 @@ function Logo(props: { src: string, alt: string, enlarge?: boolean, height: numb
     }
 }
 
-export default function CollaborationSection() {
+export default function CollaborationSection(props: {lang: Dictionary}) {
     return <div className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 max-w-600">
         <div>
             <h2 className="text-2xl font-bold sm:ml-20 text-gray-600">Collaboration & Experience with</h2>

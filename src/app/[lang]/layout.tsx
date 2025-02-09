@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
+import { i18n, Locale } from "@/i18n/i18n-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +22,23 @@ export const metadata: Metadata = {
   
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
+  params?: Promise<{ lang: Locale }>;
 }>) {
+  const slangs = await params;
+
+  
+
   return (
-    <html lang="en">
+    <html lang={slangs?.lang ?? "en"}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

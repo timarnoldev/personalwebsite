@@ -2,6 +2,8 @@ import Image from 'next/image'
 import SocialButtons from './SocialLinks'
 import Modal from './modal'
 import cvJufo from "@/content/cv/cv-jugend-forscht.json"
+import { Locale } from '@/i18n/i18n-config'
+import { Dictionary } from '@/i18n/get-dictionaries'
 
 function Introduction() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
@@ -15,7 +17,7 @@ function Introduction() {
     </div>
 }
 
-export default function HeroSection() {
+export default function HeroSection(props: {lang: Dictionary}) {
     return <><div className="flex flex-col sm:flex-row justify-between w-dvw bg-herobackground sm:mt-24 pt-[10vh] items-center sm:items-start max-w-400 self-center gap-6 md:gap-0">
         <div className="flex flex-col justify-center sm:items-start items-center sm:w-1/2  sm:pl-30 pt-15">
             <p className="uppercase text-gray-500 tracking-widest mb-4 text-xl">Nice to meet you!</p>

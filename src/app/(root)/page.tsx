@@ -1,0 +1,20 @@
+import CollaborationSection from "@/components/CollaborationSection";
+import CVHighlights from "@/components/cvhighlights";
+import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
+import { getDictionary } from "@/i18n/get-dictionaries";
+import { Locale } from "@/i18n/i18n-config";
+
+export default async function Home() {
+
+  const dictionary = await getDictionary("en");
+
+  return (
+   <div className="flex flex-col">
+     <HeroSection lang={dictionary}/>
+     <CollaborationSection lang={dictionary}/>
+     <Projects lang={dictionary}/>
+     <CVHighlights lang={dictionary}/>
+    </div>
+  );
+}

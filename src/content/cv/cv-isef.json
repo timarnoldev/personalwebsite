@@ -1,82 +1,101 @@
 {
     "title": "Representing at ISEF 2024 in Los Angeles: A Global Stage for Innovation",
+    "title_de": "Präsentation auf der ISEF 2024 in Los Angeles: Eine globale Bühne für Innovation",
     "image": "/cv/isef.webp",
     "content": [
         {
             "type": "text",
-            "text": "The Regeneron International Science and Engineering Fair (ISEF) is known as the world’s largest and most prestigious science fair for young researchers. Every year, thousands of young innovators compete for scholarships, awards, and the opportunity to exchange with field experts."
+            "text": "The Regeneron International Science and Engineering Fair (ISEF) is known as the world’s largest and most prestigious science fair for young researchers. Every year, thousands of young innovators compete for scholarships, awards, and the opportunity to exchange with field experts.",
+            "text_de": "Die Regeneron International Science and Engineering Fair (ISEF) gilt als weltweit größte und renommierteste Wissenschaftsmesse für junge Forscher. Jedes Jahr treten tausende Schülerinnen und Schüler an, um Stipendien, Auszeichnungen und die Möglichkeit zum Austausch mit Experten auf ihrem Gebiet zu gewinnen."
         },
         {
             "type": "text",
-            "text": "Being selected to present our project, Rekari, at ISEF 2024 in Los Angeles was a remarkable milestone. Having already earned recognition at the national level in Germany through the Jugend forscht competition, followed by the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG) and participation in the European Union Contest for Young Scientists (EUCYS), our selection for ISEF marked the culmination of years of hard work, research, and dedication."
+            "text": "Being selected to present our project, Rekari, at ISEF 2024 in Los Angeles was a remarkable milestone. Having already earned recognition at the national level in Germany through the Jugend forscht competition, followed by the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG) and participation in the European Union Contest for Young Scientists (EUCYS), our selection for ISEF marked the culmination of years of hard work, research, and dedication.",
+            "text_de": "Die Auswahl zur Präsentation unseres Projekts Rekari auf der ISEF 2024 in Los Angeles war für uns ein großer Erfolg. Nachdem wir bereits auf nationaler Ebene in Deutschland durch den Wettbewerb Jugend forscht viel Anerkennung bekommen hatten, gefolgt vom Europa-Preis der Deutschen Forschungsgemeinschaft (DFG) und der Teilnahme am European Union Contest for Young Scientists (EUCYS), stellt unsere Qualifikation für die ISEF den Höhepunkt der langen Arbeit an unserem Projekt dar."
         },
         {
             "type": "image",
             "src": "/content/isef-building.webp",
-            "text": "ISEF fair building with large posters"
+            "text": "ISEF fair building with large posters",
+            "text_de": "ISEF-Messegebäude mit großen Plakaten"
         },
         
         {
             "type": "headline",
-            "text": "Showcasing Rekari at ISEF"
+            "text": "Showcasing Rekari at ISEF",
+            "text_de": "Präsentation von Rekari auf der ISEF"
         },
         {
             "type": "text",
-            "text": "At ISEF, we had the opportunity to present Rekari - an innovative platform that integrates drone mission planning, execution, and data analysis through real-time collaboration into a mobile app. Our project received significant attention not only for its technological innovation but also for its wide range of practical applications in fields like emergency services, environmental research, and documentation efforts. Whether it’s helping emergency responders monitor disaster zones or assisting farmers detect fawns before harvesting, Rekari demonstrated how technology can be used to address real-world problems efficiently and collaboratively."
+            "text": "At ISEF, we had the opportunity to present Rekari - an innovative platform that integrates drone mission planning, execution, and data analysis through real-time collaboration into a mobile app. Our project received significant attention not only for its technological innovation but also for its wide range of practical applications in fields like emergency services, environmental research, and documentation efforts. Whether it’s helping emergency responders monitor disaster zones or assisting farmers detect fawns before harvesting, Rekari demonstrated how technology can be used to address real-world problems efficiently and collaboratively.",
+            "text_de": "Auf der ISEF hatten wir die Möglichkeit, Rekari zu präsentieren - eine innovative Plattform, die die Planung, Durchführung und Datenanalyse von Drohnenmissionen durch Echtzeit-Kollaboration in einer mobilen App integriert. Unser Projekt wurde nicht nur aufgrund der technischen Innovation sehr gelobt, sondern auch aufgrund seiner Bandbreite an praktischen Anwendungen in Bereichen wie Vermisstensuche, Rehkitzrettung und Dokumentationsarbeiten. Unabhänig von der Anwendung zeigt Rekari, wie das Sammeln von Mess- oder Analysedaten effizient und kollaborativ gelingen kann."
         },
         {
             "type":"image",
             "src": "/content/isef-rekari-booth.webp",
-            "text": "Finanlized Rekari Booth shortly before the jury meeting"
+            "text": "Finanlized Rekari Booth shortly before the jury meeting",
+            "text_de": "Fertiger Rekari-Stand kurz vor der Jury-Präsentation"
         },
         {
             "type": "text",
-            "text": "Students from all corners of the world presented their projects, ranging from biology and engineering to social sciences and environmental solutions. The fair was a vibrant hub of creativity, ideas, and collaboration. The chance to interact with fellow competitors all over the world who were equally passionate about innovation made the experience even more enriching. Especially exploring Los Angeles with the other ISEF-Award winners from Germany was a remarkable experience."
+            "text": "Students from all corners of the world presented their projects, ranging from biology and engineering to social sciences and environmental solutions. The fair was a vibrant hub of creativity, ideas, and collaboration. The chance to interact with fellow competitors all over the world who were equally passionate about innovation made the experience even more enriching. Especially exploring Los Angeles with the other ISEF-Award winners from Germany was a remarkable experience.",
+            "text_de": "Schüler aus allen Teilen der Welt präsentierten ihre Projekte, von Biologie und Ingenieurwesen über Sozialwissenschaften bis hin zu Umweltlösungen. Der Wettbewerb war ein spannender Treffpunkt für Innovation, Ideen und Zusammenarbeit. Die Möglichkeit, mit Mitbewerbern aus der ganzen Welt zu interagieren, die gleichermaßen leidenschaftlich an Innovation interessiert waren, machte die Erfahrung noch interessanter. Besonders das Erkunden von Los Angeles mit den anderen ISEF-Preisträgern aus Deutschland war eine unvergessliche Erfahrung."
         },
         {
             "type": "headline",
-            "text": "Learning from the Best: Networking and Mentorship at ISEF"
+            "text": "Learning from the Best: Networking and Mentorship at ISEF",
+            "text_de": "Von den Besten lernen: Networking und Mentoring auf der ISEF"
         },
         {
             "type": "text",
-            "text": "One of the most rewarding aspects of our participation was the opportunity to engage directly with leading scientists, engineers, and entrepreneurs. The mentors and judges at ISEF are some of the most respected figures in their respective fields, and having the chance to discuss our viewpoints with them was both educational and inspiring. Their feedback, insights, and encouragement helped refine our understanding of the project and opened up new avenues for potential development."
+            "text": "One of the most rewarding aspects of our participation was the opportunity to engage directly with leading scientists, engineers, and entrepreneurs. The mentors and judges at ISEF are some of the most respected figures in their respective fields, and having the chance to discuss our viewpoints with them was both educational and inspiring. Their feedback, insights, and encouragement helped refine our understanding of the project and opened up new avenues for potential development.",
+            "text_de": "Einer der für uns wichtigsten Aspekte unserer Teilnahme war die Möglichkeit, direkt mit führenden Wissenschaftlern, Ingenieuren und Unternehmern in Kontakt zu treten. Die Mentoren und Juroren auf der ISEF sind einige der angesehensten Persönlichkeiten ihres jeweiligen Fachgebiets, und die Möglichkeit, unsere Ideen mit ihnen zu diskutieren, war sehr inspirierend."
         },
         {
             "type": "text",
-            "text": "A standout moment during the competition was meeting George D. Yancopoulos, the Chief Technology Officer of Regeneron. His guidance on scientific innovation and the intersection of technology and entrepreneurship was invaluable. For us, interacting with professionals who had turned their scientific breakthroughs into successful ventures was a crucial lesson in both the scientific and business aspects of innovation. These conversations offered a glimpse into what is possible with hard work and dedication, as well as an understanding of the path to turning scientific ideas into tangible real-world solutions."
+            "text": "A standout moment during the competition was meeting George D. Yancopoulos, the Chief Technology Officer of Regeneron. His guidance on scientific innovation and the intersection of technology and entrepreneurship was invaluable. For us, interacting with professionals who had turned their scientific breakthroughs into successful ventures was a crucial lesson in both the scientific and business aspects of innovation. These conversations offered a glimpse into what is possible with hard work and dedication, as well as an understanding of the path to turning scientific ideas into tangible real-world solutions.",
+            "text_de": "Ein besonderer Moment während des Wettbewerbs war das Treffen mit George D. Yancopoulos, dem Chief Technology Officer von Regeneron. Seine Herangehensweise an wissenschaftliche Innovation und dem Schnittpunkt von Technologie und Unternehmertum war für uns sehr spannend. Gerade für uns stellt der Austausch mit Fachleuten, die ihre wissenschaftlichen Durchbrüche in erfolgreiche Unternehmen umwandeln konnten, eine wichtige Erfahrungsschatz dar. Diese Gespräche gaben uns einen Einblick in das, was mit diszipliniertem Engagement möglich ist, um wissenschaftliche Ideen in reale Lösungen umzusetzen."
         },
         {
             "type": "image",
             "src": "/content/jufo-yancopoulos.webp",
-            "text": "Discussing the details about Rekari with Regeneron CTO Yancopoulos"
+            "text": "Discussing the details about Rekari with Regeneron CTO Yancopoulos",
+            "text_de": "Diskussion der Details zu Rekari mit Regeneron CTO Yancopoulos"
         },
         {
             "type": "text",
-            "text": "As the category sponsor, Microsoft sent an engineer to discuss cutting-edge research in artificial intelligence with us. His talk was not only highly insightful but also outlined a clear path for achieving groundbreaking developments."
+            "text": "As the category sponsor, Microsoft sent an engineer to discuss cutting-edge research in artificial intelligence with us. His talk was not only highly insightful but also outlined a clear path for achieving groundbreaking developments.",
+            "text_de": "Als Kategoriesponsor sandte Microsoft einen Ingenieur zur ISEF, um mit uns über Spitzenforschung im Bereich Künstliche Intelligenz zu diskutieren. Sein Vortrag war sehr aufschlussreich und zeigte auf, wie in großen Unternehmen es zu bahnbrechende Entwicklungen kommt."
         },
         {
             "type": "text",
-            "text": "In addition to networking with industry leaders, we had the chance to interact with hundreds of talented peers who shared a similar passion for scientific research. The collaboration and idea exchange that took place were both motivating and energizing."
+            "text": "In addition to networking with industry leaders, we had the chance to interact with hundreds of talented peers who shared a similar passion for scientific research. The collaboration and idea exchange that took place were both motivating and energizing.",
+            "text_de": "Neben dem Austausch mit Branchenführern hatten wir die Möglichkeit, mit hunderten talentierten Jugenforschern aus der ganzen Welt zu netzwerken, die eine ähnliche Leidenschaft für wissenschaftliche Forschung teilten. Aus den Gesprächen sind für uns viele neue Ideen entstanden."
         },
         {
             "type": "headline",
-            "text": "Global Recognition and Future Pathways"
+            "text": "Global Recognition and Future Pathways",
+            "text_de": "Globale Erfolge und zukünftige Wege"
         },
         {
             "type": "text",
-            "text": "The experience at ISEF 2024 in Los Angeles not only gave us a global stage to present our work but also provided the platform for continued learning, mentorship, and future collaborations. The fair exemplified how scientific competitions like ISEF foster a culture of excellence and exploration."
+            "text": "The experience at ISEF 2024 in Los Angeles not only gave us a global stage to present our work but also provided the platform for continued learning, mentorship, and future collaborations. The fair exemplified how scientific competitions like ISEF foster a culture of excellence and exploration.",
+            "text_de": "Die ISEF 2024 bot uns eine internationale Bühne um unsere Arbeit zu präsentieren. Darüber hinaus aber auch die Möglichkeit, weiter zu lernen und zukünftige Kooperationen zu finden. Aus meiner Sicht zeigt der Wettbewerb gut, wie auch bereits vor dem Studium Jungforscher viele Ideen haben, Innovationen voranzutreiben."
         },
         {
             "type": "text",
-            "text": "In the end I am confident that our journey at ISEF will serve as a springboard for new opportunities and groundbreaking advancements."
+            "text": "In the end I am confident that our journey at ISEF will serve as a springboard for new opportunities and groundbreaking advancements.",
+            "text_de": "Am Ende bin ich zuversichtlich, dass unsere Reise zur ISEF als Sprungbrett für neue Möglichkeiten und für viele Fortschritte dienen wird."
         },
         {
             "type": "text",
-            "text": "Learn more about our project Rekari:"
+            "text": "Learn more about our project Rekari:",
+            "text_de": "Erfahren Sie mehr über unser Projekt Rekari:"
         },
         {
             "type": "link",
             "text": "rekari.de",
+            "text_de": "rekari.de",
             "href": "https://rekari.de"
         }
     ]

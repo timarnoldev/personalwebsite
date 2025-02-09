@@ -1,3 +1,4 @@
+import { Locale } from '@/i18n/i18n-config'
 import { ExternalLink, Github, Globe, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 

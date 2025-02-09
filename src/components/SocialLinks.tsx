@@ -21,7 +21,6 @@ const setTransform = (item: HTMLElement & EventTarget, event: React.PointerEvent
     y.set(yRange * 10)
 
 }
-
 export default function SocialButtons(props: {enableMotion: boolean}) {
     
     const x = useMotionValue(0);

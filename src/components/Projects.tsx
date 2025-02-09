@@ -4,6 +4,8 @@ import Modal from './modal';
 import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
+import { Locale } from '@/i18n/i18n-config';
+import { Dictionary } from '@/i18n/get-dictionaries';
 
 const projects = [
     {
@@ -67,7 +69,7 @@ const ListItem = (item: any) => {
 
 }
 
-export default function Projects() {
+export default function Projects(props: {lang: Dictionary}) {
     return <div className="flex flex-col w-dvw mt-20 items-center gap-8 ">
 
         <div className="mt-12 ml-12 text-5xl text-primary font-bold self-start">
