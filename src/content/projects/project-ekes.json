@@ -1,55 +1,68 @@
 {
   "title": "EKES - Evolution Simulation: A Virtual Exploration of Evolution and AI",
+  "title_de": "EKES - Evolutionssimulation: Eine Erkundung von Evolution und KI",
   "image": "/content/ekes-large.webp",
   "content": [
     {
       "type": "text",
-      "text": "EKES is a computer-based simulation that models an ecosystem where virtual creatures evolve based on genetic algorithms. These creatures move, reproduce, and survive in a digital environment, with energy limitations that mimic the challenges of real-world ecosystems. As creatures evolve, their neural networks undergo mutations, improving their survival strategies and 'intelligence' over time."
+      "text": "EKES is a computer-based simulation that models an ecosystem where virtual creatures evolve based on genetic algorithms. These creatures move, reproduce, and survive in a digital environment, with energy limitations that mimic the challenges of real-world ecosystems. As creatures evolve, their neural networks undergo mutations, improving their survival strategies and 'intelligence' over time.",
+      "text_de": "EKES ist eine computergestützte Simulation, die ein Ökosystem modelliert, in dem virtuelle Kreaturen auf der Grundlage genetischer Algorithmen simuliert werden. Diese Kreaturen bewegen sich, reproduzieren sich und überleben in einer digitalen Umgebung mit Energiebegrenzungen, die den Herausforderungen realer Ökosysteme nachempfunden sind. Während sich die Kreaturen weiterentwickeln, durchlaufen ihre neuronalen Netzwerke Mutationen, die ihre Überlebensstrategien und ihre 'Intelligenz' im Laufe der Zeit verbessern."
     },
     {
       "type": "headline",
-      "text": "How EKES Works"
+      "text": "How EKES Works",
+      "text_de": "Wie EKES funktioniert"
     },
     {
       "type": "text",
-      "text": "In EKES, each creature has a neural network that governs its actions. These networks evolve through mutations passed down to offspring, affecting their movement, energy consumption, and ability to interact with their environment. The ecosystem is designed to challenge the creatures by offering resources and obstacles, with creatures dying when their energy runs out. Those that survive reproduce, passing on their genetic information to the next generation, leading to improved behaviors over time."
+      "text": "In EKES, each creature has a neural network that governs its actions. These networks evolve through mutations passed down to offspring, affecting their movement, energy consumption, and ability to interact with their environment. The ecosystem is designed to challenge the creatures by offering resources and obstacles, with creatures dying when their energy runs out. Those that survive reproduce, passing on their genetic information to the next generation, leading to improved behaviors over time.",
+      "text_de": "In EKES verfügt jede Kreatur über ein neuronales Netzwerk, das ihr Verhalten steuert. Diese Netzwerke entwickeln sich durch Mutationen weiter, die an die Nachkommen weitergegeben werden und ihre Bewegung, ihren Energieverbrauch und ihre Fähigkeit zur Interaktion mit der Umgebung beeinflussen. Das Ökosystem stellt die Kreaturen vor Herausforderungen, indem es Ressourcen und Hindernisse bietet. Kreaturen sterben, wenn ihre Energie aufgebraucht ist. Die Überlebenden vermehren sich und geben ihre genetische Information an die nächste Generation weiter, was im Laufe der Zeit zu verbesserten Verhaltensweisen führt."
     },
     {
       "type": "image",
       "src": "/content/ekes-nn.webp",
-      "text": "Visualization of the neural network used in EKES"
+      "text": "Visualization of the neural network used in EKES",
+      "text_de": "Visualisierung des in EKES verwendeten neuronalen Netzwerks"
     },
     {
       "type": "text",
-      "text": "The focus of EKES is to demonstrate how small genetic changes lead to the gradual evolution of more intelligent creatures. The creatures adapt to environmental changes, such as simulated climate shifts or resource scarcity, showcasing natural selection in action."
+      "text": "The focus of EKES is to demonstrate how small genetic changes lead to the gradual evolution of more intelligent creatures. The creatures adapt to environmental changes, such as simulated climate shifts or resource scarcity, showcasing natural selection in action.",
+      "text_de": "Der Fokus von EKES liegt darauf zu zeigen, wie kleine genetische Veränderungen zur schrittweisen Evolution intelligenterer Kreaturen führen. Die Kreaturen passen sich an Umweltveränderungen an, wie z. B. simulierte Klimaveränderungen oder Ressourcenknappheit, wodurch die natürliche Selektion in Aktion sichtbar wird."
     },
     {
       "type": "headline",
-      "text": "Adapting to Environmental Changes"
+      "text": "Adapting to Environmental Changes",
+      "text_de": "Anpassung an Umweltveränderungen"
     },
     {
       "type": "text",
-      "text": "EKES also explores how entire ecosystems adapt to environmental changes. The simulation can introduce challenges, forcing creatures to evolve and adapt to survive. Notably, EKES was also tested with a virtual virus mimicking a pandemic, adding a layer of complexity to the ecosystem. Creatures had to adapt not only to environmental shifts but also to new threats, such as disease, which mirrors the challenges faced by living organisms in the real world. Watching how the ecosystem adjusts to these pressures provides valuable insights into the processes of natural selection and evolution."
+      "text": "EKES also explores how entire ecosystems adapt to environmental changes. The simulation can introduce challenges, forcing creatures to evolve and adapt to survive. Notably, EKES was also tested with a virtual virus mimicking a pandemic, adding a layer of complexity to the ecosystem. Creatures had to adapt not only to environmental shifts but also to new threats, such as disease, which mirrors the challenges faced by living organisms in the real world. Watching how the ecosystem adjusts to these pressures provides valuable insights into the processes of natural selection and evolution.",
+      "text_de": "EKES untersucht auch, wie sich ganze Ökosysteme an Umweltveränderungen anpassen. Die Simulation kann Herausforderungen einführen, die Kreaturen zur Evolution und Anpassung zwingen, um zu überleben. Besonders bemerkenswert ist, dass EKES mit einem virtuellen Virus getestet wurde, der eine Pandemie nachahmt und eine zusätzliche Komplexitätsebene in das Ökosystem einbringt. Die Kreaturen mussten sich nicht nur an Umweltveränderungen anpassen, sondern auch an neue Bedrohungen wie Krankheiten – eine direkte Parallele zu den Herausforderungen realer Lebewesen. Die Beobachtung, wie das Ökosystem auf diese Druckfaktoren reagiert, bietet wertvolle Einblicke in die Prozesse der natürlichen Selektion und Evolution."
     },
     {
       "type": "headline",
-      "text": "Awards and Project Recognition"
+      "text": "Awards and Project Recognition",
+      "text_de": "Auszeichnungen von EKES "
     },
     {
       "type": "text",
-      "text": "EKES has received recognition for its innovative approach of simulating AI in a educational platform. The project was presented at the 2021 Landeswettbewerb Jugend forscht and received positive feedback from the jury resulting in the special award for artificial intelligence from the Hermann Gutmann fundation. The simulation's ability to model complex interactions and evolutionary processes was commended, highlighting its potential for educational and research purposes."
+      "text": "EKES has received recognition for its innovative approach of simulating AI in a educational platform. The project was presented at the 2021 Landeswettbewerb Jugend forscht and received positive feedback from the jury resulting in the special award for artificial intelligence from the Hermann Gutmann fundation. The simulation's ability to model complex interactions and evolutionary processes was commended, highlighting its potential for educational and research purposes.",
+      "text_de": "EKES wurde für seinen innovativen Ansatz, KI auf einer hands-on Platform zu simulieren, ausgezeichnet. Das Projekt wurde beim Landeswettbewerb Jugend forscht 2021 vorgestellt und erhielt positives Feedback von der Jury, was mit dem Sonderpreises für Künstliche Intelligenz durch die Hermann-Gutmann-Stiftung ausgedrückt wurde. Die Fähigkeit der Simulation, komplexe Interaktionen und Evolutionsprozesse zu modellieren, wurde hervorgehoben, was ihr Potenzial für Bildungs- und Untersuchungszwecke unterstreicht."
     },
     {
       "type": "headline",
-      "text": "Genetic Algorithms and AI Research"
+      "text": "Genetic Algorithms and AI Research",
+      "text_de": "Genetische Algorithmen und KI-Forschung"
     },
     {
       "type": "text",
-      "text": "By utilizing genetic algorithms, EKES demonstrates how creatures can evolve without traditional training data. This approach mirrors real-world evolution, where adaptation and survival are key. The project has potential applications for AI research, helping us better understand how intelligent systems can evolve and improve autonomously."
+      "text": "By utilizing genetic algorithms, EKES demonstrates how creatures can evolve without traditional training data. This approach mirrors real-world evolution, where adaptation and survival are key. The project has potential applications for AI research, helping us better understand how intelligent systems can evolve and improve autonomously.",
+      "text_de": "Durch die Nutzung genetischer Algorithmen zeigt EKES, wie sich Kreaturen ohne traditionelle Trainingsdaten weiterentwickeln können. Dieser Ansatz spiegelt die reale Evolution wider, bei der Anpassung und Überleben entscheidend sind. Das Projekt bietet potenzielle Anwendungen für die KI-Forschung und hilft uns, besser zu verstehen, wie intelligente Systeme sich autonom weiterentwickeln und verbessern können."
     },
     {
       "type": "text",
-      "text": "View Live Simulation here:"
+      "text": "View Live Simulation here:",
+      "text_de": "Live-Simulation hier ansehen:"
     },
     {
       "type": "link",
