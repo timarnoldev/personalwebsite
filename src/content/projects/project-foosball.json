@@ -1,82 +1,101 @@
 {
   "title": "The AI Table Football Robot: Outplaying Humans with Precision and Speed",
+  "title_de": "KI-Tischkicker: Den Menschen mit Präzision und Geschwindigkeit besiegen",
   "image": "/content/foosball-large.webp",
   "content": [
     {
       "type": "text",
-      "text": "Imagine a game of foosball where the human opponent is replaced by a robot that can predict your next move and outplay you. This project aims to build such a robot, powered by artificial intelligence (AI) and advanced sensors, to transform the traditional game. It’s about creating a machine that not only mimics the human ability to control the foosball players but also can outperform them with split-second precision."
+      "text": "Imagine a game of foosball where the human opponent is replaced by a robot that can predict you. It’s about creating a machine that not only mimics the human ability to control the foosball players but also can outperform them with split-second precision.",
+      "text_de": "Stell dir ein Tischfußballspiel vor, bei dem der menschliche Gegner durch einen Roboter ersetzt wird, der deinen nächsten Zug vorhersagt und dich besiegen kann. Dieses Projekt zielt darauf ab, einen solchen Roboter zu bauen, der mit künstlicher Intelligenz (KI) und fortschrittlichen Sensoren ausgestattet ist, um einen menschlichen Mitspieler zu besiegen. Es geht darum, einen Roboter zu bauen, die nicht nur die menschliche Fähigkeit zur Kontrolle der Kicker nachahmt, sondern auch mit sekundengenauer Präzision übertrumpfen kann."
     },
     {
       "type": "headline",
-      "text": "The Challenge: Designing the Robot"
+      "text": "The Challenge: Designing the Robot",
+      "text_de": "Die Herausforderung: Der technische Entwurf des Roboters"
     },
     {
       "type": "text",
-      "text": "To get started, the core mechanical design focuses on enabling the robot to move and control the players just like a human would. The idea is simple: the robot needs to control the rods on the table, moving the figures horizontally and rotating them for shots. The first prototype used a threaded spindle running through the hollow rods, with a nut connected to each player. This system allows for precise movement when the rod is rotated by a motor."
+      "text": "To get started, the core mechanical design focuses on enabling the robot to move and control the players just like a human would. The idea is simple: the robot needs to control the rods on the table, moving the figures horizontally and rotating them for shots. The first prototype used a threaded spindle running through the hollow rods, with a nut connected to each player. This system allows for precise movement when the rod is rotated by a motor.",
+      "text_de": "Zu Beginn war die Herausforderung der mechanischen Konstruktion, dass der Roboter die Spieler genau wie ein Mensch bewegen und steuern kann. Die Idee ist einfach: Der Roboter muss die Stangen linear bewegen, um die Figuren horizontal zu bewegen und für Schüsse müssen sie rotiert werden. Der erste Prototyp verwendet eine Gewindespindel, die durch die hohlen Stangen lief, und eine Mutter, die mit jedem Spieler verbunden war. Dieses System ermöglicht eine präzise Bewegung, indem die Stange durch einen Motor gedreht wird."
     },
     {
       "type": "text",
-      "text": "A key challenge was to ensure that the player figures could rotate on their axes to perform shots. To do this, the design includes a second motor at the opposite end of the rod that can spin the rod, rotating the player figures. With these motors, the robot can replicate every move a human player would do—moving players into position and executing shots."
+      "text": "A key challenge was to ensure that the player figures could rotate on their axes to perform shots. To do this, the design includes a second motor at the opposite end of the rod that can spin the rod, rotating the player figures. With these motors, the robot can replicate every move a human player would do—moving players into position and executing shots.",
+      "text_de": "Eine große Aufgabe bestand darin, sicherzustellen, dass sich die Spielerfiguren um ihre Achsen drehen können, um Schüsse abzugeben. Zu diesem Zweck enthält die Konstruktion einen zweiten Motor am anderen Ende der Stange, der die Stange drehen kann und so die Spielerfiguren dreht. Mit diesen Motoren kann der Roboter jede Bewegung nachahmen, die ein menschlicher Spieler ausführen würde - er kann die Spieler in Position bringen und Schüsse ausführen."
     },
     {
       "type": "headline",
-      "text": "Using AI to Track the Game"
+      "text": "Using AI to Track the Game",
+      "text_de": "Einsatz von KI zum Tracking des Spiels"
     },
     {
       "type": "text",
-      "text": "The next critical component of the project is using AI to track the ball and players on the field in real-time. A high-speed camera is mounted above the table to monitor the game. The camera's job is to capture the movement of the ball and the players, while AI, specifically a YOLOv8 network, processes the image data. This network can detect and track the ball, even when it’s partially obstructed by players or moving quickly."
+      "text": "The next critical component of the project is using AI to track the ball and players on the field in real-time. A high-speed camera is mounted above the table to monitor the game. The camera's job is to capture the movement of the ball and the players, while AI, specifically a YOLOv8 network, processes the image data. This network can detect and track the ball, even when it’s partially obstructed by players or moving quickly.",
+      "text_de": "Die nächste wichtige Komponente des Projekts ist der Einsatz von KI, um den Ball und die Spieler auf dem Spielfeld in Echtzeit zu verfolgen. Eine Hochgeschwindigkeitskamera wurde dafür über dem Tisch montiert, um das Spiel zu überwachen. Die Kamera hat die Aufgabe, die Bewegung des Balls und der Spieler zu erfassen, während die KI, hier ein YOLOv8-Netzwerk, die Bilddaten verarbeitet. Dieses Netzwerk ist in der Lage, den Ball zu erkennen und zu verfolgen, auch wenn er teilweise von Spielern verdeckt ist oder sich sehr schnell bewegt."
     },
     {
       "type": "text",
-      "text": "To train the AI, over 3,000 images were manually labeled to ensure the system could reliably identify both the players and the ball from a top-down perspective. After training, the system achieved an impressive accuracy of 98%. Even with fast-moving balls or partially hidden positions, the AI still tracked everything precisely, allowing the robot to respond accurately."
+      "text": "To train the AI, over 3,000 images were manually labeled to ensure the system could reliably identify both the players and the ball from a top-down perspective. After training, the system achieved an impressive accuracy of 98%. Even with fast-moving balls or partially hidden positions, the AI still tracked everything precisely, allowing the robot to respond accurately.",
+      "text_de": "Um die KI zu trainieren, wurden über 3.000 Bilder manuell gelabelt. Damit habe ich sichergestellt, dass das System sowohl die Spieler als auch den Ball aus einer Top-Down-Perspektive zuverlässig identifizieren kann. Nach dem Training erreichte das System eine beeindruckende Genauigkeit von 98 %. Selbst bei sich schnell bewegenden Bällen oder teilweise verdeckten Positionen verfolgte die KI immer noch alles präzise, sodass der Roboter genau reagieren kann."
     },
     {
       "type": "image",
       "src": "/content/foosball-ai.webp",
-      "text": "Players and the ball are getting detected by the AI"
+      "text": "Players and the ball are getting detected by the AI",
+      "text_de": "Die Spieler und der Ball werden von der KI erkannt"
     },
     {
       "type": "headline",
-      "text": "Overcoming the Hardware and Latency Challenges"
+      "text": "Overcoming the Hardware and Latency Challenges",
+      "text_de": "Hardware- und Latenzherausforderungen"
     },
     {
       "type": "text",
-      "text": "The real-time processing and control are crucial. For the robot to respond quickly enough to be competitive, the system needs to operate with minimal latency. The current hardware setup allows the AI to process images at around 200 frames per second (fps). This is more than sufficient to ensure the robot can react in real-time."
+      "text": "The real-time processing and control are crucial. For the robot to respond quickly enough to be competitive, the system needs to operate with minimal latency. The current hardware setup allows the AI to process images at around 200 frames per second (fps). This is more than sufficient to ensure the robot can react in real-time.",
+      "text_de": "Die Echtzeitverarbeitung und -steuerung sind entscheidend. Damit der Roboter schnell genug reagieren kann, um im Spiel wettbewerbsfähig zu sein, muss das System mit minimaler Latenzzeit arbeiten. Mit der aktuellen Hardware kann die KI Bilder mit etwa 200 Bildern pro Sekunde verarbeiten. Dies ist mehr als ausreichend, um sicherzustellen, dass der Roboter in Echtzeit reagieren kann."
     },
     {
       "type": "text",
-      "text": "Additionally, careful attention was given to the camera setup, ensuring it had a clear view of the entire playing field. The camera’s placement and mounting were designed to minimize vibrations, which could misalign the field and affect the robot’s performance. Fiducial markers placed at the corners of the table help the system identify the exact position of the field and correct any misalignments."
+      "text": "Additionally, careful attention was given to the camera setup, ensuring it had a clear view of the entire playing field. The camera’s placement and mounting were designed to minimize vibrations, which could misalign the field and affect the robot’s performance. Fiducial markers placed at the corners of the table help the system identify the exact position of the field and correct any misalignments.",
+      "text_de": "Darüber hinaus war das Kamerasetup eine Herausforderung, da sichergestellt werden muss, dass sie eine klare Sicht auf das gesamte Spielfeld hat. Die Platzierung und Befestigung der Kamera habe ich so konzipiert, dass Vibrationen minimiert werden, die das Spielfeld falsch ausrichten und die Leistung des Roboters beeinträchtigen könnten. Dafür sind an den Ecken des Tisches Markierungen angebracht, die dem System helfen, die genaue Position des Spielfelds zu bestimmen und eventuelle Fehlausrichtungen zu korrigieren."
     },
     {
       "type": "headline",
-      "text": "Building the Control System"
+      "text": "Building the Control System",
+      "text_de": "Aufbau des Steuerungssystems"
     },
     {
       "type": "text",
-      "text": "The robot’s motor control system is another key challenge. The movement of the figures requires precise coordination between motors, encoders, and servos. Each rod is controlled by a motor, which moves the player left and right. The encoders track the position of the player, while the servo motors allow for rotational movement to execute shots. The robot is powered by a custom-designed PCB that houses all the electronics. It allows the system to track the position of each player on the rods and adjust the motors accordingly."
+      "text": "The robot’s motor control system is another key challenge. The movement of the figures requires precise coordination between motors, encoders, and servos. Each rod is controlled by a motor, which moves the player left and right. The encoders track the position of the player, while the servo motors allow for rotational movement to execute shots. The robot is powered by a custom-designed PCB that houses all the electronics. It allows the system to track the position of each player on the rods and adjust the motors accordingly.",
+      "text_de":"Die Bewegung der Figuren erfordert eine präzise Koordination zwischen Motoren, Encodern und Servos. Jede Stange wird von einem Motor gesteuert, der den Spieler nach links und rechts bewegt. Die Encoder verfolgen die Position des Spielers, während die Servomotoren die Rotationsbewegung zur Ausführung der Schüsse ermöglichen. Die Stromversorgung des Roboters erfolgt über eine speziell entwickelte Platine, auf der die gesamte Elektronik untergebracht ist. Sie ermöglicht es dem System, die Position jedes Spielers auf den Stangen zu verfolgen und die Motoren entsprechend einzustellen."
     },
     
     {
       "type": "image",
       "src": "/content/foosball-prototype.webp",
-      "text": "Current prototype of a control pcb"
+      "text": "Current prototype of a control pcb",
+      "text_de": "Aktueller Prototyp einer Steuerungsplatine"
     },
     
     {
       "type": "headline",
-      "text": "Looking Ahead"
+      "text": "Looking Ahead",
+      "text_de": "Ausblick"
     },
     {
       "type": "text",
-      "text": "Now, the focus is on refining the robot’s ability to move quickly and accurately, particularly during rotations when taking a shot. A significant portion of the ongoing work involves optimizing the software to manage the high-frequency calculations needed to maintain 200 Hz updates, ensuring that the robot is always one step ahead of its human opponent."
+      "text": "Now, the focus is on refining the robot’s ability to move quickly and accurately, particularly during rotations when taking a shot. A significant portion of the ongoing work involves optimizing the software to manage the high-frequency calculations needed to maintain 200 Hz updates, ensuring that the robot is always one step ahead of its human opponent.",
+      "text_de": "Jetzt geht es darum, die Fähigkeit des Roboters zu verfeinern, sich schnell und präzise zu bewegen, insbesondere während der Drehungen beim Schießen. Ein wesentlicher Teil der laufenden Arbeit besteht in der Optimierung der Software zur Verwaltung der Hochfrequenzberechnungen, die zur Aufrechterhaltung von 200-Hz-Aktualisierungen erforderlich sind, um sicherzustellen, dass der Roboter seinem menschlichen Gegner immer einen Schritt voraus ist."
     },
     {
       "type": "text",
-      "text": "As the project progresses, the next steps include finalizing the control systems, further fine-tuning the AI, and completing the integration of all components. The goal is to create a robot that not only plays foosball but does so in a way that challenges and eventually defeats human players."
+      "text": "As the project progresses, the next steps include finalizing the control systems, further fine-tuning the AI, and completing the integration of all components. The goal is to create a robot that not only plays foosball but does so in a way that challenges and eventually defeats human players.",
+      "text_de": "Im weiteren Verlauf des Projekts sind die nächsten Schritte die Fertigstellung der Steuerungssoftware, die weitere Feinabstimmung der KI und die Integration aller Komponenten. So ist das Ziel, einen Roboter zu entwickeln, der nicht nur Tischfußball spielt, sondern dies auch auf eine Weise tut, die menschliche Spieler herausfordert und schließlich besiegt."
     },
     {
       "type": "text",
-      "text": "More updates on the Football Table Blog:"
+      "text": "More updates on the Football Table Blog:",
+      "text_de": "Mehr Updates auf dem Tischfußball-Blog:"
     },
     {
       "type": "link",
