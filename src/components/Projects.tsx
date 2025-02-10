@@ -7,43 +7,40 @@ import ekesBlog from "@/content/projects/project-ekes.json"
 import { Locale } from '@/i18n/i18n-config';
 import { Dictionary } from '@/i18n/get-dictionaries';
 
-const projects = [
-    {
-        id: 0,
-        img: "/projects/rekari.webp",
-        title: "Rekari",
-        desc: "Empower the team",
-        link: "https://www.rekari.de",
-        linkText: "Visit Rekari",
-        blogContent: rekariBlog
-    },
-
-    {
-        id: 2,
-        img: "/projects/foosball.webp",
-        title: "AI football table",
-        desc: "Robot vs. Human",
-        link: "https://www.rekari.de",
-        linkText: "Visit Rekari",
-        blogContent: foosballBlog
-    },
-
-
-    {
-        id: 1,
-        img: "/projects/ekes.webp",
-        title: "Evolution Simulation",
-        desc: "AI visualized",
-        link: "https://www.rekari.de",
-        linkText: "Visit Rekari",
-        blogContent: ekesBlog
-    },
-
-
-
-];
-
-
+const projects = (lang:Dictionary)=>{
+    return [
+        {
+            id: 0,
+            img: "/projects/rekari.webp",
+            title: lang.rekari,
+            desc: lang.rekariDesc,
+            link: "https://www.rekari.de",
+            blogContent: rekariBlog
+        },
+    
+        {
+            id: 2,
+            img: "/projects/foosball.webp",
+            title: lang.foosball,
+            desc: lang.foosballDesc,
+            link: "https://www.rekari.de",
+            blogContent: foosballBlog
+        },
+    
+    
+        {
+            id: 1,
+            img: "/projects/ekes.webp",
+            title: lang.ekes,
+            desc: lang.ekesDesc,
+            link: "https://www.rekari.de",
+            blogContent: ekesBlog
+        },
+    
+    
+    
+    ];
+} 
 
 const ListItem = (item: any) => {
     return <Modal data={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
@@ -70,16 +67,16 @@ const ListItem = (item: any) => {
 }
 
 export default function Projects(props: {lang: Dictionary}) {
-    return <div className="flex flex-col w-dvw mt-20 items-center gap-8 ">
+    return <div className="flex flex-col w-dvw mb-20 items-center gap-1 ">
 
-        <div className="mt-12 ml-12 text-5xl text-primary font-bold self-start">
-            Recent Projects
+        <div className="mt-12 ml-12 text-5xl text-[#2e2e2e] font-bold self-start">
+           {props.lang.recentProjects}
         </div>
 
         {/*Has page width*/}
         <div className="w-dvw  overflow-x-auto pl-12">
-            <div className="flex flex-row w-max gap-8 pt-5 pb-5 pr-12"> {/*Has width of all children*/}
-                {projects.map((project) => (
+            <div className="flex flex-row w-max gap-8 mt-5 mb-5 pr-12"> {/*Has width of all children*/}
+                {projects(props.lang).map((project) => (
                     <ListItem key={project.id} {...project} />
                 ))}
 

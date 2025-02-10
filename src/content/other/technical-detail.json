@@ -1,39 +1,48 @@
 {
     "title": "Technical Details",
+    "title_de": "Technische Details",
     "image": null,
     "content": [
         {
             "type": "headline",
-            "text": "Techstack"
+            "text": "Techstack",
+            "text_de": "Technologie-Stack"
         },
         {
             "type": "text",
-            "text": "This website was built using NextJS, a javascript framwork based on React. Styling was done using no template, but rather custom CSS combined with TailwindCSS. The website is hosted on Vercel, which also provides the CI/CD pipeline for the project."
+            "text": "This website was built using NextJS, a javascript framwork based on React. Styling was done using no template, but rather custom CSS combined with TailwindCSS. The website is hosted on Vercel, which also provides the CI/CD pipeline for the project.",
+            "text_de": "Diese Website wurde mit NextJS, einem auf React basierenden JavaScript-Framework, erstellt. Das Styling wurde ohne Vorlage, sondern mit benutzerdefiniertem CSS in Kombination mit TailwindCSS durchgeführt. Die Website wird auf Vercel gehostet, das auch die CI/CD-Pipeline für das Projekt bereitstellt."
         },
         {
             "type": "headline",
-            "text": "Reporting Errors"
+            "text": "Reporting Errors",
+            "text_de": "Fehler melden"
         },
         {
             "type": "text",
-            "text": "If you find any errors or issues with the website, please report them to me via the following link. I will try to fix them as soon as possible. I also appreciate any feedback on the website design or content."
+            "text": "If you find any errors or issues with the website, please report them to me via the following link. I will try to fix them as soon as possible. I also appreciate any feedback on the website design or content.",
+            "text_de": "Wenn du Fehler oder Probleme auf der Website findest, melde diese bitte über den folgenden Link. Ich werde versuchen, sie so schnell wie möglich zu beheben. Ich freue mich auch über jedes Feedback zum Design oder Inhalt der Website."
         },
         {
             "type": "link",
             "text": "Report Issue: bugs@tim-arnold.de",
-            "href": "mailto:bugs@tim-arnold.de"
+            "href": "mailto:bugs@tim-arnold.de",
+            "text_de": "Fehler melden: bugs@tim-arnold.de"
         },
         {
             "type": "headline",
-            "text": "More Information"
+            "text": "More Information",
+            "text_de": "Weitere Informationen"
         },
         {
             "type": "text",
-            "text": "If you are interested in the technical details of a specific project or want to know more about my work, feel free to reach out to me. I am always happy to discuss my projects and share insights into the development process. I'm also inviting you checking out my GitHub profile for more projects and contributions."
+            "text": "If you are interested in the technical details of a specific project or want to know more about my work, feel free to reach out to me. I am always happy to discuss my projects and share insights into the development process. I'm also inviting you checking out my GitHub profile for more projects and contributions.",
+            "text_de": "Wenn du an den technischen Details eines bestimmten Projekts interessiert bist oder mehr über meine Arbeit erfahren möchtest, kannst du mich gerne kontaktieren. Ich freue mich immer, über meine Projekte zu sprechen und Einblicke in den Entwicklungsprozess zu teilen. Ich lade dich auch ein, mein GitHub-Profil zu besuchen, um mehr Projekte und Beiträge zu sehen."
         },
         {
             "type": "link",
             "text": "GitHub: @timarnoldev",
+            "text_de": "GitHub: @timarnoldev",
             "href": "https://github.com/timarnoldev"
         }
 

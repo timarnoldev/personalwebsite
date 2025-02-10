@@ -15,8 +15,8 @@ export default async function Home(props: {
    <div className="flex flex-col">
       <HeroSection lang={dictionary}/>
       <CollaborationSection lang={dictionary}/>
-      <Projects lang={dictionary}/>
       <CVHighlights lang={dictionary}/>
+      <Projects lang={dictionary}/>
     </div>
   );
 }

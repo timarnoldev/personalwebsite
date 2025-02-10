@@ -1,4 +1,5 @@
 "use client";
+import { Dictionary } from '@/i18n/get-dictionaries';
 import { Linkedin, Mail } from 'lucide-react'
 import { motion, MotionValue, useMotionValue, useTransform } from 'motion/react'
 
@@ -21,7 +22,7 @@ const setTransform = (item: HTMLElement & EventTarget, event: React.PointerEvent
     y.set(yRange * 10)
 
 }
-export default function SocialButtons(props: {enableMotion: boolean}) {
+export default function SocialButtons(props: {enableMotion: boolean, lang: Dictionary}) {
     
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -41,7 +42,9 @@ export default function SocialButtons(props: {enableMotion: boolean}) {
         }} title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' target="_blank" className='bounce flex flex-row  whitespace-nowrap items-center justify-center gap-2 px-8 py-3 bg-primary rounded-3xl text-white cursor-pointer hover:bg-primary-hover transition-colors select-none'>
             <motion.div className='flex flex-row items-center gap-2 bounce' style={{ x:textX, y:textY}}>
             <Mail />
-            Let's Talk
+            {
+                props.lang.letstalk
+            }
             </motion.div>
         </motion.a>
 

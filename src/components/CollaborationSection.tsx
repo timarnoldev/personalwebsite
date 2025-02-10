@@ -2,20 +2,22 @@ import Image from 'next/image'
 import Modal from './modal'
 import { Blog } from './BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"
+import jufo from "@/content/cv/cv-jugend-forscht.json"
+import isef from "@/content/cv/cv-isef.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 
 function Logo(props: { src: string, alt: string, enlarge?: boolean, height: number, width?: number, blog?:Blog}) {
     if (props.enlarge) {
-        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
+        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
     } else {
-        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
+        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer" /></Modal>
     }
 }
 
 export default function CollaborationSection(props: {lang: Dictionary}) {
     return <div className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 max-w-600">
         <div>
-            <h2 className="text-2xl font-bold sm:ml-20 text-gray-600">Collaboration & Experience with</h2>
+            <h2 className="text-2xl font-bold sm:ml-20  text-center self-center text-gray-600">{props.lang.collaborationSection}</h2>
         </div>
 
         <div className="fade-out-container overflow-hidden max-w-full">
@@ -32,8 +34,8 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo blog={stemtutor} src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
               {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
-                <Logo src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
-                <Logo src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
+                <Logo blog={jufo} src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
+                <Logo blog={isef} src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
 
 
                 {/*repeat */}
@@ -49,7 +51,8 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
                 <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/>
               {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
-              <Logo src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
+              <Logo blog={jufo} src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
+                <Logo blog={isef} src="/logos/societyforscience.svg" alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
 
           </div>
         </div>

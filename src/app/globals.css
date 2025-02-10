@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-herobackground: #fff9f5;
+  --color-herobackground: #fbf7f4;
   --color-herobackgroundhover: #f6f0eb;
   --color-herotext: #332E2E;
   --color-wavebackground: #00000046;
@@ -16,7 +16,7 @@
 
 :root {
   
-  --background: #fff9f5;
+  --background: #fbf7f4;
   --foreground: #171717;
   --color-test: #e8f1ce;
 

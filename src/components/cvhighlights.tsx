@@ -62,8 +62,8 @@ function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
     const { section } = props;
     return <>
 
-        <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-15">
-            <div className="text-white sm:text-5xl text-2xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
+        <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-10">
+            <div className="text-white sm:text-5xl text-xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
             <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
             <Modal data={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit cursor-pointer">{props.lang.moreInformation} <ExternalLink /></div></Modal>
         </div>
@@ -82,8 +82,8 @@ function Carousel(props: { lang: Dictionary }) {
     const [page, setPage] = useState(0);
     const [autoSlide, setAutoSlide] = useState(true);
 
-    const next = () => setPage((page) => (page === cvHighlights.length - 1 ? 0 : page + 1));
-    const prev = () => setPage((page) => (page === 0 ? cvHighlights.length - 1 : page - 1));
+    const next = () => setPage((page) => (page === cvHighlights(props.lang).length - 1 ? 0 : page + 1));
+    const prev = () => setPage((page) => (page === 0 ? cvHighlights(props.lang).length - 1 : page - 1));
 
     const handlers = useSwipeable({
         onSwipedLeft: () => {
@@ -107,7 +107,7 @@ function Carousel(props: { lang: Dictionary }) {
         return () => clearInterval(slideInterval);
     }, [autoSlide])
 
-    return <div className="w-fit relative flex flex-col rounded-3xl overflow-hidden"> {/*View box wrapper*/}
+    return <div className="w-fit relative flex flex-col sm:rounded-3xl rounded-xl overflow-hidden"> {/*View box wrapper*/}
 
 
         <div tabIndex={0} onClick={() => {
@@ -156,11 +156,11 @@ function Carousel(props: { lang: Dictionary }) {
 export default function CVHighlights(props: {lang: Dictionary}) {
 
 
-    return <div className="flex flex-col mb-10 gap-8">
+    return <div className="flex flex-col mt-5 mb-10 gap-8">
 
-        <div className="sm:ml-12 ml-6 mt-20 text-5xl text-primary font-bold self-start">
+        <div className="sm:ml-12 ml-6 mt-20 text-5xl text-[#2e2e2e] font-bold self-start">
             {
-                props.lang["cvHighlights"]
+                props.lang.cvHighlights
             }
         </div>
 

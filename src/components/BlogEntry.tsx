@@ -14,7 +14,7 @@ export default function BlogEntry(props: { data: Blog }) {
             props.data.image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"}/>
         }
 
-        <article className="flex flex-col gap-4 p-12 w-[70%] self-center" key={"article"}>
+        <article className="flex flex-col gap-4 sm:p-12 px-4 p-12 sm:w-[70%] self-center" key={"article"}>
             <div className="text-4xl font-bold text-gray-800 mb-4" key={"title"}>{props.data.title_de??props.data.title}</div>
 
 

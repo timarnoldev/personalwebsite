@@ -1,4 +1,5 @@
 {
+    "lang": "en",
     "cvHighlights": "Highlights from my CV",
     "cvOnLinkedin": "See complete CV on LinkedIn",
     "cvJufoHeadline": "Jugend forscht National Winner",
@@ -12,7 +13,30 @@
     "cvAbiturText": "With my Abitur, I was awarded the prize for the best math Abitur by the Deutsche Mathematiker-Vereinigung and the prize for the best physics Abitur by the Deutsche Physikalische Gesellschaft. Additionally, I received the STEM Excellence Certificate from MINT-EC, Germany’s national excellence initiative for STEM education.",
 
     "niceToMeetYou": "Nice to meet you!",
-    "iamtim": "Hello, I'm Tim Arnold"
+    "iamtim": "Hello, I'm Tim Arnold",
+
+    "recentProjects": "Recent Projects",
+    "rekari": "Rekari",
+    "rekariDesc": "Empower the team",
+    "foosball": "AI football table",
+    "foosballDesc": "Robot vs. Human",
+    "ekes": "Evolution Simulation",
+    "ekesDesc": "AI visualized",
+    "collaborationSection": "Collaboration & Experience with",
+    
+    "letstalk": "Let's talk",
+    "connectOnLinkedin": "Connect on LinkedIn",
+    "contactme": "Contact me",
+    "getintouchwithme": "Get in touch with me",
+
+    "exchangeIdeas": "Exchange ideas!",
+    "footerText": "I’m always curious to hear new perspectives and exchange ideas. Whether it’s a creative project or a fresh challenge, I’m up for the conversation. Let’s chat and see what we can create together.",
+
+    "technicalDetails": "Technical Details",
+    "articles": "Articles",
+    "imprint": "Imprint"
+
+
 
 
 }

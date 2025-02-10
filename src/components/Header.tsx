@@ -1,8 +1,9 @@
+import { Dictionary } from '@/i18n/get-dictionaries'
 import { Locale } from '@/i18n/i18n-config'
 import { ExternalLink, Github, Globe, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 
-export default function Header() {
+export default function Header(props: {lang: Dictionary}) {
     return <nav className="bg-herobackground shadow-lg w-dvw sm:h-24 h-22 flex items-center fixed top-0 z-50 overscroll-y-none"> {/* Header */}
 
         <div className="my-3 sm:mx-10 mx-3 flex-grow flex flex-row items-center justify-between">
@@ -27,7 +28,7 @@ export default function Header() {
                 {/* Name dropdown - socials*/}
 
                 <div aria-label="submenu" className='border speechbubble border-gray-400 absolute left-0 top-0 flex-col gap-4 rounded-2xl shadow-xl p-4 ml-4 mt-28 bg-herobackgroundhover hidden peer-has-checked:flex'>
-                    <p className="text-herotext font-bold px-7">Get in touch with me</p>
+                    <p className="text-herotext font-bold px-7">{props.lang.getintouchwithme}</p>
 
                     <div className="flex flex-col gap-3 w-full">
                         {/* Email */}
@@ -82,7 +83,7 @@ export default function Header() {
                     <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">Projects</a>
                 </div>
 
-                <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">Contact me</a>
+                <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">{props.lang.contactme}</a>
                 <Globe className="text-gray-500 cursor-pointer"/>
             </div>
 

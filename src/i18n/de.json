@@ -1,4 +1,5 @@
 {
+    "lang": "de",
     "cvHighlights": "Highlights aus meinem Lebenslauf",
     "cvOnLinkedin": "Vollständigen Lebenslauf auf LinkedIn ansehen",
     "cvJufoHeadline": "Jugend forscht Bundessieger",
@@ -12,7 +13,28 @@
     "cvAbiturText": "Mit meinem Abitur wurde ich von der Deutschen Mathematiker-Vereinigung mit dem Preis für das beste Mathe-Abitur und von der Deutschen Physikalischen Gesellschaft mit dem Preis für das beste Physik-Abitur ausgezeichnet. Außerdem erhielt ich das MINT-Exzellenz-Zertifikat von MINT-EC, der nationalen Exzellenzinitiative für MINT-Bildung in Deutschland.",
 
     "niceToMeetYou": "Schön, dich kennenzulernen!",
-    "iamtim": "Hallo, ich bin Tim Arnold"
+    "iamtim": "Hallo, ich bin Tim Arnold",
 
+    "recentProjects": "Aktuelle Projekte",
+    "rekari": "Rekari",
+    "rekariDesc": "Empower the team",
+    "foosball": "KI Tischfußball",
+    "foosballDesc": "Mensch gegen Maschine",
+    "ekes": "Evolutions Simulation",
+    "ekesDesc": "KI zum Anfassen",
+
+    "collaborationSection": "Kollaborationen & Erfahrungen mit",
+
+    "letstalk": "Lass uns austauschen",
+    "connectOnLinkedin": "Connect on LinkedIn",
+    "contactme": "Kontakt",
+    "getintouchwithme": "Lass uns kennenlernen",
+
+    "exchangeIdeas": "Neue Ideen finden!",
+    "footerText": "Ich bin immer neugierig auf neue Perspektiven und den Austausch von Ideen. Egal, ob es sich um ein kreatives Projekt oder eine neue Herausforderung handelt, ich bin immer für ein Gespräch bereit. Lassen Sie uns miteinander reden und sehen, was wir gemeinsam schaffen können.",
+
+    "technicalDetails": "Technische Details",
+    "articles": "Artikel",
+    "imprint": "Impressum"
 
 }

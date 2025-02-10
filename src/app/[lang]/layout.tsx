@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
 import { i18n, Locale } from "@/i18n/i18n-config";
+import { getDictionary } from "@/i18n/get-dictionaries";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default async function RootLayout({
 }>) {
   const slangs = await params;
 
+    const dictionary = await getDictionary(slangs?.lang ?? "en");
   
 
   return (
@@ -42,11 +44,11 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
+        <Header lang={dictionary}/>
         
         {children}
 
-        <Footer/>
+        <Footer lang={dictionary}/>
       </body>
     </html>
   );
