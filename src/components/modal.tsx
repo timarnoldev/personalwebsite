@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
-import BlogEntry, { Blog } from './BlogEntry';
+import BlogEntry, { Blog } from './articles/BlogEntry';
 
 interface ModalProps {
     children: ReactNode;

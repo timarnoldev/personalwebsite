@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/footer";
 import { i18n, Locale } from "@/i18n/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionaries";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,8 +46,10 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header lang={dictionary}/>
-        
+        <LanguageProvider lang={slangs?.lang ?? "en"}>
+ 
         {children}
+        </LanguageProvider>
 
         <Footer lang={dictionary}/>
       </body>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Modal from './modal'
-import { Blog } from './BlogEntry'
+import { Blog } from './articles/BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"
 import jufo from "@/content/cv/cv-jugend-forscht.json"
 import isef from "@/content/cv/cv-isef.json"

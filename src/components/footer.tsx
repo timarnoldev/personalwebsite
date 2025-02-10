@@ -27,7 +27,7 @@ export default function Footer(props: {lang: Dictionary}) {
                     <a className="text-white hover:underline underline-offset-4" href="https://github.com/timarnoldev">Github</a>
                 </div>
                 <div className="flex flex-row sm:gap-14 gap-8  text-lg ">
-                    <a className="text-white hover:underline underline-offset-4" href="articles">{props.lang.articles}</a>
+                    <a className="text-white hover:underline underline-offset-4" href={"/"+props.lang.lang+"/articles/"}>{props.lang.articles}</a>
                     <Modal data={technicalDetails}>
                         <div className="text-white hover:underline underline-offset-4 cursor-pointer">{props.lang.technicalDetails}</div>
                     </Modal>
