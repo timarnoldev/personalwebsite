@@ -6,9 +6,9 @@ import technicalDetails from "@/content/other/technical-detail.json"
 export default function Footer(props: {lang: Dictionary}) {
     return <div className="flex flex-col">
 
-        <div className=" bg-test flex md:flex-row flex-col gap-5 justify-center items-center py-20 px-10">
+        <div className=" bg-test flex md:flex-row flex-col gap-5 xl:gap-18 justify-center items-center py-20 px-10">
             <div className="lg:text-8xl text-6xl leading-none text-[#2e2e2e] max-w-135 font-bold  text-center">{props.lang.exchangeIdeas}</div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 ">
                 <div className="text-gray-700 max-w-100 text-lg">
                     {
                         props.lang.footerText

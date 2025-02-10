@@ -20,7 +20,7 @@ export default function Modal({ children, data }: ModalProps) {
         setRollup(true);
         setTimeout(() => {
             setOpen(false);
-        }, 700);
+        }, 500);
     }
 
     function openModal() {
@@ -58,10 +58,10 @@ export default function Modal({ children, data }: ModalProps) {
             open && 
             ReactDOM.createPortal(<>
                
-                    <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center  transition-all duration-700 "+(rollup?"backdrop-blur-none bg-transparent":"backdrop-blur-lg bg-[#00000080]")}>
+                    <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center  transition-all duration-500 "+(rollup?"backdrop-blur-none bg-transparent":"backdrop-blur-lg bg-[#00000080]")}>
                         <div onClick={(e) => {
                             e.stopPropagation();
-                        }} className={(rollup&&"mt-[40vh] scale-90 opacity-0")+' transition-all duration-700 sm:w-[88%] xl:w-[68%] max-w-300 bg-white relative h-fit rounded-4xl my-10 flex flex-col'}>
+                        }} className={(rollup&&"mt-[40vh] scale-80 opacity-0")+' transition-all duration-500 sm:w-[88%] xl:w-[68%] max-w-300 bg-white relative h-fit rounded-4xl my-10 flex flex-col'}>
 
                             <div className='overflow-hidden rounded-4xl m-0 p-0'>
                                 <BlogEntry data={data!} ></BlogEntry>
