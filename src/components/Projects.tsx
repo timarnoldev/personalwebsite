@@ -4,7 +4,6 @@ import Modal from './modal';
 import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
-import { Locale } from '@/i18n/i18n-config';
 import { Dictionary } from '@/i18n/get-dictionaries';
 
 const projects = (lang:Dictionary)=>{

@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
-import { i18n, Locale } from "@/i18n/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionaries";
 
 const geistSans = Geist({
@@ -23,9 +22,6 @@ export const metadata: Metadata = {
   
 };
 
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
-}
 
 export default async function RootLayout({
   children,

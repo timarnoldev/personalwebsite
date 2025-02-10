@@ -10,8 +10,8 @@
         },
         {
             "type": "text",
-            "text": "Alongside my Abitur in 2024 I received the prestigious MINT-EC certificate for excellence in STEM subjects with honoration. This certification is awarded to students who have demonstrated exceptional performance in mathematics, computer science, natural sciences, and technology. The MINT-EC network connects schools, universities, and research institutions to promote STEM education and foster collaboration among students and educators.",
-            "text_de": "Zusätzlich zu meinem Abitur 2024 erhielt ich das renommierte MINT-EC-Zertifikat für hervorragende Leistungen in den MINT-Fächern mit Auszeichnung. Diese Zertifizierung wird an Schüler verliehen, die außergewöhnliche Leistungen in Mathematik, Informatik, Naturwissenschaften und Technik gezeigt haben. Das MINT-EC-Netzwerk verbindet Schulen, Universitäten und Forschungseinrichtungen, um die MINT-Bildung und die Zusammenarbeit zwischen Schülern und Lehrern zu fördern."
+            "text": "Alongside my Abitur in 2024 at the Hanns-Seidel-Gymnasium I received the prestigious MINT-EC certificate for excellence in STEM subjects with honoration. This certification is awarded to students who have demonstrated exceptional performance in mathematics, computer science, natural sciences, and technology. The MINT-EC network connects schools, universities, and research institutions to promote STEM education and foster collaboration among students and educators.",
+            "text_de": "Zusätzlich zu meinem Abitur 2024 am Hanns-Seidel-Gymnasium erhielt ich das renommierte MINT-EC-Zertifikat für hervorragende Leistungen in den MINT-Fächern mit Auszeichnung. Diese Zertifizierung wird an Schüler verliehen, die außergewöhnliche Leistungen in Mathematik, Informatik, Naturwissenschaften und Technik gezeigt haben. Das MINT-EC-Netzwerk verbindet Schulen, Universitäten und Forschungseinrichtungen, um die MINT-Bildung und die Zusammenarbeit zwischen Schülern und Lehrern zu fördern."
         },
         {
             "type": "image",
@@ -27,7 +27,7 @@
         {
             "type": "link",
             "text": "Learn more about MINT-EC",
-            "text_de": "Erfahren Sie mehr über MINT-EC",
+            "text_de": "Erfahre mehr über MINT-EC",
             "href": "https://mint-ec.de"
         },
 
@@ -44,7 +44,7 @@
         {
             "type": "link",
             "text": "Learn more about the DPG",
-            "text_de": "Erfahren Sie mehr über die DPG",
+            "text_de": "Erfahre mehr über die DPG",
             "href": "https://dpg-physik.de"
         },
 
@@ -61,7 +61,7 @@
         {
             "type": "link",
             "text": "Learn more about the DMV",
-            "text_de": "Erfahren Sie mehr über die DMV",
+            "text_de": "Erfahre mehr über die DMV",
             "href": "https://www.mathematik.de/"
         }
 

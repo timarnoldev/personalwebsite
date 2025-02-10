@@ -1,3 +1,5 @@
+'use client';
+
 import { Dictionary } from '@/i18n/get-dictionaries'
 import { Locale } from '@/i18n/i18n-config'
 import { ExternalLink, Github, Globe, Linkedin, Mail } from 'lucide-react'
@@ -10,7 +12,11 @@ export default function Header(props: {lang: Dictionary}) {
 
 
             <div>
-                <label tabIndex={0} htmlFor="toggleSocialMenu" className="peer hover:bg-herobackgroundhover group-has-checked:bg-herobackgroundhover p-2 rounded-2xl transition-colors group flex flex-row items-center cursor-pointer overflow-visible" title="Click to see socials" aria-haspopup> {/* Hero Image */}
+                <label onClick={() => {
+                            if (!['/', '/en', '/de'].includes(window.location.pathname)) {
+                                window.location.href = `/${props.lang.lang}`;
+                            }
+                        }}  tabIndex={0} htmlFor="toggleSocialMenu" className="peer hover:bg-herobackgroundhover group-has-checked:bg-herobackgroundhover p-2 rounded-2xl transition-colors group flex flex-row items-center cursor-pointer overflow-visible" title="Click to see socials" aria-haspopup> {/* Hero Image */}
                     <input type="checkbox" id="toggleSocialMenu" className='hidden'/>
                     <div className='relative overflow-visible'>
                         <Image src={"/timarnold.webp"} alt="Picture of Tim Arnold" width={75} height={75} className="rounded-full object-cover w-[75px] h-[75px] aspect-square shadow" />
@@ -26,6 +32,7 @@ export default function Header(props: {lang: Dictionary}) {
                 </label>
 
                 {/* Name dropdown - socials*/}
+            
 
                 <div aria-label="submenu" className='border speechbubble border-gray-400 absolute left-0 top-0 flex-col gap-4 rounded-2xl shadow-xl p-4 ml-4 mt-28 bg-herobackgroundhover hidden peer-has-checked:flex'>
                     <p className="text-herotext font-bold px-7">{props.lang.getintouchwithme}</p>

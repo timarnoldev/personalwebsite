@@ -1,6 +1,5 @@
 "use client";
 import { X } from 'lucide-react';
-import { AnimatePresence } from 'motion/react';
 import React, { useEffect, useState } from 'react';
 import { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
@@ -44,6 +43,11 @@ export default function Modal({ children, data }: ModalProps) {
         };
     }, []);
 
+    if(!React.isValidElement(children)){
+        console.error("Modal children must be a valid react element " + data?.title);
+        
+    }
+
     return <>
 
 
@@ -55,27 +59,27 @@ export default function Modal({ children, data }: ModalProps) {
 
 
         {
-            open && 
+            open &&
             ReactDOM.createPortal(<>
-               
-                    <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center  transition-all duration-500 "+(rollup?"backdrop-blur-none bg-transparent":"backdrop-blur-lg bg-[#00000080]")}>
-                        <div onClick={(e) => {
-                            e.stopPropagation();
-                        }} className={(rollup&&"mt-[40vh] scale-80 opacity-0")+' transition-all duration-500 sm:w-[88%] xl:w-[68%] max-w-300 bg-white relative h-fit rounded-4xl my-10 flex flex-col'}>
 
-                            <div className='overflow-hidden rounded-4xl m-0 p-0'>
-                                <BlogEntry data={data!} ></BlogEntry>
-                            </div>
+                <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center  transition-all duration-500 " + (rollup ? "backdrop-blur-none bg-transparent" : "backdrop-blur-lg bg-[#00000080]")}>
+                    <div onClick={(e) => {
+                        e.stopPropagation();
+                    }} className={(rollup && "mt-[40vh] scale-80 opacity-0") + ' transition-all duration-500 sm:w-[88%] xl:w-[68%] max-w-300 bg-white relative h-fit rounded-4xl my-10 flex flex-col'}>
 
-
-                            <div className="absolute overflow-visible h-full mr-5 mt-5 self-end ">
-                                <div onClick={close} tabIndex={0} className='sticky top-5  p-2 bg-gray-200 rounded-full cursor-pointer'>
-                                    <X />
-                                </div>
-                            </div>
-
+                        <div className='overflow-hidden rounded-4xl m-0 p-0'>
+                            <BlogEntry data={data!} ></BlogEntry>
                         </div>
-                    </div></>,
+
+
+                        <div className="absolute overflow-visible h-full mr-5 mt-5 self-end ">
+                            <div onClick={close} tabIndex={0} className='sticky top-5  p-2 bg-gray-200 rounded-full cursor-pointer'>
+                                <X />
+                            </div>
+                        </div>
+
+                    </div>
+                </div></>,
                 document.body
             )
         }

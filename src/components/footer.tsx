@@ -1,7 +1,8 @@
+"use client";
 import { Dictionary } from "@/i18n/get-dictionaries";
-import Modal from "./modal";
 import SocialButtons from "./SocialLinks";
 import technicalDetails from "@/content/other/technical-detail.json"
+import Modal from "./modal";
 
 export default function Footer(props: {lang: Dictionary}) {
     return <div className="flex flex-col">
@@ -26,8 +27,10 @@ export default function Footer(props: {lang: Dictionary}) {
                     <a className="text-white hover:underline underline-offset-4" href="https://github.com/timarnoldev">Github</a>
                 </div>
                 <div className="flex flex-row sm:gap-14 gap-8  text-lg ">
-                    <a className="text-white hover:underline underline-offset-4" href="/articles">{props.lang.articles}</a>
-                    <Modal data={technicalDetails}><div className="text-white hover:underline underline-offset-4 cursor-pointer">{props.lang.technicalDetails}</div></Modal>
+                    <a className="text-white hover:underline underline-offset-4" href="articles">{props.lang.articles}</a>
+                    <Modal data={technicalDetails}>
+                        <div className="text-white hover:underline underline-offset-4 cursor-pointer">{props.lang.technicalDetails}</div>
+                    </Modal>
                     <a className="text-white hover:underline underline-offset-4" href="https://github.com/timarnoldev">{props.lang.imprint}</a>
                 </div>
             </div>
