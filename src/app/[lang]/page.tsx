@@ -22,8 +22,8 @@ export default async function Home(props: {
       <HeroSection lang={dictionary}/>
       <CollaborationSection lang={dictionary}/>
       <CVHighlights lang={dictionary}/>
-      <Awards lang={dictionary}/>
       <Projects lang={dictionary}/>
+      <Awards lang={dictionary}/>
     </div>
   );
 }

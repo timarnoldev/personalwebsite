@@ -39,5 +39,19 @@
 
     "experienceandsuccess": "Erfahrungen und Erfolge",
     "other": "Sonstiges",
-    "back": "Zurück"
+    "back": "Zurück",
+    "learnmore": "Mehr erfahren",
+
+    "awardsHGSHeadline": "Hermann-Gutmann-Preis für KI Forschung",
+    "awardsHGSText": "Ich erhielt diese Auszeichnung für die Entwicklung einer KI-basierten Evolutionssimulation. Dabei entwicklen sich digitale Kreaturen, die auf neuronalen Netzen basieren und passen sich an ihre Umwelt an. Das Projekt wurde im Rahmen des Wettbewerbs Jugend Forscht entwickelt.",
+
+    "awardsFraunhoferHeadline": "Fraunhofer Talent - Cybersecurity",
+    "awardsFraunhoferText": "Als besondere Auszeichnung erhielt ich die Einladung zur Fraunhofer Cybersecurity Talent School. Das Programm ist darauf ausgelegt, Studenten im Bereich Cybersecurity auszubilden. Kernthemen sind Kryptographie, Netzwerksicherheit und Penetrationstests.",
+
+    "awardsGFBMHeadline": "Digital Solution Award",
+    "awardsGFBMText": "Ich erhielt diese Auszeichnung für die Entwicklung von Rekari. Eine Plattform für die kollaborative Datenerfassung und -analyse mithilfe von Drohnen und mobilen Sensoren. Alle relevanten Daten werden in Echtzeit mit jedem Teammitglied synchronisiert.",
+
+    "furtherAwardsAndAchievements": "Weitere Auszeichnungen und Erfolge"
+
+
 }

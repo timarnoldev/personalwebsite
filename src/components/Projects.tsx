@@ -66,7 +66,7 @@ const ListItem = (item: any) => {
 }
 
 export default function Projects(props: {lang: Dictionary}) {
-    return <div className="flex flex-col 3xl:mt-20 mb-20 items-center gap-1 ">
+    return <div className="flex flex-col 3xl:mt-20 mb-5 items-center gap-1 ">
 
         <div className="mt-12 ml-12 text-5xl text-[#2e2e2e] font-bold self-start 3xl:ml-[30vw]">
            {props.lang.recentProjects}

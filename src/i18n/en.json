@@ -39,9 +39,18 @@
     "experienceandsuccess": "Experience and Awards",
 
     "other": "Miscellaneous",
-    "back": "Back"
+    "back": "Back",
+    "learnmore": "Learn more",
 
+    "awardsHGSHeadline": "Hermann-Gutmann-Prize for AI-Research",
+    "awardsHGSText": "I received this award for the development of an AI-based Evolution Simulation. Digital creatures based on neuronal networks evolve and adapt to their environment. The project was developed in the context of the Jugend Forscht competition.",
 
+    "awardsFraunhoferHeadline": "Fraunhofer Talent - Cybersecurity",
+    "awardsFraunhoferText": "As a special award I received the Fraunhofer Cybersecurity Talent School invitation. The program is designed to teach students in the field of Cybersecurity. Core topics are cryptography, network security and penetration testing.",
 
+    "awardsGFBMHeadline": "Digital Solution Award",
+    "awardsGFBMText": "I received this award for the development of Rekari. A platform for collaborative data collection and analysis using drones and mobile sensors. All relevant data get synchronized with every team member in real-time.",
+
+    "furtherAwardsAndAchievements": "Further Awards and Achievements"
 
 }

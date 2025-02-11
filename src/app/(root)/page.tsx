@@ -17,8 +17,8 @@ export default async function Home() {
      <HeroSection lang={dictionary}/>
      <CollaborationSection lang={dictionary}/>
      <CVHighlights lang={dictionary}/>
-     <Awards lang={dictionary}/>
      <Projects lang={dictionary}/>
+     <Awards lang={dictionary}/>
      </LanguageProvider>
     </div>
   );
