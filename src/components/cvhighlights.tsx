@@ -158,7 +158,7 @@ export default function CVHighlights(props: {lang: Dictionary}) {
 
     return <div className="flex flex-col mt-5 mb-10 gap-8">
 
-        <div className="sm:ml-12 ml-6 mt-20 text-5xl text-[#2e2e2e] font-bold self-start">
+        <div className="sm:ml-12 ml-6 3xl:self-center mt-20 text-5xl text-[#2e2e2e] font-bold self-start">
             {
                 props.lang.cvHighlights
             }

@@ -54,7 +54,24 @@ export default function Modal({ children, data }: ModalProps) {
         {React.isValidElement(children) && React.cloneElement(children as React.ReactElement<any>, {
             onClick: () => {
                 openModal();
-            }
+            },
+            onKeyDown: (e: React.KeyboardEvent) => {
+                if (e.key === 'Enter') {
+                    openModal();
+                }
+            },  
+            tabIndex: 0,
+            role: "button",
+            "aria-label": "Open Blog Post",
+            "aria-expanded": open,
+            "aria-haspopup": "dialog",
+            "aria-controls": "modal",
+            "aria-modal": "true",
+            "aria-labelledby": "modal-title",
+            "aria-describedby": "modal-description",
+            "aria-hidden": !open,
+            "data-testid": "modal-trigger"
+            
         })}
 
 

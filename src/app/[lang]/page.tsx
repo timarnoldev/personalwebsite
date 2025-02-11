@@ -1,3 +1,4 @@
+import Awards from "@/components/awards";
 import CollaborationSection from "@/components/CollaborationSection";
 import CVHighlights from "@/components/cvhighlights";
 import HeroSection from "@/components/HeroSection";
@@ -21,6 +22,7 @@ export default async function Home(props: {
       <HeroSection lang={dictionary}/>
       <CollaborationSection lang={dictionary}/>
       <CVHighlights lang={dictionary}/>
+      <Awards lang={dictionary}/>
       <Projects lang={dictionary}/>
     </div>
   );
