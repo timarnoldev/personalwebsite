@@ -19,7 +19,8 @@ const cvHighlights = (lang:Dictionary) => {
             img: "/cv/jufo.jpg",
             headline: lang.cvJufoHeadline,
             text: lang.cvJufoText,
-            blogPost: jufoBlog
+            blogPost: jufoBlog,
+            location: "Bremen, Germany"
         },
     
         {
@@ -27,7 +28,8 @@ const cvHighlights = (lang:Dictionary) => {
             img: "/cv/isef.webp",
             headline: lang.cvISEFHeadline,
             text: lang.cvISEFText,
-            blogPost: isefBlog
+            blogPost: isefBlog,
+            location: "Los Angeles, California"
         },
     
         {
@@ -35,7 +37,8 @@ const cvHighlights = (lang:Dictionary) => {
             img: "/cv/bufdi.webp",
             headline: lang.cvBufdiHeadline,
             text: lang.cvBufdiText,
-            blogPost: stemtutor
+            blogPost: stemtutor,
+            location: "Obernburg, Germany"
         },
     
         {
@@ -43,7 +46,8 @@ const cvHighlights = (lang:Dictionary) => {
             img: "/projects/ekes.webp",
             headline: lang.cvAbiturHeadline,
             text: lang.cvAbiturText,
-            blogPost: abitur
+            blogPost: abitur,
+            location: "Hösbach, Germany"
         }
     
     ];
@@ -61,11 +65,10 @@ interface CVSectionProps {
 function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
     const { section } = props;
     return <>
-
         <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-10">
             <div className="text-white sm:text-5xl text-xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
             <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
-            <Modal data={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex flex-row gap-2 items-center w-fit cursor-pointer">{props.lang.moreInformation} <ExternalLink /></div></Modal>
+            <Modal data={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex-row gap-2 items-center w-fit cursor-pointer flex">{props.lang.moreInformation} <ExternalLink /></div></Modal>
         </div>
 
         <div className="cvGradient h-full w-full absolute -z-10" />
@@ -118,7 +121,7 @@ function Carousel(props: { lang: Dictionary }) {
         </div>
 
 
-        <div className="flex flex-col justify-end xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px] relative overflow-hidden"> {/*View box*/}
+        <div className="group flex flex-col justify-end xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px] relative overflow-hidden"> {/*View box*/}
             <div {...handlers} className="flex h-full transition-transform ease-out duration-500" style={{ transform: `translateX(-${(page) * 100}%)` }}> {/*Large Container*/}
 
                 {

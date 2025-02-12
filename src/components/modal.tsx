@@ -17,6 +17,7 @@ export default function Modal({ children, data }: ModalProps) {
 
     function close() {
         setRollup(true);
+        document.documentElement.style.overflow = "auto"
         setTimeout(() => {
             setOpen(false);
         }, 500);
@@ -24,6 +25,8 @@ export default function Modal({ children, data }: ModalProps) {
 
     function openModal() {
         setOpen(true);
+        document.documentElement.style.overflow = "hidden"
+
         setRollup(true);
         setTimeout(() => {
             setRollup(false);
@@ -71,7 +74,7 @@ export default function Modal({ children, data }: ModalProps) {
             "aria-describedby": "modal-description",
             "aria-hidden": !open,
             "data-testid": "modal-trigger"
-            
+
         })}
 
 
@@ -79,7 +82,7 @@ export default function Modal({ children, data }: ModalProps) {
             open &&
             ReactDOM.createPortal(<>
 
-                <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-scroll flex justify-center  transition-all duration-500 " + (rollup ? "backdrop-blur-none bg-transparent" : "backdrop-blur-lg bg-[#00000080]")}>
+                <div onClick={close} tabIndex={-1} className={"inset-0 fixed z-100 overscroll-contain overflow-y-auto flex justify-center  transition-all duration-500 " + (rollup ? "backdrop-blur-none bg-transparent" : "backdrop-blur-lg bg-[#00000080]")}>
                     <div onClick={(e) => {
                         e.stopPropagation();
                     }} className={(rollup && "mt-[40vh] scale-80 opacity-0") + ' transition-all duration-500 sm:w-[88%] xl:w-[68%] max-w-300 bg-white relative h-fit rounded-4xl my-10 flex flex-col'}>

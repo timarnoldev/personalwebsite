@@ -1,0 +1,49 @@
+{
+    "title": "Rohde & Schwarz: A Measurable Partnership",
+    "slug": "rohdeundschwarz",
+    "title_de": "Rohde & Schwarz: Eine messbare Partnerschaft",
+    "company_image": "/logos/rohdeundschwarz.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text": "Rohde & Schwarz is a leading technology company that specializes in innovative solutions for test and measurement, broadcast and media, cybersecurity, secure communications, and monitoring and network testing. With a global presence and a strong focus on research and development.",
+            "text_de": "Rohde & Schwarz ist ein führendes Technologieunternehmen, das sich auf innovative Lösungen für Test und Messung, Rundfunk und Medien, Cybersicherheit, sichere Kommunikation, Überwachung und Netzwerktests spezialisiert hat. Mit einer globalen Präsenz und einem starken Fokus auf Forschung und Entwicklung."
+        },
+        {
+            "type": "headline",
+            "text": "Collaboration with Rohde & Schwarz",
+            "text_de": "Zusammenarbeit mit Rohde & Schwarz"
+        },
+        {
+            "type": "text",
+            "text": "As a partner for my project Rekari, Rohde & Schwarz provided a high quality oscilloscope, which helped finding and fixing bugs in the hardware design faster. Due to the many possibilities of analysis, it was possible to quickly read out data buses and crucial connections. It was also very pleasing that after the project the oscilloscope is now available to a larger group of young people interested in technology. Many thanks to the Rohde & Schwarz team for this sponsorship.",
+            "text_de": "Als Partner für mein Projekt Rekari stellte Rohde & Schwarz ein hochwertiges Oszilloskop zur Verfügung, das half, Fehler im Hardware-Design schneller zu finden und zu beheben. Durch die vielen Analysemöglichkeiten war es möglich, Datenbusse und wichtige Verbindungen schnell auszulesen. Es war auch sehr erfreulich, dass das Oszilloskop nach dem Projekt einer größeren Gruppe von technikinteressierten Jugendlichen zur Verfügung steht. Vielen Dank an das Team von Rohde & Schwarz für dieses Sponsoring."
+        },
+        {
+            "type": "headline",
+            "text": "Internship @ Rohde & Schwarz",
+            "text_de": "Praktikum bei Rohde & Schwarz"
+        },
+        {
+            "type": "text",
+            "text": "In the spring of 2023, I had the opportunity to complete an internship at Rohde & Schwarz. During this time, I was able to gain valuable insights into the company's work and the development of innovative technologies. I was particularly impressed by the company's internal silicon design team underlining their commitment to research and development. The internship was a great opportunity to apply my knowledge in practice and to learn from experienced professionals.",
+            "text_de": "Im Frühjahr 2023 hatte ich die Möglichkeit, ein Praktikum bei Rohde & Schwarz zu absolvieren. In dieser Zeit konnte ich wertvolle Einblicke in die Arbeit des Unternehmens und die Entwicklung innovativer Technologien gewinnen. Besonders beeindruckt hat mich das interne Chip-Design-Team des Unternehmens, das ihr Engagement für Forschung und Entwicklung zeigt. Das Praktikum war eine großartige Gelegenheit, mein Wissen in der Praxis anzuwenden und von erfahrenen Fachleuten zu lernen."
+        },
+        {
+            "type": "text",
+            "text": "Furthermore, I had the chance to work on a large scale drone project helping to integrate a new lidar distance sensor into the drone's navigation system. Additionally, I configured and tested the sensor within the drone flight controller firmware to adapt it to the drone's specific requirements. I found it particularly exciting to see drone applications which aren't commonly known by the public.",
+            "text_de": "Darüber hinaus hatte ich die Möglichkeit, an einem Drohnenprojekt im großen Maßstab zu arbeiten und dabei zu helfen, einen neuen Lidar-Entfernungssensor in das Navigationssystem der Drohne zu integrieren. Außerdem habe ich den Sensor innerhalb der Drohnen-Flugsteuerungs-Firmware konfiguriert und getestet, um ihn an die spezifischen Anforderungen der Drohne anzupassen. Besonders spannend fand ich es, Drohnenanwendungen zu sehen, die in der breiten Öffentlichkeit nicht so bekannt sind."
+        },
+        {
+            "type": "text",
+            "text": "Read more about my project Rekari and the collaboration with Rohde & Schwarz:",
+            "text_de": "Erfahre mehr über mein Projekt Rekari und die Zusammenarbeit mit Rohde & Schwarz:"
+        },
+        {
+            "type": "link",
+            "text": "rekari.de",
+            "href": "https://rekari.de"
+        }
+    ]
+}

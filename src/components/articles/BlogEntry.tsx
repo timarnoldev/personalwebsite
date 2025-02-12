@@ -9,7 +9,8 @@ export interface Blog {
     slug: string,
     title_de?: string,
     content: Array<{ type: string, text?: string, href?: string, src?: string, text_de?: string }>,
-    image: string | null
+    image: string | null,
+    company_image?: string | null
 }
 export default function BlogEntry(props: { data: Blog, large?: boolean }) {
     const language = useContext(LanguageContext);
@@ -17,6 +18,10 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
     return <div className="w-full flex flex-col gap-4">
         {
             !props.large && props.data.image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"} />
+        }
+
+        {
+            !props.large && props.data.company_image && <Image src={props.data.company_image} alt={"Image of Company"} width={1966} height={1106} className="w-[30%] self-center pt-30 pb-10 h-auto" key={"companyimage"} />
         }
 
         <article className="flex flex-col gap-4 sm:p-12 px-4 p-12 sm:w-[70%] self-center" key={"article"}>

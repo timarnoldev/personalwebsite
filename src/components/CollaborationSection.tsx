@@ -4,6 +4,8 @@ import { Blog } from './articles/BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"
 import jufo from "@/content/cv/cv-jugend-forscht.json"
 import isef from "@/content/cv/cv-isef.json"
+import rohdeundschwarz from "@/content/collaboration/col-rohdeandschwarz.json"
+import asc from "@/content/collaboration/col-asc.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 
 function Logo(props: { src: string, alt: string, enlarge?: boolean, height: number, width?: number, blog?:Blog}) {
@@ -26,8 +28,8 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo src="/logos/microsoft.svg" alt="Microsoft Logo - Trademark of microsoft" height={43.65} />
                 <Logo src="/logos/framatome.svg" alt="Framatome Logo - Trademark of framatome" height={31.25}/>
                 <Logo src="/logos/deutschebank.svg" alt="Deutsche Bank Logo - Trademark of deutsche bank" height={60} width={60}/>
-                <Logo src="/logos/rohdeundschwarz.svg" alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
-                <Logo src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
+                <Logo blog={rohdeundschwarz} src="/logos/rohdeundschwarz.svg" alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
+                <Logo blog={asc} src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
                 <Logo src="/logos/st.svg" alt="STMicroelectronics Logo - Trademark of STMicroelectronics" height={79.99} width={104.04} enlarge/>
                 <Logo src="/logos/productware.svg" alt="Productware Logo - Trademark of productware" height={46} width={138}/>
                 <Logo src="/logos/nordicsemi.svg" alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
