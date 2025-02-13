@@ -1,0 +1,33 @@
+{
+    "title": "Imprint",
+    "slug": "imprint",
+    "title_de": "Impressum",
+    "image": null,
+    "content": [
+      
+        {
+            "type": "text",
+            "text": "Tim Arnold"
+        },
+        {
+            "type": "text",
+            "text": "63808 Haibach"
+        },
+        {
+            "type": "headline",
+            "text": "Contact",
+            "text_de": "Kontakt"
+        },
+        {
+            "type": "text",
+            "text": "Phone: +49 173 9201077",
+            "text_de": "Telefon: +49 173 9201077"
+        },
+        {
+            "type": "text",
+            "text": "Email: hello@tim-arnold.de",
+            "text_de": "E-Mail: hello@tim-arnold.de"
+        }
+
+    ]
+}

@@ -8,6 +8,7 @@ import stemtutor from "@/content/cv/cv-bufdi.json"
 import abitur from "@/content/cv/cv-abitur.json"
 import colMicrosoft from "@/content/collaboration/col-microsoft.json"
 import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json"
+import colProductware from "@/content/collaboration/col-productware.json"
 import colASC from "@/content/collaboration/col-asc.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 import { getDictionary, TranslatedElement } from "@/i18n/get-dictionaries";
@@ -52,6 +53,7 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <Seperator text={dictionary.collaborationSection}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colProductware} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colASC} ></BlogEntryPreview>
                 <Seperator text={dictionary.other}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={technicalDetails} ></BlogEntryPreview>

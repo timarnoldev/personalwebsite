@@ -7,6 +7,7 @@ import isef from "@/content/cv/cv-isef.json"
 import rohdeundschwarz from "@/content/collaboration/col-rohdeandschwarz.json"
 import asc from "@/content/collaboration/col-asc.json"
 import microsoft from "@/content/collaboration/col-microsoft.json"
+import productware from "@/content/collaboration/col-productware.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 
 function Logo(props: { src: string, alt: string, enlarge?: boolean, height: number, width?: number, blog?:Blog}) {
@@ -32,7 +33,7 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo blog={rohdeundschwarz} src="/logos/rohdeundschwarz.svg" alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
                 <Logo blog={asc} src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
                 <Logo src="/logos/st.svg" alt="STMicroelectronics Logo - Trademark of STMicroelectronics" height={79.99} width={104.04} enlarge/>
-                <Logo src="/logos/productware.svg" alt="Productware Logo - Trademark of productware" height={46} width={138}/>
+                <Logo blog={productware} src="/logos/productware.svg" alt="Productware Logo - Trademark of productware" height={46} width={138}/>
                 <Logo src="/logos/nordicsemi.svg" alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
                 <Logo src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo blog={stemtutor} src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>

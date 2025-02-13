@@ -7,6 +7,7 @@ import stemtutor from "@/content/cv/cv-bufdi.json"
 import abitur from "@/content/cv/cv-abitur.json"
 import colMicrosoft from "@/content/collaboration/col-microsoft.json"
 import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json"
+import colProductware from "@/content/collaboration/col-productware.json"
 import colASC from "@/content/collaboration/col-asc.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 export const blogs = [
@@ -19,6 +20,7 @@ export const blogs = [
     abitur,
     colMicrosoft,
     colRohdeUndSchwarz,
+    colProductware,
     colASC,
     technicalDetails
 ];

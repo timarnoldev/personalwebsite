@@ -1,0 +1,45 @@
+{
+    "title": "productware: PCB-Assembly in Record Time",
+    "slug": "productware",
+    "title_de": "productware: Platinenbestückung in Rekordzeit",
+    "company_image": "/logos/productware.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text": "Productware is an EMS service provider specializing in the assembly of PCBs using a modern, highly automated machinery park. With cutting-edge technology and precise manufacturing processes, the company ensures the highest quality and reliability in production. Its key advantages include excellent regional availability, short delivery times, and a high level of professionalism in order processing.",
+            "text_de": "Productware ist ein EMS-Dienstleistungsunternehmen, das sich auf die Bestückung von PCBs mit einem modernen, hochautomatisierten Maschinenpark spezialisiert hat. Dank neuester Technologien und präziser Fertigungsprozesse gewährleistet das Unternehmen höchste Qualität und Zuverlässigkeit in der Produktion. Ihr großer Vorteil liegt in der ausgezeichneten regionalen Verfügbarkeit, kurzen Lieferzeiten und der hohen Professionalität bei der Abwicklung der Aufträge."
+        },
+        {
+            "type": "headline",
+            "text": "Sponsorship in the Midst of the Component Crisis",
+            "text_de": "Sponsoring mitten in der Bauteilkrise"
+        },
+        {
+            "type": "text",
+            "text": "During the development of my award-winning collaborative documentation system, Rekari, my project partner and I encountered the problem of not being able to obtain the necessary components during the COVID-19 pandemic. Even major Chinese circuit board manufacturers were unable to source the required parts. However, thanks to the generous support of Productware, we were not only able to test our new prototype much faster but also to obtain the necessary components in the first place.",
+            "text_de": "Während der Entwicklung meines preisgekrönten kollaborativen Dokumentationssystems Rekari sind mein Projektpartner und ich auf das Problem gestoßen, in der Corona-Pandemie nicht an die benötigten Bauteile zu kommen. Selbst große chinesische Platinenhersteller konnten die notwendigen Bauteile nicht mehr beschaffen. Doch durch die großzügige Unterstützung von Productware konnten wir nicht nur deutlich schneller unseren neuen Prototypen testen, sondern auch überhaupt erst an die benötigten Bauteile kommen."
+        },
+        {
+            "type": "image",
+            "src": "/content/rekari-pcb.webp",
+            "text": "Prototype of a PCB for the Rekari system",
+            "text_de": "Prototype einer Platine für das Rekari-System"
+        },
+        {
+            "type": "text",
+            "text": "Productware specifically supported us with the procurement and assembly of the components. With their life cycle management, they helped us identify discontinued components and even suggested pin-compatible replacements in some cases. Once all preparations were complete, it took only a few days for the managing director to personally deliver the assemblies to us. This was a great experience for us, and we are very grateful for the excellent support.",
+            "text_de": "Konkret unterstützte uns Productware mit der Beschaffung und der Bestückung der Bauteile. Mit ihrem Life-Cycle-Management haben sie uns geholfen, abgekündigte Bauteile zu erkennen und haben teils sogar pinkompatbile Ersatzteile vorgeschlagen. Nachdem alle Vorbereitungen abgeschlossen waren, hat es nur wenige Tage gedauert, bis der Geschäftsführer uns die Baugruppen persönlich vorbeigebracht hat. Das war für uns eine großartige Erfahrungen und wir danken sehr für die tolle Unterstützung."
+        },
+        {
+            "type": "text",
+            "text": "Learn more about the collaboration with productware:",
+            "text_de": "Erfahre mehr über die Zusammenarbeit mit Productware:"
+        },
+        {
+            "type": "link",
+            "text": "elektronik-news.com",
+            "href": "https://www.elektronik-news.com/news/54940-productware-unterst%C3%BCtzt-%E2%80%9Ejugend-forscht%E2%80%9C-projekt-rekari-%E2%80%93-rehkitzrettung-durch-intelligente-drohnen-technisch-neu-durchdacht"
+        }
+    ]
+}

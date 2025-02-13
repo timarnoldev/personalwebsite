@@ -21,6 +21,12 @@
             "text_de": "Als Partner für mein Projekt Rekari stellte Rohde & Schwarz ein hochwertiges Oszilloskop zur Verfügung, das half, Fehler im Hardware-Design schneller zu finden und zu beheben. Durch die vielen Analysemöglichkeiten war es möglich, Datenbusse und wichtige Verbindungen schnell auszulesen. Es war auch sehr erfreulich, dass das Oszilloskop nach dem Projekt einer größeren Gruppe von technikinteressierten Jugendlichen zur Verfügung steht. Vielen Dank an das Team von Rohde & Schwarz für dieses Sponsoring."
         },
         {
+            "type": "image",
+            "src": "/content/oscilloscope.webp",
+            "text": "Measurement on the Rohde & Schwarz oscilloscope",
+            "text_de": "Messung auf dem Rohde & Schwarz Oszilloskop"
+        },
+        {
             "type": "headline",
             "text": "Internship @ Rohde & Schwarz",
             "text_de": "Praktikum bei Rohde & Schwarz"
