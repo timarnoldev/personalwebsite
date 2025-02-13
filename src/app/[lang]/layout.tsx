@@ -45,13 +45,14 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header lang={dictionary}/>
         <LanguageProvider lang={slangs?.lang ?? "en"}>
- 
+        <Header lang={dictionary}/>
+
         {children}
+        <Footer lang={dictionary}/>
+
         </LanguageProvider>
 
-        <Footer lang={dictionary}/>
       </body>
     </html>
   );

@@ -1,0 +1,39 @@
+{
+    "title": "Digital Insights: AI Innovation at Microsoft",
+    "slug": "digital-insights-microsoft",
+    "title_de": "Digital Insights: KI-Innovation bei Microsoft",
+    "company_image": "/logos/microsoft.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text": "Microsoft's Digital Insights program provides participants with hands-on experience in artificial intelligence, software development, and industry networking. The program focuses on building AI chatbots, working with real-world datasets, and understanding the latest advancements in generative AI. It also includes exclusive career talks with leading Microsoft engineers, offering valuable insights into their roles and projects.",
+            "text_de": "Das Digital Insights Programm von Microsoft bietet Teilnehmern praktische Erfahrungen in den Bereichen künstliche Intelligenz, Softwareentwicklung und Industrie-Netzwerke. Der Fokus des Programms liegt auf dem Erstellen von KI-Chatbots, der Arbeit mit realen Datensätzen und dem Verständnis der neuesten Fortschritte in generativer KI. Zudem umfasst es exklusive Karrieregespräche mit führenden Microsoft-Ingenieuren, die wertvolle Einblicke in ihre Tätigkeiten und Projekte geben."
+        },
+        {
+            "type": "headline",
+            "text": "Building an AI-powered Chatbot",
+            "text_de": "Entwicklung eines KI-gestützten Chatbots"
+        },
+        {
+            "type": "text",
+            "text": "During the program, I had the opportunity to design and train an application-specific chatbot based on OpenAI's latest generative models. The chatbot was integrated with proprietary datasets, allowing it to provide context-aware responses and react to individual user interactions. I found it particularly exciting to learn about the daily workflow as a Microsoft employee and how collaboration functions within a large team.",
+            "text_de": "Im Rahmen des Programms hatte ich die Möglichkeit, einen applikationsspezifischen Chatbot zu entwerfen und zu trainieren, der auf den neuesten generativen Modellen von OpenAI basiert. Der Chatbot wurde mit proprietären Datensätzen integriert, um kontextbezogene Antworten zu liefern und auf individuelle Benutzerinteraktion zu reagieren. Besonders spannend fand ich, wie der tägliche Arbeitsablauf als Mitarbeiter bei Microsoft aussieht und wie die Zusammenarbeit in einem großen Team funktioniert."
+        },
+        {
+            "type": "text",
+            "text": "Beyond the technical aspects, the program provided valuable insights into AI's impact on industries and business solutions. Engaging discussions with Microsoft engineers helped me understand real-world challenges.",
+            "text_de": "Über die technischen Aspekte hinaus bot das Programm wertvolle Einblicke in die Auswirkungen von KI auf verschiedene Branchen und Geschäftslösungen. In Gesprächen mit Microsoft-Ingenieuren wurde deutlich, wo aktuelle Herausforderungen und Lösungsansätze liegen."
+        },
+        {
+            "type": "text",
+            "text": "Learn more about the Digital Insights initiatives at Microsoft:",
+            "text_de": "Erfahre mehr über die Digital Insights-Initiativen von Microsoft:"
+        },
+        {
+            "type": "link",
+            "text": "Microsoft Digital Insights",
+            "href": "https://www.microsoft.com/de-de/berlin/artikel/digital-insights-zusammen-fuer-deine-zukunft.aspx"
+        }
+    ]
+}
