@@ -7,7 +7,7 @@
         {
           "type": "text",
           "text": "What started as an idea to make drone missions more intuitive and collaborative has now become an award-winning project, recognized on both national and international levels. From winning the prestigious Jugend forscht Bundeswettbewerb in Bremen to receiving the Europa-Preis from the Deutsche Forschungsgemeinschaft (DFG), and finally earning a spot at the Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles—this journey has been nothing short of extraordinary.",
-          "text_de": "Was als Idee begann, Drohneneinsätze intuitiver und kollaborativer zu gestalten, ist mittlerweile zu einem preisgekrönten Projekt geworden, das auf nationaler und internationaler Ebene geehrt wurde. Vom Gewinn des renommierten Jugend forscht Bundeswettbewerbs in Bremen über die Auszeichnung mit dem Europa-Preis der Deutschen Forschungsgemeinschaft (DFG) bis hin zur Teilnahme an der Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles – diese Reise war für uns alles andere als alltäglich."
+          "text_de": "Was als Idee begann, Drohneneinsätze intuitiver und kollaborativer zu gestalten, ist mittlerweile zu einem preisgekrönten Projekt geworden, das auf nationaler und internationaler Ebene geehrt wurde. Vom Gewinn des renommierten Jugend forscht Bundeswettbewerbs in Bremen über die Auszeichnung mit dem Europa-Preis der Deutschen Forschungsgemeinschaft (DFG) bis hin zur Teilnahme an der Regeneron International Science and Engineering Fair (ISEF) 2024 in Los Angeles – diese Reise war für meinen Projektpartner und mich alles andere als alltäglich."
         },
         {
           "type": "headline",
@@ -29,6 +29,12 @@
             "type": "text",
             "text": "Winning the Bundessieg in Technik (National Winner in Technology) was an incredible honor, but the recognition didn’t stop there.",
             "text_de": "Der Bundessieg in Technik war eine unglaubliche Erfahrung, aber unsere Reise hörte damit nicht auf."
+        },
+        {
+          "type": "link",
+          "text_de": "Unser Projekt in der Jugend forscht Projektdatenbank",
+          "text": "Our project in the Jugend forscht project database",
+          "href": "https://www.jugend-forscht.de/projektdatenbank/rekari-intuitive-plattform-fuer-verschiedenartige-drohneneinsaetze.html"
         },
         {
           "type": "headline",

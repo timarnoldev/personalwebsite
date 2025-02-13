@@ -21,7 +21,7 @@ function IntroductionDE() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
         Seit 2024 bin ich
         als <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">MINT-Tutor am Walter-Reis-Institut </a>
-        tätig und interessiere mich auf KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
+        tätig und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
         hardwarebezogenen <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">Projekten</a>.
         Durch Praktika bei Unternehmen wie <a href="https://www.linkedin.com/in/timarnold-/" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
         Erfolgreich habe ich an <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></Modal> teilgenommen.

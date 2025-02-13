@@ -6,6 +6,9 @@ import jufoBlog from "@/content/cv/cv-jugend-forscht.json"
 import isefBlog from "@/content/cv/cv-isef.json"
 import stemtutor from "@/content/cv/cv-bufdi.json"
 import abitur from "@/content/cv/cv-abitur.json"
+import colMicrosoft from "@/content/collaboration/col-microsoft.json"
+import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json"
+import colASC from "@/content/collaboration/col-asc.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 import { getDictionary, TranslatedElement } from "@/i18n/get-dictionaries";
 import { i18n, Locale } from "@/i18n/i18n-config";
@@ -46,6 +49,10 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <BlogEntryPreview lang={language.lang} data={isefBlog} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={stemtutor} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={abitur} ></BlogEntryPreview>
+                <Seperator text={dictionary.collaborationSection}></Seperator>
+                <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colASC} ></BlogEntryPreview>
                 <Seperator text={dictionary.other}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={technicalDetails} ></BlogEntryPreview>
 
