@@ -8,6 +8,7 @@ import abitur from "@/content/cv/cv-abitur.json"
 import colMicrosoft from "@/content/collaboration/col-microsoft.json"
 import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json"
 import colProductware from "@/content/collaboration/col-productware.json"
+import colFramatome from "@/content/collaboration/col-framatome.json"
 import colASC from "@/content/collaboration/col-asc.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 export const blogs = [
@@ -21,6 +22,7 @@ export const blogs = [
     colMicrosoft,
     colRohdeUndSchwarz,
     colProductware,
+    colFramatome,
     colASC,
     technicalDetails
 ];

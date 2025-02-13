@@ -1,0 +1,39 @@
+{
+    "title": "Framatome: Innovative Solutions for Predictive Diagnosis",
+    "slug": "framatome",
+    "title_de": "Framatome: Innovative Lösungen im prediktivem Diagnosemagement",
+    "company_image": "/logos/framatome.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text": "ASC is a leading provider of innovative solutions to record, analyze, and evaluate multimedia interactions. The company's software captures, stores, and analyzes communication data, providing valuable insights for compliance, quality management, and customer service. With a strong focus on research and development, ASC is committed to delivering cutting-edge solutions for communication and collaboration.",
+            "text_de": "Die Teams von Framatome sind auf die Entwicklung, Modernisierung und Wartung von Kernkraftwerken spezialisiert. Sie bieten maßgeschneiderte Komponenten und Lösungen für Reaktoren unterschiedlichster Bauart an. Speziell die Diagnose und Wartung von bestehende Systemen ist ein wichtiger Bereich des Unternehmens."
+        },
+        {
+            "type": "headline",
+            "text": "Internship @ Framatome",
+            "text_de": "Praktikum bei Framatome"
+        },
+        {
+            "type": "text",
+            "text": "At the Framatome site in Karlstein am Main, I had the opportunity to develop a prototype as part of an R&D project based on a requirements specification. The goal was to investigate a method for determining the active power from the current data of a three-phase actuator - without the need for direct voltage measurement, which is required in conventional methods. I was given a basic idea as a starting point and then developed an algorithm that applies that idea and compares the result with conventional data processing using real measurement data.",
+            "text_de": "An Framatome Standort in Karlstein am Main hatte ich die Gelegenheit, im Rahmen eines F&E-Projekts einen Prototyp auf Basis eines Lastenhefts zu entwickeln. Ziel war es, ein Verfahren zur Bestimmung der Wirkleistung aus den Stromdaten einer drehstrombetriebenen Armatur zu erforschen – und das ohne eine direkte Spannungsmessung, die bei bisherigen Verfahren erforderlich ist. Dabei erhielt ich eine grundlegende Idee als Ausgangspunkt und entwickelte daraufhin einen Algorithmus, der dieses Verfahren anhand realer Messdaten mit der konventionellen Datenverarbeitung vergleicht."
+        },
+        {
+            "type": "text",
+            "text_de": "Besonders spannend fand ich bei Framatome die besonderen Sicherheitsverkehrungen, um im nuklearen Bereich einen sicheren Betrieb zu gewährleisten. Auch die Werksführung in Karlstein ist mir besonders im Kopf geblieben, da hier viele Versuchsaufbauten zu Neuentwicklungen sowie viele Spezialfertigungsstraße zu sehen waren ",
+            "text": "I found the special safety measures at Framatome particularly fascinating, as they ensure safe operation in the nuclear sector. The factory tour in Karlstein also left a lasting impression on me, as it showcased many test setups for new developments as well as numerous specialized production lines."
+        },
+        {
+            "type": "text",
+            "text_de": "Erfahre mehr über die Diagnoseprodukte von Framatome:",
+            "text": "Learn more about the diagnosis products of Framatome:"
+        },
+        {
+            "type": "link",
+            "text": "framatome.com",
+            "href": "https://www.framatome.com/solutions-portfolio/portfolio/product/A0802/valve-and-drive-online-diagnostics-adam-and-siplug"
+        }
+    ]
+}

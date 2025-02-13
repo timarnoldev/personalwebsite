@@ -30,6 +30,10 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
             {
                 props.large && props.data.image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto rounded-xl" key={"mainimage"} />
             }
+            {
+                props.large && props.data.company_image && <Image src={props.data.company_image} alt={"Image of Company"} width={1966} height={1106} className="w-[30%] self-center pb-10 pt-10 h-auto" key={"companyimage"} />
+            }
+
 
             {
                 props.data.content.map((element, index) => {

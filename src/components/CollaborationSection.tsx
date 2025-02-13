@@ -7,6 +7,7 @@ import isef from "@/content/cv/cv-isef.json"
 import rohdeundschwarz from "@/content/collaboration/col-rohdeandschwarz.json"
 import asc from "@/content/collaboration/col-asc.json"
 import microsoft from "@/content/collaboration/col-microsoft.json"
+import framatome from "@/content/collaboration/col-framatome.json"
 import productware from "@/content/collaboration/col-productware.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 
@@ -28,7 +29,7 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
             <div className=" flex flex-row gap-16 overflow-hidden items-center w-max autoscroll shrink-1 grow">
                 <div className='pl-4'></div>
                 <Logo blog={microsoft} src="/logos/microsoft.svg" alt="Microsoft Logo - Trademark of microsoft" height={43.65} />
-                <Logo src="/logos/framatome.svg" alt="Framatome Logo - Trademark of framatome" height={31.25}/>
+                <Logo blog={framatome} src="/logos/framatome.svg" alt="Framatome Logo - Trademark of framatome" height={31.25}/>
                 <Logo src="/logos/deutschebank.svg" alt="Deutsche Bank Logo - Trademark of deutsche bank" height={60} width={60}/>
                 <Logo blog={rohdeundschwarz} src="/logos/rohdeundschwarz.svg" alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
                 <Logo blog={asc} src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
