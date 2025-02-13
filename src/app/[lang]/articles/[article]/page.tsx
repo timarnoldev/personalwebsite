@@ -5,6 +5,8 @@ import { useContext } from "react"
 import { getDictionary } from "@/i18n/get-dictionaries";
 import { Locale } from "@/i18n/i18n-config";
 import { blogs } from "@/data/blogs";
+import Image from "next/image";
+import BlogEntryPreview from "@/components/articles/BlogEntryPreview";
 
 export async function generateStaticParams() {
     let articles:Array<{lang:string, article:string}> = [];
@@ -22,6 +24,8 @@ export default async function page(props: { params: Promise<{ lang: Locale, arti
 
     //find article 
     const data = blogs.find((blog) => blog.slug === article);
+    //next article or the first one if this is the last
+    const nextArticle = blogs[(blogs.findIndex((blog) => blog.slug === article) + 1) % blogs.length];
 
 
 
@@ -40,6 +44,17 @@ export default async function page(props: { params: Promise<{ lang: Locale, arti
         {
             data && <div className="max-w-500"><BlogEntry large data={data} ></BlogEntry></div>
         }
+
+        <div className="self-center mt-5 bg-gray-600 rounded h-1 w-[80%]"/>
+    
+        <div className="flex-col flex items-center md:items-start gap-3 mt-5 mb-4">
+            <div className="font-bold text-2xl ml-4">{dictionary.readmore}</div>
+
+               
+               <BlogEntryPreview lang={language} data={nextArticle} ></BlogEntryPreview>
+
+        </div>
+
 
 
     </div>

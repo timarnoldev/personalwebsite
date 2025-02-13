@@ -15,16 +15,16 @@ export default function BlogEntryPreview(props: {data: Blog, lang: Locale}) {
     }
 
    return  <Link href={"/"+props.lang+"/articles/"+props.data.slug} >
-    <div className="cursor-pointer flex flex-row justify-between p-4 rounded-xl">
-        <div className="flex md:flex-row flex-col justify-center gap-4 items-stretch">
+    <div className="group cursor-pointer flex flex-row justify-between p-4 rounded-xl">
+        <div className="flex md:flex-row flex-col justify-center gap-4 items-start">
             {
                 props.data.image &&
                 <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="md:h-40 h-auto md:w-70 w-full object-cover rounded-xl" key={"mainimage"}/>
             }
 
-            <article className="flex flex-col justify-center flex-1">
-                <h1 className="text-xl font-bold text-gray-800 mb-4 md:max-w-[60%] underline-offset-4 hover:underline" key={"title"}>{title}</h1>
-                <p className="text-lg md:max-w-[80%]">{text}</p>
+            <article className="flex flex-col justify-center w-fit">
+                <h1 className="text-xl font-bold text-gray-800 mb-4 md:max-w-110 underline-offset-4 group-hover:underline w-fit" key={"title"}>{title}</h1>
+                <p className="text-lg md:max-w-140 w-fit">{text}</p>
             </article>
 
         </div>
