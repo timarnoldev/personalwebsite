@@ -113,16 +113,6 @@ body {
 }
 
 
-.autoscroll {
-  animation: scroll 45s linear infinite;
-}
-
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% + 32px - 8px));
-  }
-}
 
 .bounce {
   transition: all 1s var(--elastic-out);
