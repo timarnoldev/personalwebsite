@@ -5,7 +5,6 @@ import { useContext } from "react"
 import { getDictionary } from "@/i18n/get-dictionaries";
 import { Locale } from "@/i18n/i18n-config";
 import { blogs } from "@/data/blogs";
-import Image from "next/image";
 import BlogEntryPreview from "@/components/articles/BlogEntryPreview";
 
 export async function generateStaticParams() {

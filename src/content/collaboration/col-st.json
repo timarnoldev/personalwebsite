@@ -1,39 +1,40 @@
 {
-    "title": "ASC: Innovation in Communication",
-    "slug": "asc",
-    "title_de": "ASC: Innovation in der Kommunikation",
-    "company_image": "/logos/asc.svg",
+    "title": "Precision in the Sky: How STMicroelectronics Powered my Drone Project",
+    "slug": "st",
+    "title_de": "Fliegen mit Präzision: STMicroelectronics als Halbleiterhersteller",
+    "company_image": "/logos/st.svg",
     "image": null,
     "content": [
         {
             "type": "text",
-            "text": "ASC is a leading provider of innovative solutions to record, analyze, and evaluate multimedia interactions. The company's software captures, stores, and analyzes communication data, providing valuable insights for compliance, quality management, and customer service. With a strong focus on research and development, ASC is committed to delivering cutting-edge solutions for communication and collaboration.",
-            "text_de": "ASC ist ein führender Anbieter innovativer Lösungen zur Aufzeichnung, Analyse und Auswertung multimedialer Interaktionen. Die Software des Unternehmens erfasst, speichert und analysiert Kommunikationsdaten und liefert wertvolle Erkenntnisse für Compliance, Qualitätsmanagement und Kundenservice. Mit einem starken Fokus auf Forschung und Entwicklung ist ASC bestrebt, modernste Lösungen für Kommunikation und Zusammenarbeit bereitzustellen."
+            "text": "Building a drone that performs well requires high-quality components, especially when supply chain issues make sourcing difficult. STMicroelectronics provided the sensors and microcontrollers necessary for stable flight and precise navigation. Their accelerometers, gyroscopes, and barometer ensured accurate environmental sensing, while the microcontroller handled real-time data processing. The well-documented components integrated smoothly into our design, allowing for a streamlined development process. While other suppliers faced delays, STMicroelectronics delivered components quickly, ensuring my project partner and I stayed on schedule. Their responsiveness and efficient logistics helped pushing the project forward.",
+            "text_de": "Der Bau einer leistungsstarken Drohne erfordert hochwertige Komponenten, insbesondere wenn die Beschaffung aufgrund von Problemen in der Lieferkette schwierig ist. STMicroelectronics lieferte die für einen stabilen Flug und eine präzise Navigation erforderlichen Sensoren und Mikrocontroller. Die Beschleunigungsmesser, Gyroskope und Barometer von STMicroelectronics sorgten für eine genaue Erfassung der Umgebungsbedingungen, während der Mikrocontroller die Daten in Echtzeit verarbeitete. Die gut dokumentierten Komponenten ließen sich reibungslos in unser Design integrieren und ermöglichten einen effizienten Entwicklungsprozess. Während es bei anderen Anbietern zu Verzögerungen kam, lieferte STMicroelectronics die Komponenten schnell, so dass mein Projektpartner und ich den Zeitplan einhalten konnten. Die tolle Partnerschaft mit ST hat maßgeblich dazu beigetragen, dass wir mit unserem Projekt vorankommen."
+        },
+        {
+            "type": "image",
+            "src": "/content/rekari-pcb-st.webp",
+            "text": "Prototype of a PCB for the Rekari system with ST components",
+            "text_de": "Prototype einer Platine für das Rekari-System mit ST Komponenten"
         },
         {
             "type": "headline",
-            "text": "Internship @ ASC",
-            "text_de": "Praktikum bei ASC"
+            "text": "Reliable Components for a High-Performance Drone",
+            "text_de": "Zuverlässige Komponenten für eine leistungsstarke Drohne"
         },
         {
             "type": "text",
-            "text": "As part of the SANTO initiative (School academy for science and technology in the upper high-school), I had the opportunity to complete an internship at ASC. The task was to design and develop a web-based application that provides a topic-divided chat system for internal communication. Additionally, our software offered the possibility to provide various apps for chat, including the option to generate context-specific answers using generative artificial intelligence.",
-            "text_de": "Als Teil der SANTO-Initiative (Schülerakademie für Naturwissenschaft und Technik in der Oberstufe) hatte ich die Gelegenheit, ein Praktikum bei ASC zu absolvieren. Die Aufgabe war es, eine web-basierte Anwendung zu konzipieren und zu entwickeln, die ein themenunterteiltes Chatsystem für die interne Kommunikation bereitstellt. Zusätzlich bot unsere Software die Möglichkeit zum Chat verschiedenste Apps bereitzustellen. Darunter auch die Option, mithilfe von generativer künstlicher Intelligenz kontextspezifische Antworten zu generieren."
+            "text": "Integrating STMicroelectronics’ components into our system was straightforward, thanks to their consistency and precise specifications. The sensors worked together to maintain balance and respond to environmental changes in real time. The microcontroller managed data efficiently, optimizing drone performance duo to its high processing speed. These components helped us achieve a robust and efficient final product.",
+            "text_de": "Die Integration der Komponenten von STMicroelectronics in unser System war dank der genauen Spezifikationen problemlos. Die Sensoren arbeiteten zusammen, um die Stabilität der Drohne zu halten und in Echtzeit auf Umweltveränderungen zu reagieren. Der Mikrocontroller verarbeitet die Daten effizient und optimierte die Leistung der Drohne dank seiner hohen Verarbeitungsgeschwindigkeit. Diese Komponenten haben uns geholfen, einen robusten und wettbewerbsfähigen Prototypen zu entwickeln."
         },
         {
             "type": "text",
-            "text_de": "Besonders spannend fand ich innerhalb des Praktikums vom inneren Aufbau der Produktivsoftware bei ASC zu erfahren. Dabei konnte ich wertvolle Einblicke in die large-scale Entwicklung von Softwarelösungen innerhalb dieser Kommunikationsbranche gewinnen. Insbesondere hat unser Praktiumsleiter einen großen Wert auf Kollaboration und Teamarbeit gelegt und viele Möglichkeiten der agilen Softwareentwicklung aufgezeigt.",
-            "text": "I found it particularly exciting to learn about the internal structure of the productive software at ASC during the internship. This allowed me to gain valuable insights into the large-scale development of software solutions within this communication industry. In particular, our internship supervisor placed great value on collaboration and teamwork, and demonstrated many opportunities for agile software development."
-        },
-        {
-            "type": "text",
-            "text_de": "Erfahre mehr über die regionale SANTO-Initiative:",
-            "text": "Learn more about the regional SANTO initiative:"
+            "text_de": "Erfahre mehr über die Unterstützung von ST:",
+            "text": "Learn more about our partnership with ST:"
         },
         {
             "type": "link",
-            "text": "th-ab.de/santo",
-            "href": "https://www.th-ab.de/studium/vor-dem-studium/kennenlernangebote/santo/"
+            "text": "rekari.de",
+            "href": "https://rekari.de"
         }
     ]
 }

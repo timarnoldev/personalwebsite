@@ -10,6 +10,7 @@ import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json
 import colProductware from "@/content/collaboration/col-productware.json"
 import colFramatome from "@/content/collaboration/col-framatome.json"
 import colASC from "@/content/collaboration/col-asc.json"
+import colST from "@/content/collaboration/col-st.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 export const blogs = [
     rekariBlog,
@@ -24,5 +25,6 @@ export const blogs = [
     colProductware,
     colFramatome,
     colASC,
+    colST,
     technicalDetails
 ];

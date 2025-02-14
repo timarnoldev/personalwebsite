@@ -36,7 +36,7 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
     
     return <div className=" mt-40 flex flex-col gap-5 mb-20">
          <div className="flex items-center gap-2  mb-5 sm:ml-30 ml-5  self-start">
-            <a href={"/"+language+"/"} className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"><ArrowLeft/>{dictionary.back} </a>
+            <a href={"/"+language.lang+"/"} className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"><ArrowLeft/>{dictionary.back} </a>
         </div>
         <h1 className="text-6xl sm:ml-30 self-center sm:self-start  font-bold text-big-headline">{dictionary.articles}</h1>
 

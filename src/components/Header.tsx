@@ -40,7 +40,7 @@ export default function Header(props: { lang: Dictionary }) {
     }
 
 
-    return <div className='flex flex-col top-0 fixed z-50 '>
+    return <div className='flex flex-col top-0 fixed z-50 w-full'>
         {
             isUserLanguageGerman && props.lang.lang !== "de" && <div className='hidden md:flex bg-primary cursor-pointer text-center p-2 flex-row items-center justify-between px-4 text-white' onClick={switchLanguage.bind(null, "de")}>
                 <div></div>
@@ -57,7 +57,7 @@ export default function Header(props: { lang: Dictionary }) {
             </div>
         }
 
-        <nav className="bg-herobackground shadow-lg w-dvw sm:h-24 h-22 flex items-center   overscroll-y-none"> {/* Header */}
+        <nav className="bg-herobackground shadow-lg w-full sm:h-24 h-22 flex items-center   overscroll-y-none"> {/* Header */}
 
             <div className="my-3 sm:mx-10 mx-3 flex-grow flex flex-row items-center justify-between">
 
@@ -144,7 +144,7 @@ export default function Header(props: { lang: Dictionary }) {
                     <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">{props.lang.contactme}</a>
 
                     <div className='relative '>
-                        <Globe onClick={toggleLanguageSelector} className="text-gray-500 cursor-pointer" />
+                        <Globe onClick={toggleLanguageSelector}  tabIndex={0} onKeyDown={(e)=>{if(e.key === "Enter") toggleLanguageSelector()}} className="text-gray-500 cursor-pointer" />
                         <div className={isLanguageSelectorOpen ? "" : "hidden"}>
                             <LanguageSelector lang={props.lang} switchLanguage={switchLanguage} />
                         </div>
