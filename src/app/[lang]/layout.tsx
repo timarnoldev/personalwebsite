@@ -50,7 +50,7 @@ export default async function RootLayout({
             "@type": "Person",
             "name": "Tim Arnold",
             "url": "https://tim-arnold.de",
-            "image": "https://tim-arnold.de/timarnold.webp",
+            "image": "https://tim-arnold.de/mainimage.webp",
             "sameAs": [
             "https://www.linkedin.com/in/timarnold-/",
             "https://github.com/timarnoldev",
@@ -61,7 +61,7 @@ export default async function RootLayout({
         </script>
         <link rel="alternate" hrefLang="en" href="https://tim-arnold.de/en" />
         <link rel="alternate" hrefLang="de" href="https://tim-arnold.de/de" />
-        <link rel="alternate" href="https://tim-arnold.de/" hrefLang="x-default" />
+        <link rel="alternate" href="https://tim-arnold.de/en" hrefLang="x-default" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
