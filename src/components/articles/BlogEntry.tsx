@@ -39,11 +39,11 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
                 props.data.content.map((element, index) => {
 
                     if (element.type === "headline") {
-                        return <div className="text-2xl font-bold mt-6" key={index}>{language === "de" ? element.text_de ?? element.text : element.text}</div>
+                        return <h2 className="text-2xl font-bold mt-6" key={index}>{language === "de" ? element.text_de ?? element.text : element.text}</h2>
                     }
 
                     if (element.type === "text") {
-                        return <div className="text-lg" key={index}>{language === "de" ? element.text_de ?? element.text : element.text}</div>
+                        return <p className="text-lg" key={index}>{language === "de" ? element.text_de ?? element.text : element.text}</p>
                     }
 
                     if (element.type === "link") {
@@ -53,7 +53,7 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
                     if (element.type === "image") {
                         return <div className="w-full flex flex-col gap-0" key={index}>
                             <Image src={element.src!} alt={(language === "de" ? element.text_de ?? element.text : element.text) ?? "Blog post image"} width={1966} height={1106} className="w-full h-auto rounded-xl" />
-                            <div className=" text-gray-700">{language === "de" ? element.text_de ?? element.text : element.text}</div>
+                            <h3 className=" text-gray-700">{language === "de" ? element.text_de ?? element.text : element.text}</h3>
                         </div>
                     }
 

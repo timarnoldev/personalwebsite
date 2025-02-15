@@ -66,7 +66,7 @@ function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
     const { section } = props;
     return <>
         <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-10">
-            <div className="text-white sm:text-5xl text-xl font-bold md:max-w-[80%] w-full">{section.headline}</div>
+            <h3 className="text-white sm:text-5xl text-xl font-bold md:max-w-[80%] w-full">{section.headline}</h3>
             <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
             <Modal data={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex-row gap-2 items-center w-fit cursor-pointer flex">{props.lang.moreInformation} <ExternalLink /></div></Modal>
         </div>
@@ -159,13 +159,13 @@ function Carousel(props: { lang: Dictionary }) {
 export default function CVHighlights(props: {lang: Dictionary}) {
 
 
-    return <div className="flex flex-col mt-5 mb-10 gap-8">
+    return <div id="achievements" className="flex flex-col mt-5 mb-10 gap-8">
 
-        <div className="sm:ml-12 ml-6 3xl:self-center mt-20 text-5xl text-[#2e2e2e] font-bold self-start">
+        <h2 className="sm:ml-12 ml-6 3xl:self-center mt-20 text-5xl text-[#2e2e2e] font-bold self-start">
             {
                 props.lang.cvHighlights
             }
-        </div>
+        </h2>
 
         <div className="flex flex-col gap-2 self-center">
 

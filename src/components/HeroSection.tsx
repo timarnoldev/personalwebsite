@@ -30,9 +30,9 @@ function IntroductionDE() {
 }
 
 export default function HeroSection(props: { lang: Dictionary }) {
-    return <><div className="flex flex-col sm:flex-row justify-between w-dvw bg-herobackground sm:mt-24 pt-[10vh] items-center sm:items-start max-w-400 self-center gap-6 md:gap-0">
+    return <><div id="aboutme" className="flex flex-col sm:flex-row justify-between w-dvw bg-herobackground sm:mt-24 pt-[10vh] items-center sm:items-start max-w-400 self-center gap-6 md:gap-0">
         <div className="flex flex-col justify-center sm:items-start items-center sm:w-1/2  sm:pl-30 pt-15">
-            <p className="uppercase text-gray-500 tracking-widest mb-4 text-xl sm:text-left sm:max-w-full max-w-[80%] text-center">{props.lang.niceToMeetYou}</p>
+            <h2 className="uppercase text-gray-500 tracking-widest mb-4 text-xl sm:text-left sm:max-w-full max-w-[80%] text-center">{props.lang.niceToMeetYou}</h2>
             <h1 className="text-herotext text-6xl text-center sm:text-start font-bold px-4 sm:px-0">{props.lang.iamtim}</h1>
 
             <div className="hidden md:block">

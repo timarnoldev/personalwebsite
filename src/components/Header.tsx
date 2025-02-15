@@ -7,6 +7,17 @@ import Image from 'next/image'
 import LanguageSelector from './LanguageSelector';
 import { useEffect, useState } from 'react';
 
+function smoothScroll (event: React.UIEvent<HTMLAnchorElement, UIEvent>) {
+    event.preventDefault()
+    const link = event.currentTarget
+    const anchorId = new URL(link!.href).hash.replace('#', '')
+    const anchor = document.getElementById(anchorId)
+    window.scrollTo({
+        top: anchor!.offsetTop-100,
+        behavior: 'smooth'
+    })
+}
+
 export default function Header(props: { lang: Dictionary }) {
     const [isLanguageSelectorOpen, setIsLanguageSelectorOpen] = useState(false);
     const [isUserLanguageGerman, setIsUserLanguageGerman] = useState(false);
@@ -67,7 +78,7 @@ export default function Header(props: { lang: Dictionary }) {
                         if (!['/', '/en', '/de'].includes(window.location.pathname)) {
                             window.location.href = `/${props.lang.lang}`;
                         }
-                    }} tabIndex={0} htmlFor="toggleSocialMenu" className="peer hover:bg-herobackgroundhover group-has-checked:bg-herobackgroundhover p-2 rounded-2xl transition-colors group flex flex-row items-center cursor-pointer overflow-visible" title="Click to see socials" aria-haspopup> {/* Hero Image */}
+                    }} tabIndex={0} htmlFor="toggleSocialMenu" className="peer hover:bg-herobackgroundhover group-has-checked:bg-herobackgroundhover p-2 rounded-2xl transition-colors group flex flex-row items-center cursor-pointer overflow-visible" title="Social-Menu" aria-haspopup> {/* Hero Image */}
                         <input type="checkbox" id="toggleSocialMenu" className='hidden' />
                         <div className='relative overflow-visible'>
                             <Image src={"/timarnold.webp"} alt="Picture of Tim Arnold" width={75} height={75} className="rounded-full object-cover w-[75px] h-[75px] aspect-square shadow" />
@@ -136,9 +147,9 @@ export default function Header(props: { lang: Dictionary }) {
                 <div className="flex flex-row items-center sm:gap-6 gap-2"> {/* Header Links */}
 
                     <div className="flex-row items-center gap-6 hidden sm:flex">
-                        <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">About me</a>
-                        <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">Achievements</a>
-                        <a href="#" className="hover:underline underline-offset-4 transition-all text-nowrap">Projects</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#aboutme" className="hover:underline underline-offset-4 transition-all text-nowrap">About me</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#achievements" className="hover:underline underline-offset-4 transition-all text-nowrap hidden md:block">Achievements</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#projects" className="hover:underline underline-offset-4 transition-all text-nowrap">Projects</a>
                     </div>
 
                     <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">{props.lang.contactme}</a>

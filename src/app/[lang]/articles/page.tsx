@@ -11,6 +11,7 @@ import colRohdeUndSchwarz from "@/content/collaboration/col-rohdeandschwarz.json
 import colProductware from "@/content/collaboration/col-productware.json"
 import colFramatome from "@/content/collaboration/col-framatome.json"
 import colASC from "@/content/collaboration/col-asc.json"
+import colST from "@/content/collaboration/col-st.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 import { getDictionary, TranslatedElement } from "@/i18n/get-dictionaries";
 import { i18n, Locale } from "@/i18n/i18n-config";
@@ -23,7 +24,7 @@ export async function generateStaticParams() {
 function Seperator(props: { text: string}) {
     return <div className="mx-5 sm:mx-0 flex items-center gap-2 mt-10 mb-5 w-full self-center">
         <div className="w-1/3 h-1 bg-gray-600 rounded"></div>
-        <div className="text-xl font-bold text-gray-600 text-center">{props.text}</div>
+        <h2 className="text-xl font-bold text-gray-600 text-center">{props.text}</h2>
         <div className="w-1/3 h-1 bg-gray-600 rounded"></div>
     </div>
 
@@ -55,6 +56,7 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colProductware} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colST} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colFramatome} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colASC} ></BlogEntryPreview>
                 <Seperator text={dictionary.other}></Seperator>

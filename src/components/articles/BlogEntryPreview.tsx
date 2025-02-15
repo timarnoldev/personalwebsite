@@ -31,7 +31,7 @@ export default function BlogEntryPreview(props: {data: Blog, lang: Locale}) {
             }
 
             <article className="flex flex-col justify-center w-fit">
-                <h1 className="text-xl font-bold text-gray-800 mb-4 md:max-w-110 underline-offset-4 group-hover:underline w-fit" key={"title"}>{title}</h1>
+                <h3 className="text-xl font-bold text-gray-800 mb-4 md:max-w-110 underline-offset-4 group-hover:underline w-fit" key={"title"}>{title}</h3>
                 <p className="text-lg md:max-w-140 w-fit">{text}</p>
             </article>
 
