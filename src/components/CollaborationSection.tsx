@@ -10,6 +10,7 @@ import microsoft from "@/content/collaboration/col-microsoft.json"
 import framatome from "@/content/collaboration/col-framatome.json"
 import productware from "@/content/collaboration/col-productware.json"
 import st from "@/content/collaboration/col-st.json"
+import deutschebank from "@/content/collaboration/col-deutschebank.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 import Marquee from "react-fast-marquee";
 
@@ -32,7 +33,7 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
             <Marquee className="" autoFill={true}>
                 <Logo blog={microsoft} src="/logos/microsoft.svg" alt="Microsoft Logo - Trademark of microsoft" height={43.65} />
                 <Logo blog={framatome} src="/logos/framatome.svg" alt="Framatome Logo - Trademark of framatome" height={31.25}/>
-                <Logo src="/logos/deutschebank.svg" alt="Deutsche Bank Logo - Trademark of deutsche bank" height={60} width={60}/>
+                <Logo blog={deutschebank} src="/logos/deutschebank.svg" alt="Deutsche Bank Logo - Trademark of deutsche bank" height={60} width={60}/>
                 <Logo blog={rohdeundschwarz} src="/logos/rohdeundschwarz.svg" alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
                 <Logo blog={asc} src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
                 <Logo blog={st} src="/logos/st.svg" alt="STMicroelectronics Logo - Trademark of STMicroelectronics" height={79.99} width={104.04} enlarge/>

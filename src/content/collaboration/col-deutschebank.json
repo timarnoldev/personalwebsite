@@ -1,0 +1,30 @@
+{
+    "title": "Deutsche Bank - Transition to Microservices",
+    "slug": "deutschebank",
+    "title_de": "Deutsche Bank - Transformation zu Microservices",
+    "company_image": "/logos/deutschebank.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Als einer der größten Banken in Deutschland spielt gerade für die Deutsche Bank die Digitalisierung eine große Rolle. Doch gerade im FinTech-Bereich gibt es hohe Anforderungen an Relibilität und Sicherheit. Bei Millionen von Transaktion täglich kommt es sowohl auf die Sicherheit, als auch auf die ständige Verfügbarkeit der zuständingen IT-Infrastruktur an. Zusätzlich werden viele Zugriffspunkte, wie das Online-Banking (PSD2) oder die Banking-Apps angeboten.",
+            "text": "As one of the largest banks in Germany, digitalization plays a particularly important role for Deutsche Bank. However, the FinTech sector in particular places high demands on reliability and security. With millions of transactions every day, both security and the constant availability of the relevant IT infrastructure are crucial. In addition, many access points are offered, such as online banking (PSD2) or banking apps."
+        },
+        {
+            "type": "headline",
+            "text": "Insights into the complex Microservice Infrastructure",
+            "text_de": "Einblicke in die komplexe Microservice-Infrastruktur"
+        },
+        {
+            "type": "text",
+            "text": "As part of the MINT-EC program, the infrastructure of Deutsche Bank was explained to us. A particular focus was on the transformation from a monolithic system to a microservice architecture. Our speaker also gave us an insight into the development of the remittance process. It was very surprising for me to see how much data actually has to be stored for a single transaction in order to guarantee security.",
+            "text_de": "Im Rahmen des MINT-EC Programms wurde uns die Infrastruktur der Deutschen Bank erklärt. Ein besonderer Fokus lag dabei auf der Transformation von einem monolithischen System hin zu einer Microservice-Architektur. Unser Referent hat uns außerdem Einblicke in die Entwicklung des Überweisungs-Prozesses gegeben. Für mich war es sehr überraschend zu sehen, wie viele Daten tatsächlich bei einer einzigen Transaktion gespeichert werden müssen, um die Sicherheit zu gewährleisten."
+        },
+        {
+            "type": "text",
+            "text": "In the subsequent practical exercise, we were asked to implement and document a microservice according to a given specification. This project was very exciting for me, as it made the current industry trend around cloud infrastructure tangible. Overall, the program at Deutsche Bank was a very informative and interesting experience that will certainly be useful to me in the future.",
+            "text_de": "In der anschließend Praxisübung sollten wir nach einer vorgegebenen Spezifikationen einen Microservice implementieren und dokumentieren. Für mich war dieses Projekt sehr spannend, da es den aktuellen Industrietrend rund um die Cloudinfrastruktur greifbar macht. Insgesamt war das Programm in der Deutschen Bank eine sehr aufschlussreiche und interessante Erfahrung, das mir sicherlich in der Zukunft noch von Nutzen sein wird."
+        }
+    ]
+}
+
