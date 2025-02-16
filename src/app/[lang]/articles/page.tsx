@@ -12,6 +12,9 @@ import colProductware from "@/content/collaboration/col-productware.json"
 import colFramatome from "@/content/collaboration/col-framatome.json"
 import colASC from "@/content/collaboration/col-asc.json"
 import colST from "@/content/collaboration/col-st.json"
+import colUblox from "@/content/collaboration/col-ublox.json"
+import colNordicSemi from "@/content/collaboration/col-nordicsemi.json"
+import colDeutscheBank from "@/content/collaboration/col-deutschebank.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 import { getDictionary, TranslatedElement } from "@/i18n/get-dictionaries";
 import { i18n, Locale } from "@/i18n/i18n-config";
@@ -55,9 +58,12 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <Seperator text={dictionary.collaborationSection}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
-                <BlogEntryPreview lang={language.lang} data={colProductware} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colST} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colNordicSemi} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colProductware} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colFramatome} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colUblox} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colDeutscheBank} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colASC} ></BlogEntryPreview>
                 <Seperator text={dictionary.other}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={technicalDetails} ></BlogEntryPreview>

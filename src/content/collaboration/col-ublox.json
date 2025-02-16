@@ -1,0 +1,40 @@
+{
+    "title": "Precise GPS Receiver: u-blox as Technology Partner",
+    "slug": "ublox",
+    "title_de": "Präzise GPS-Empfänger: u-blox als Technologiepartner",
+    "company_image": "/logos/ublox.svg",
+    "image": null,
+    "content": [
+    {
+    "type": "text",
+    "text": "Accurate positioning is crucial for drone navigation, especially in dynamic environments. With u-blox as a strong partner, my project partner and I were able to integrate industry-leading GNSS technology into our Rekari system. Their NEO-9M module provided precise and reliable GPS data, allowing us to determine our drone’s exact coordinates in real time. The high accuracy of up to one meter significantly improved our ability to track and control the drone, making operations safer and more efficient.",
+    "text_de": "Eine genaue Positionsbestimmung ist entscheidend für die Navigation von Drohnen, insbesondere in dynamischen Umgebungen. Mit u-blox als starkem Partner konnten mein Projektpartner und ich branchenführende GNSS-Technologie in unser Rekari-System integrieren. Ihr NEO-9M-Modul lieferte präzise und zuverlässige GPS-Daten, sodass wir die genauen Koordinaten unserer Drohne in Echtzeit bestimmen konnten. Die hohe Genauigkeit von bis zu einem Meter verbesserte unsere Fähigkeit, die Drohne zu verfolgen und zu steuern, wodurch der Betrieb sicherer und effizienter wurde. "
+    },
+    {
+    "type": "image",
+    "src": "/content/rekari-pcb-ublox.webp",
+    "text": "Prototype of a PCB for the Rekari system with u-blox components",
+    "text_de": "Prototyp einer Platine für das Rekari-System mit u-blox Komponenten"
+    },
+    {
+    "type": "headline",
+    "text": "Reliable GPS Solutions for High-Precision Tracking",
+    "text_de": "Zuverlässige GPS-Lösungen für hochpräzises Tracking"
+    },
+    {
+    "type": "text",
+    "text": "Integrating u-blox’s GNSS technology was seamless, thanks to their well-documented modules and robust hardware. The NEO-9M’s exceptional sensitivity and fast signal acquisition ensured continuous and accurate positioning, even in challenging conditions. This allowed us to develop a reliable navigation system that adapts to real-time changes with minimal latency. The combination of u-blox’s precision and reliability helped us achieve a superior tracking solution that met all our project requirements.",
+    "text_de": "Die Integration der GNSS-Technologie von u-blox war dank ihrer gut dokumentierten Module und der robusten Hardware nahtlos möglich. Die außergewöhnliche Empfindlichkeit und schnelle Signalerfassung des NEO-9M-Moduls gewährleisteten eine kontinuierliche und präzise Positionsbestimmung, selbst unter schwierigen Bedingungen. Dies ermöglichte es uns, ein zuverlässiges Navigationssystem zu entwickeln, das sich mit minimaler Latenz an Echtzeitveränderungen anpasst. Die Kombination aus Präzision und Zuverlässigkeit von u-blox half uns, eine überlegene Tracking-Lösung zu entwickeln, die alle unsere Projektanforderungen erfüllte."
+    },
+    {
+    "type": "text",
+    "text_de": "Erfahre mehr über die Unterstützung von u-blox:",
+    "text": "Learn more about our partnership with u-blox:"
+    },
+    {
+    "type": "link",
+    "text": "rekari.de",
+    "href": "https://rekari.de"
+    }
+    ]
+}

@@ -11,6 +11,9 @@ import colProductware from "@/content/collaboration/col-productware.json"
 import colFramatome from "@/content/collaboration/col-framatome.json"
 import colASC from "@/content/collaboration/col-asc.json"
 import colST from "@/content/collaboration/col-st.json"
+import colUblox from "@/content/collaboration/col-ublox.json"
+import colNordicSemi from "@/content/collaboration/col-nordicsemi.json"
+import colDeutscheBank from "@/content/collaboration/col-deutschebank.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 export const blogs = [
     rekariBlog,
@@ -20,11 +23,15 @@ export const blogs = [
     isefBlog,
     stemtutor,
     abitur,
-    colMicrosoft,
-    colRohdeUndSchwarz,
-    colProductware,
-    colFramatome,
     colASC,
+    colDeutscheBank,
+    colFramatome,
+    colMicrosoft,
+    colNordicSemi,
+    colProductware,
+    colRohdeUndSchwarz,
+    colST,
+    colUblox,
     colST,
     technicalDetails
 ];

@@ -10,7 +10,9 @@ import microsoft from "@/content/collaboration/col-microsoft.json"
 import framatome from "@/content/collaboration/col-framatome.json"
 import productware from "@/content/collaboration/col-productware.json"
 import st from "@/content/collaboration/col-st.json"
+import nordic from "@/content/collaboration/col-nordicsemi.json"
 import deutschebank from "@/content/collaboration/col-deutschebank.json"
+import ublox from "@/content/collaboration/col-ublox.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 import Marquee from "react-fast-marquee";
 
@@ -38,8 +40,8 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo blog={asc} src="/logos/asc.svg" alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
                 <Logo blog={st} src="/logos/st.svg" alt="STMicroelectronics Logo - Trademark of STMicroelectronics" height={79.99} width={104.04} enlarge/>
                 <Logo blog={productware} src="/logos/productware.svg" alt="Productware Logo - Trademark of productware" height={46} width={138}/>
-                <Logo src="/logos/nordicsemi.svg" alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
-                <Logo src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
+                <Logo blog={nordic} src="/logos/nordicsemi.svg" alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
+                <Logo blog={ublox} src="/logos/ublox.svg" alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo blog={stemtutor} src="/logos/walterreisstiftung.svg" alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
               {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
                 <Logo blog={jufo} src="/logos/jugendforscht.svg" alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>

@@ -24,8 +24,8 @@ export default function BlogEntryPreview(props: {data: Blog, lang: Locale}) {
 
             {
                 props.data.company_image &&
-                <div className="md:h-40 md:w-70 flex items-center p-4">
-                    <Image src={props.data.company_image} alt={"Image of Company"} width={1966} height={1106} className=" w-full h-auto" key={"companyimage"}/>
+                <div className="md:h-40 md:w-70 flex items-center p-4 overflow-hidden">
+                    <Image src={props.data.company_image} alt={"Image of Company"} width={1966} height={1106} className=" w-full h-auto max-h-full" key={"companyimage"}/>
 
                 </div>
             }
