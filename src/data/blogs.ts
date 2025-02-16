@@ -19,19 +19,21 @@ export const blogs = [
     rekariBlog,
     foosballBlog,
     ekesBlog,
+
     jufoBlog,
     isefBlog,
     stemtutor,
     abitur,
-    colASC,
-    colDeutscheBank,
-    colFramatome,
+
     colMicrosoft,
-    colNordicSemi,
-    colProductware,
     colRohdeUndSchwarz,
     colST,
+    colNordicSemi,
+    colProductware,
+    colFramatome,
     colUblox,
-    colST,
+    colDeutscheBank,
+    colASC,
+
     technicalDetails
 ];
