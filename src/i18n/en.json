@@ -59,7 +59,10 @@
 
     "readmore": "Read more",
 
-    "metadescription": "Hello, I'm Tim Arnold. Nice to meet you! On my website I share my projects, awards and more. I'm always curious to hear new perspectives and exchange ideas."
+    "metadescription": "Hello, I'm Tim Arnold. Nice to meet you! On my website I share my projects, awards and more. I'm always curious to hear new perspectives and exchange ideas.",
 
+    "aboutme": "About me",
+    "achievements": "Achievements",
+    "projects": "Projects"
 
 }

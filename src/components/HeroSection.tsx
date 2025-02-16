@@ -7,12 +7,12 @@ import { Dictionary } from '@/i18n/get-dictionaries'
 function IntroductionEN() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
         Since 2024, I have been
-        a <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">STEM coach at the Walter-Reis-Institute</a>
-        , focusing on AI, full-stack development and automation — especially in
+        a <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">STEM coach at the Walter-Reis-Institute </a>
+        and have a keen interest in AI, full-stack development and automation — especially in
         hardware-related <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">projects</a>.
-        Through internships at companies like <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
-        I have also successfully competed in <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">well-known competitions</div></Modal>.
-        I regularly attend workshops and enjoy working on <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">personal projects</a> to apply my knowledge in practice.
+        Through internships at companies such as <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
+        I have successfully competed in <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">renowned competitions</div></Modal>.
+        Additionally, I regularly attend workshops and enjoy working on <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">personal projects</a> to apply my knowledge in practice.
     </div>
 }
 

@@ -7,10 +7,17 @@ import LanguageSelector from './LanguageSelector';
 import { useEffect, useState } from 'react';
 
 function smoothScroll (event: React.UIEvent<HTMLAnchorElement, UIEvent>) {
+
     event.preventDefault()
+
     const link = event.currentTarget
     const anchorId = new URL(link!.href).hash.replace('#', '')
     const anchor = document.getElementById(anchorId)
+     //if the anchor is not on the page, redirect to the root
+     if(!anchor){
+        window.location.href = "/";
+        return;
+    }
     window.scrollTo({
         top: anchor!.offsetTop-100,
         behavior: 'smooth'
@@ -146,9 +153,9 @@ export default function Header(props: { lang: Dictionary }) {
                 <div className="flex flex-row items-center sm:gap-6 gap-2"> {/* Header Links */}
 
                     <div className="flex-row items-center gap-6 hidden sm:flex">
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#aboutme" className="hover:underline underline-offset-4 transition-all text-nowrap">About me</a>
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#achievements" className="hover:underline underline-offset-4 transition-all text-nowrap hidden md:block">Achievements</a>
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#projects" className="hover:underline underline-offset-4 transition-all text-nowrap">Projects</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#aboutme" className="hover:underline underline-offset-4 transition-all text-nowrap">{props.lang.aboutme}</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#achievements" className="hover:underline underline-offset-4 transition-all text-nowrap hidden md:block">{props.lang.achievements}</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#projects" className="hover:underline underline-offset-4 transition-all text-nowrap">{props.lang.projects}</a>
                     </div>
 
                     <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">{props.lang.contactme}</a>

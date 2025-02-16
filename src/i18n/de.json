@@ -3,12 +3,12 @@
     "cvHighlights": "Highlights aus meinem Lebenslauf",
     "cvOnLinkedin": "Vollständigen Lebenslauf auf LinkedIn ansehen",
     "cvJufoHeadline": "Jugend forscht Bundessieger",
-    "cvJufoText": "Beim renommierten Wettbewerb „Jugend forscht“ konnte ich mit meinem Projekt Rekari den Bundesieg in der Kategorie gewinnen. Rekari vereinfacht dabei Drohneneinsätze mit intuitiver Planung und Echtzeit-Zusammenarbeit und ist damit für Profis und Freiwilligenteams gleichermaßen zugänglich.",
+    "cvJufoText": "Beim renommierten Wettbewerb „Jugend forscht“ konnte ich mit meinem Projekt Rekari den Bundesieg in der Kategorie Technik gewinnen. Rekari vereinfacht dabei Drohneneinsätze mit intuitiver Planung und Echtzeit-Zusammenarbeit und ist damit für Profis und Freiwilligenteams gleichermaßen zugänglich.",
     "moreInformation": "Weitere Informationen",
     "cvISEFHeadline": "ISEF Finalist",
     "cvISEFText": "Im Jahr 2024 nahm ich an der Regeneron International Science and Engineering Fair (ISEF) teil, dem weltweit größten voruniversitären Wissenschaftswettbewerb in Los Angeles. Im Wettbewerb mit jungen Spitzenforschern aus aller Welt hatte ich die Gelegenheit, mein Projekt auf einer internationalen Bühne zu präsentieren und Ideen mit führenden Wissenschaftlern auszutauschen.",
     "cvBufdiHeadline": "MINT-Tutor am Institut für Technologie",
-    "cvBufdiText": "Als Tutor bei der Walter-Reis-Stiftung konzipiere ich Kurse und Workshops, um Schülern technische Konzepte zu vermitteln. Der Schwerpunkt liegt dabei auf praktischen Fertigkeiten wie Entwerfen, Löten und Programmieren, aber auch auf KI-Anwendungen, um den Teilnehmern ein breiteres Verständnis für moderne Technologien zu vermitteln.",
+    "cvBufdiText": "Als Tutor bei der Walter-Reis-Stiftung konzipiere ich Kurse und Workshops, um Schülern technische Konzepte zu vermitteln. Der Schwerpunkt liegt dabei auf praktischen Fertigkeiten wie Konstruieren, Löten und Programmieren, aber auch auf KI-Anwendungen, um den Teilnehmern ein breiteres Verständnis für moderne Technologien zu vermitteln.",
     "cvAbiturHeadline": "Abiturpreisträger",
     "cvAbiturText": "Mit meinem Abitur wurde ich von der Deutschen Mathematiker-Vereinigung mit dem Preis für das beste Mathe-Abitur und von der Deutschen Physikalischen Gesellschaft mit dem Preis für das beste Physik-Abitur ausgezeichnet. Außerdem erhielt ich das MINT-Exzellenz-Zertifikat von MINT-EC, der nationalen Exzellenzinitiative für MINT-Bildung in Deutschland.",
 
@@ -55,13 +55,15 @@
 
 
     "awardsFuldaHackathonHeadline": "Hackathon Fulda Award",
-    "awardsFuldaHackathonText": "Mit meinem Team habe ich am 6. Fulda Hackathon teilgenommen, wo wir einen konversationellen Dokumentationsassistenten entwickelt haben, um generativen Wissensverlust entgegenzutreten. Wir hatten die Ehre, unter den drei besten Teams zu sein und den Preis der Klinikum Fulda gAG zu erhalten.",
+    "awardsFuldaHackathonText": "Mit meinem Team habe ich am 6. Fulda Hackathon teilgenommen, wo wir einen konversativen Dokumentationsassistenten entwickelt haben, um generativen Wissensverlust entgegenzutreten. Wir hatten die Ehre, unter den drei besten Teams zu sein und den Preis der Klinikum Fulda gAG zu erhalten.",
 
     "furtherAwardsAndAchievements": "Weitere Auszeichnungen und Erfolge",
 
     "readmore": "Weiter Lesen",
 
-    "metadescription": "Hallo, ich bin Tim Arnold. Schön, dich kennenzulernen! Auf meiner Website stelle ich meine Projekte und Auszeichnungen vor. Ich bin immer neugierig auf neue Perspektiven und den Austausch von Ideen."
+    "metadescription": "Hallo, ich bin Tim Arnold. Schön, dich kennenzulernen! Auf meiner Website stelle ich meine Projekte und Auszeichnungen vor. Ich bin immer neugierig auf neue Perspektiven und den Austausch von Ideen.",
 
-
+    "aboutme": "Über mich",
+    "achievements": "Erfolge",
+    "projects": "Projekte"
 }

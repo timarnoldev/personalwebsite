@@ -46,6 +46,7 @@ export default async function RootLayout({
   return (
     <html lang={slangs?.lang ?? "en"}>
       <head>
+      
       <script type="application/ld+json">
           {
            `{
