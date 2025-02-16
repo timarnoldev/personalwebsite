@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const dynamic = 'force-static';
 
 export async function generateMetadata({params}: {params?: Promise<{ lang: Locale }>}) {
   const slangs = await params;
