@@ -1,14 +1,12 @@
-import { ArrowLeft, ExternalLink } from "lucide-react"
-import data from "@/content/projects/project-foosball.json"
+import { ArrowLeft } from "lucide-react"
 import BlogEntry from "@/components/articles/BlogEntry"
-import { useContext } from "react"
 import { getDictionary } from "@/i18n/get-dictionaries";
 import { Locale } from "@/i18n/i18n-config";
 import { blogs } from "@/data/blogs";
 import BlogEntryPreview from "@/components/articles/BlogEntryPreview";
 
 export async function generateStaticParams() {
-    let articles: Array<{ lang: string, article: string }> = [];
+    const articles: Array<{ lang: string, article: string }> = [];
     const articles_de = blogs.map((blog) => ({ lang: "de", article: blog.slug }));
     const articles_en = blogs.map((blog) => ({ lang: "en", article: blog.slug }));
     return articles.concat(articles_de, articles_en);

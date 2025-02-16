@@ -1,7 +1,6 @@
 'use client';
 
 import { Dictionary } from '@/i18n/get-dictionaries'
-import { Locale } from '@/i18n/i18n-config'
 import { ArrowRight, ExternalLink, Github, Globe, Linkedin, Mail, X } from 'lucide-react'
 import Image from 'next/image'
 import LanguageSelector from './LanguageSelector';

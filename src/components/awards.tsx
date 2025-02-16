@@ -1,7 +1,7 @@
 import { Dictionary } from "@/i18n/get-dictionaries";
 import ekes from "@/content/projects/project-ekes.json";
 import Modal from "./modal";
-import { CalendarDays, ChevronDown, ExternalLink, MapPin } from "lucide-react";
+import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import Image from "next/image";
 
 const awards = (lang:Dictionary) => {
@@ -82,11 +82,11 @@ export default function Awards(props: { lang: Dictionary }) {
                             </div>
                            
                             {
-                                    award.reference === "modal" && <Modal data={award.modalData}><div className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmore} <ExternalLink/></div></Modal>
+                                    award.reference === "modal" && <Modal data={award.modalData}><div className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmoreaward} <ExternalLink/></div></Modal>
                                 }
 
                                 {
-                                    award.reference === "external" && <a href={award.link} target="_blank" className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmore} <ExternalLink/></a>
+                                    award.reference === "external" && <a href={award.link} target="_blank" className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmoreaward} <ExternalLink/></a>
                                 }
                         </div>
                     })

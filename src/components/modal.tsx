@@ -55,8 +55,7 @@ export default function Modal({ children, data }: ModalProps) {
 
     return <>
 
-
-        {React.isValidElement(children) && React.cloneElement(children as React.ReactElement<any>, {
+        {React.isValidElement(children) && React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
             onClick: () => {
                 openModal();
             },
@@ -75,8 +74,6 @@ export default function Modal({ children, data }: ModalProps) {
             "aria-labelledby": "modal-title",
             "aria-describedby": "modal-description",
             "aria-hidden": !open,
-            "data-testid": "modal-trigger"
-
         })}
 
 

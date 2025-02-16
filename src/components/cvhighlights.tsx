@@ -1,7 +1,7 @@
 "use client";
 import { ExternalLink, Pause, Play } from "lucide-react";
 import Image from 'next/image'
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import Modal from "./modal";
 import jufoBlog from "@/content/cv/cv-jugend-forscht.json"
@@ -85,8 +85,8 @@ function Carousel(props: { lang: Dictionary }) {
     const [page, setPage] = useState(0);
     const [autoSlide, setAutoSlide] = useState(true);
 
-    const next = () => setPage((page) => (page === cvHighlights(props.lang).length - 1 ? 0 : page + 1));
-    const prev = () => setPage((page) => (page === 0 ? cvHighlights(props.lang).length - 1 : page - 1));
+    const next = useCallback(() => setPage((page) => (page === cvHighlights(props.lang).length - 1 ? 0 : page + 1)), [props.lang]);
+    const prev = useCallback(() => setPage((page) => (page === 0 ? cvHighlights(props.lang).length - 1 : page - 1)), [props.lang]);
 
     const handlers = useSwipeable({
         onSwipedLeft: () => {
@@ -108,7 +108,7 @@ function Carousel(props: { lang: Dictionary }) {
         }, 4000);
 
         return () => clearInterval(slideInterval);
-    }, [autoSlide])
+    }, [autoSlide, next])
 
     return <div className="w-fit relative flex flex-col sm:rounded-3xl rounded-xl overflow-hidden"> {/*View box wrapper*/}
 

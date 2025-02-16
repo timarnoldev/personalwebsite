@@ -41,6 +41,7 @@
     "other": "Miscellaneous",
     "back": "Back",
     "learnmore": "Learn more",
+    "learnmoreaward": "Learn more about this award",
 
     "awardsHGSHeadline": "Hermann-Gutmann-Prize for AI-Research",
     "awardsHGSText": "I received this award for the development of an AI-based Evolution Simulation. Digital creatures based on neuronal networks evolve and adapt to their environment. The project was developed in the context of the Jugend Forscht competition.",

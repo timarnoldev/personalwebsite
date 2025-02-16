@@ -2,7 +2,6 @@ import Image from 'next/image'
 import SocialButtons from './SocialLinks'
 import Modal from './modal'
 import cvJufo from "@/content/cv/cv-jugend-forscht.json"
-import { Locale } from '@/i18n/i18n-config'
 import { Dictionary } from '@/i18n/get-dictionaries'
 
 function IntroductionEN() {

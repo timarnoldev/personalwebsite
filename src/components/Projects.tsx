@@ -5,6 +5,7 @@ import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
 import { Dictionary } from '@/i18n/get-dictionaries';
+import { Blog } from './articles/BlogEntry';
 
 const projects = (lang:Dictionary)=>{
     return [
@@ -41,7 +42,16 @@ const projects = (lang:Dictionary)=>{
     ];
 } 
 
-const ListItem = (item: any) => {
+type Project = {
+    id: number;
+    img: string;
+    title: string;
+    desc: string;
+    link: string;
+    blogContent: Blog;
+}
+
+const ListItem = (item: Project) => {
     return <Modal data={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
 
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">

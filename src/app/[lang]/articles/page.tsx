@@ -1,4 +1,4 @@
-import { ArrowLeft, ExternalLink } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
@@ -16,7 +16,7 @@ import colUblox from "@/content/collaboration/col-ublox.json"
 import colNordicSemi from "@/content/collaboration/col-nordicsemi.json"
 import colDeutscheBank from "@/content/collaboration/col-deutschebank.json"
 import technicalDetails from "@/content/other/technical-detail.json"
-import { getDictionary, TranslatedElement } from "@/i18n/get-dictionaries";
+import { getDictionary } from "@/i18n/get-dictionaries";
 import { i18n, Locale } from "@/i18n/i18n-config";
 import BlogEntryPreview from "@/components/articles/BlogEntryPreview";
 
