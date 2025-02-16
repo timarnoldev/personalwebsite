@@ -66,7 +66,7 @@ export default function Awards(props: { lang: Dictionary }) {
                         return <div key={index} className="flex flex-1 flex-col justify-between gap-4 max-w-[80vw]">
                             <div className="flex flex-col gap-3 sm:items-center">
                                 {
-                                    award.image && <div className="lg:m-10 m-5 max-w-100 bg-white shadow-2xl p-4 rounded-xl aspect-square flex flex-col items-center justify-center">
+                                    award.image && <div className="lg:m-10 m-5 max-w-100 bg-white shadow-2xl p-4 rounded-xl aspect-square flex flex-col items-center self-center justify-center">
                                         <Image src={award.image} alt="Logo" width={600} height={600} className="  "/>
                                     </div>
                                 }
