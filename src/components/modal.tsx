@@ -73,7 +73,6 @@ export default function Modal({ children, data }: ModalProps) {
             "aria-modal": "true",
             "aria-labelledby": "modal-title",
             "aria-describedby": "modal-description",
-            "aria-hidden": !open,
         })}
 
 
