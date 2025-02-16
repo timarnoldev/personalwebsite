@@ -50,15 +50,17 @@ export default async function page(props: { params: Promise<{ lang: Locale, arti
                 "@context": "https://schema.org/",
                 "@type": "Article",
                 "headline": "${language === "de" ? data.title_de ?? data.title : data.title}",
-                "image": "${data.image}",
+                "image": "https://tim-arnold.de/${data.image}",
                 "author": {
                     "@type": "Person",
-                    "name": "Tim Arnold"
+                    "name": "Tim Arnold",
+                    "url": "https://tim-arnold.de"
                 },
                 "mainEntityOfPage": {
                     "@type": "WebPage",
                     "@id": "https://tim-arnold.de"
                 },
+                "
                 "publisher": {
                     "@type": "Organization",
                     "name": "Tim Arnold",

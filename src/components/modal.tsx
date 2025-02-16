@@ -17,15 +17,17 @@ export default function Modal({ children, data }: ModalProps) {
 
     function close() {
         setRollup(true);
-        document.documentElement.style.overflow = "auto"
         setTimeout(() => {
             setOpen(false);
+            setTimeout(() => {
+                document.documentElement.style.overflowY = "auto"
+            }, 100);
         }, 500);
     }
 
     function openModal() {
         setOpen(true);
-        document.documentElement.style.overflow = "hidden"
+        document.documentElement.style.overflowY = "hidden"
 
         setRollup(true);
         setTimeout(() => {

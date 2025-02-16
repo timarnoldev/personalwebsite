@@ -17,12 +17,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Tim Arnold",
-  description: "Hello, I'm Tim Arnold. Nice to meet you! On my website I share my projects, awards and more. I'm always curious to hear new perspectives and exchange ideas.",
-  keywords: ["Tim Arnold", "Portfolio", "Software Developer", "Jugend forscht", "Germany", "Deutschland", "Munich", "München", "Obernburg", "Linkedin", "Tim", "Arnold", "tim arnold websites", "projects", "private", "personal"],
 
-};
+export async function generateMetadata({params}: {params?: Promise<{ lang: Locale }>}) {
+  const slangs = await params;
+  const dictionary = await getDictionary(slangs?.lang ?? "en");
+  return {
+    title: "Tim Arnold",
+    description: dictionary.metadescription,
+    keywords: ["Tim Arnold", "Portfolio", "Software Developer", "Jugend forscht", "Germany", "Deutschland", "Munich", "München", "Obernburg", "Linkedin", "Tim", "Arnold", "tim arnold websites", "projects", "private", "personal"],
+  };
+}
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
