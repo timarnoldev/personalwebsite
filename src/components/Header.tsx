@@ -5,6 +5,8 @@ import { ArrowRight, ExternalLink, Github, Globe, Linkedin, Mail, X } from 'luci
 import Image from 'next/image'
 import LanguageSelector from './LanguageSelector';
 import { useEffect, useState } from 'react';
+import timarnold from "../../public/timarnold.webp"
+import wave from "../../public/wave.webp"
 
 function smoothScroll (event: React.UIEvent<HTMLAnchorElement, UIEvent>) {
 
@@ -87,8 +89,8 @@ export default function Header(props: { lang: Dictionary }) {
                     }} tabIndex={0} htmlFor="toggleSocialMenu" className="peer hover:bg-herobackgroundhover group-has-checked:bg-herobackgroundhover p-2 rounded-2xl transition-colors group flex flex-row items-center cursor-pointer overflow-visible" title="Social-Menu" aria-haspopup> {/* Hero Image */}
                         <input type="checkbox" id="toggleSocialMenu" className='hidden' />
                         <div className='relative overflow-visible'>
-                            <Image src={"/timarnold.webp"} alt="Picture of Tim Arnold" title="Tim Arnold" width={75} height={75} className="rounded-full object-cover w-[75px] h-[75px] aspect-square shadow" />
-                            <Image src={"/wave.webp"} alt="Wave" width={30} height={30} className="group-hover:opacity-100 group-has-checked:opacity-100 opacity-0 transition-opacity absolute bottom-0 right-0 w-[30px] h-[30px] drop-shadow-2xl" />
+                            <Image src={timarnold} alt="Picture of Tim Arnold" title="Tim Arnold" width={75} height={75} className="rounded-full object-cover w-[75px] h-[75px] aspect-square shadow" />
+                            <Image src={wave} alt="Wave" width={30} height={30} className="group-hover:opacity-100 group-has-checked:opacity-100 opacity-0 transition-opacity absolute bottom-0 right-0 w-[30px] h-[30px] drop-shadow-2xl" />
 
                         </div>
                         <div className="sm:flex hidden flex-col gap-0.5 items-start justify-center">

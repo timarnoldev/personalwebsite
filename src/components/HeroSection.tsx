@@ -3,6 +3,7 @@ import SocialButtons from './SocialLinks'
 import Modal from './modal'
 import cvJufo from "@/content/cv/cv-jugend-forscht.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
+import mainimage from "../../public/mainimage.webp"
 
 function IntroductionEN() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
@@ -45,7 +46,7 @@ export default function HeroSection(props: { lang: Dictionary }) {
             </div>
         </div>
         <div className="sm:w-1/2 w-full flex justify-center items-center select-none">
-            <Image title="Tim Arnold" src={"/mainimage.webp"} alt="Hero Image" width={1400} height={1400} className="object-cover rounded-full w-2/3 shadow-2xl max-w-150" />
+            <Image title="Tim Arnold" src={mainimage} alt="Hero Image" width={1400} height={1400} className="object-cover rounded-full w-2/3 shadow-2xl max-w-150" />
         </div>
 
 

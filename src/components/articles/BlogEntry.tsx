@@ -14,7 +14,6 @@ export interface Blog {
 }
 export default function BlogEntry(props: { data: Blog, large?: boolean }) {
     const language = useContext(LanguageContext);
-    console.log(language)
     return <div className="w-full flex flex-col gap-4">
         {
             !props.large && props.data.image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto" key={"mainimage"} />
