@@ -1,17 +1,20 @@
 import { Plus } from 'lucide-react';
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Modal from './modal';
 import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
 import { Dictionary } from '@/i18n/get-dictionaries';
 import { Blog } from './articles/BlogEntry';
+import rekariImage from "../../public/projects/rekari.webp"
+import foosballImage from "../../public/projects/foosball.webp"
+import ekesImage from "../../public/projects/ekes.webp"
 
 const projects = (lang:Dictionary)=>{
     return [
         {
             id: 0,
-            img: "/projects/rekari.webp",
+            img: rekariImage,
             title: lang.rekari,
             desc: lang.rekariDesc,
             link: "https://www.rekari.de",
@@ -20,7 +23,7 @@ const projects = (lang:Dictionary)=>{
     
         {
             id: 2,
-            img: "/projects/foosball.webp",
+            img: foosballImage,
             title: lang.foosball,
             desc: lang.foosballDesc,
             link: "https://www.rekari.de",
@@ -30,7 +33,7 @@ const projects = (lang:Dictionary)=>{
     
         {
             id: 1,
-            img: "/projects/ekes.webp",
+            img: ekesImage,
             title: lang.ekes,
             desc: lang.ekesDesc,
             link: "https://www.rekari.de",
@@ -44,7 +47,7 @@ const projects = (lang:Dictionary)=>{
 
 type Project = {
     id: number;
-    img: string;
+    img: StaticImageData;
     title: string;
     desc: string;
     link: string;

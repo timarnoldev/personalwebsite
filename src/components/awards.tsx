@@ -3,6 +3,10 @@ import ekes from "@/content/projects/project-ekes.json";
 import Modal from "./modal";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import Image from "next/image";
+import hgsImage from "../../public/awards/hgs.webp"
+import fraunhoferImage from "../../public/awards/fraunhofer.webp"
+import gfbmImage from "../../public/awards/gfbm.webp"
+import hackathonImage from "../../public/awards/hackathon-fulda.svg"
 
 const awards = (lang:Dictionary) => {
     return [
@@ -10,7 +14,7 @@ const awards = (lang:Dictionary) => {
             name: lang.awardsHGSHeadline,
             date: "05/2021", 
             localation: "Vilsbiburg, Germany",
-            image: "/awards/hgs.webp",
+            image: hgsImage,
             text: lang.awardsHGSText,
             reference: "modal",
             modalData: ekes
@@ -19,7 +23,7 @@ const awards = (lang:Dictionary) => {
             name: lang.awardsFraunhoferHeadline,
             date: "05/2022",
             localation: "Munich, Germany",
-            image: "/awards/fraunhofer.webp",
+            image: fraunhoferImage,
             text: lang.awardsFraunhoferText,
             reference: "external",
             link: "https://www.linkedin.com/in/timarnold-/"
@@ -27,7 +31,7 @@ const awards = (lang:Dictionary) => {
         {
             name: lang.awardsGFBMHeadline,
             date: "11/2024",
-            image: "/awards/gfbm.webp",
+            image: gfbmImage,
             localation: "Berlin, Germany",
             text: lang.awardsGFBMText,
             reference: "external",
@@ -37,7 +41,7 @@ const awards = (lang:Dictionary) => {
         {
             name: lang.awardsFuldaHackathonHeadline,
             date: "10/2024",
-            image: "/awards/hackathon-fulda.svg",
+            image: hackathonImage,
             localation: "Fulda, Germany",
             text: lang.awardsFuldaHackathonText,
             reference: "external",

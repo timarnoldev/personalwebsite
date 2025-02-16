@@ -46,7 +46,7 @@ export default function HeroSection(props: { lang: Dictionary }) {
             </div>
         </div>
         <div className="sm:w-1/2 w-full flex justify-center items-center select-none">
-            <Image title="Tim Arnold" src={mainimage} alt="Hero Image" width={1400} height={1400} className="object-cover rounded-full w-2/3 shadow-2xl max-w-150" />
+            <Image title="Tim Arnold" src={mainimage} priority={true} alt="Hero Image" width={1400} height={1400} className="object-cover rounded-full w-2/3 shadow-2xl max-w-150" />
         </div>
 
 
