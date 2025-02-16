@@ -31,6 +31,8 @@ export function middleware(request: NextRequest) {
      [
        '/manifest.json',
        '/favicon.ico',
+       '/icon.png',
+       '/apple-icon.png',
        '/mainimage.webp',
        '/timarnold.webp',
        '/wave.webp',
