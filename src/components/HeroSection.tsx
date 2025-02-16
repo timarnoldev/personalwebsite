@@ -10,7 +10,7 @@ function IntroductionEN() {
         a <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">STEM coach at the Walter-Reis-Institute</a>
         , focusing on AI, full-stack development and automation — especially in
         hardware-related <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">projects</a>.
-        Through internships at companies like <a href="https://www.linkedin.com/in/timarnold-/" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
+        Through internships at companies like <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
         I have also successfully competed in <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">well-known competitions</div></Modal>.
         I regularly attend workshops and enjoy working on <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">personal projects</a> to apply my knowledge in practice.
     </div>
@@ -22,7 +22,7 @@ function IntroductionDE() {
         als <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">MINT-Tutor am Walter-Reis-Institut </a>
         tätig und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
         hardwarebezogenen <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">Projekten</a>.
-        Durch Praktika bei Unternehmen wie <a href="https://www.linkedin.com/in/timarnold-/" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
+        Durch Praktika bei Unternehmen wie <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
         Erfolgreich habe ich an <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></Modal> teilgenommen.
         Außerdem besuche ich Workshops und arbeite gerne an <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">persönlichen Projekten</a>, um mein Wissen in der Praxis anzuwenden.
     </div>

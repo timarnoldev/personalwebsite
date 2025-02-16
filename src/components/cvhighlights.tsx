@@ -43,7 +43,7 @@ const cvHighlights = (lang:Dictionary) => {
     
         {
             id: 3,
-            img: "/projects/ekes.webp",
+            img: "/cv/abitur.webp",
             headline: lang.cvAbiturHeadline,
             text: lang.cvAbiturText,
             blogPost: abitur,

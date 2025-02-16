@@ -24,8 +24,8 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-function Seperator(props: { text: string}) {
-    return <div className="mx-5 sm:mx-0 flex items-center gap-2 mt-10 mb-5 w-full self-center">
+function Seperator(props: { text: string, id: string }) {
+    return <div id={props.id} className="mx-5 sm:mx-0 flex items-center gap-2 mt-10 mb-5 w-full self-center">
         <div className="w-1/3 h-1 bg-gray-600 rounded"></div>
         <h2 className="text-xl font-bold text-gray-600 text-center">{props.text}</h2>
         <div className="w-1/3 h-1 bg-gray-600 rounded"></div>
@@ -46,16 +46,16 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
 
         <div className="flex flex-col w-[100vw] items-center">
             <div className="flex lg:w-[70%] w-[90%] flex-col gap-8 ">
-                <Seperator text={dictionary.recentProjects}></Seperator>
+                <Seperator id="recentprojects" text={dictionary.recentProjects}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={rekariBlog} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={foosballBlog} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={ekesBlog} ></BlogEntryPreview>
-                <Seperator text={dictionary.experienceandsuccess}></Seperator>
+                <Seperator id="experienceandsuccess" text={dictionary.experienceandsuccess}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={jufoBlog} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={isefBlog} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={stemtutor} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={abitur} ></BlogEntryPreview>
-                <Seperator text={dictionary.collaborationSection}></Seperator>
+                <Seperator id="collaborationSection" text={dictionary.collaborationSection}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colST} ></BlogEntryPreview>
@@ -65,7 +65,7 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <BlogEntryPreview lang={language.lang} data={colUblox} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colDeutscheBank} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colASC} ></BlogEntryPreview>
-                <Seperator text={dictionary.other}></Seperator>
+                <Seperator id="other" text={dictionary.other}></Seperator>
                 <BlogEntryPreview lang={language.lang} data={technicalDetails} ></BlogEntryPreview>
 
             </div>
