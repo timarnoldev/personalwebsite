@@ -20,10 +20,26 @@
           "text_de": "Einen großen Meilenstein haben wir beim 58. Bundeswettbewerb Jugend forscht in Bremen erreicht. In der Kategorie Technik präsentierten wir Rekari – eine innovative Plattform, die die Planung, Durchführung und Datenanalyse von Drohneneinsätzen vereinfacht. Die Jury war beeindruckt, wie Rekari Echtzeit-Kollaboration, automatisierte Missionsplanung und KI-basierte Analytik integriert, um Drohnenoperationen effizienter zu gestalten. Dabei können unteranderem Rehkitzretter, Dokumentationsteams, sowie die Feuerwehr gleichermaßen unsere Platform nutzen, um ihre Effizienz am Einsatzort zu steigern."
         },
         {
+          "type": "text",
+          "text_de": "Jugend forscht hat uns dabei die Möglichkeit gegeben, das Projekt einer fachkundigen Jury zu präsentieren und wertvolles Feedback von ihr zu erhalten. Neben der eigentlichen Präsentation war der Bundeswettbewerb der 58. Wettbewerbsrunde ein für uns unglaublich spannendes Event. Engagierte Jugendliche aus ganz Deutschland kamen zusammen, um über ihre Ideen und Innovationen zu sprechen und sich auszutauschen. Auch viele Vertreter bekannter Firmen waren vor Ort, die mit uns über unser Projekt in Kontakt gekommen sind und eine wertvolle Netzwerkmöglichkeit boten.",
+          "text": "Jugend forscht gave us the opportunity to present the project to an expert jury and receive valuable feedback from them. In addition to the actual presentation, the national competition of the 58th round was an incredibly exciting event for us. Committed young people from all over Germany came together to talk about their ideas and innovations and to exchange ideas. Many representatives from well-known companies were also present, who came into contact with us through our project and provided a valuable networking opportunity."
+        },
+        {
             "type": "image",
             "src": "/content/jufo-presented-to-polticians.webp",
             "text": "The Rekari Drone gets presented to German politicians",
             "text_de": "Die Rekari-Drohne wird deutschen Politikern vorgestellt"
+        },
+        {
+          "type": "text",
+          "text_de": "Nach dem offiziellen Teil in der Bremer ÖVB-Arena hat Jugend forscht zum Rahmenprogramm eingeladen. Europas bester Beatboxer Robeat war zu Gast und zeigte uns einige seiner besten Tricks, mit denen er schon einige Erfolge erzielt hatte. Ich persönlich fand die Abende mit Jugend forscht sehr gelungen und sie haben die Veranstaltung wunderbar abgerundet.",
+          "text": "After the official part in Bremen's ÖVB-Arena, Jugend forscht invited us to the supporting programme. Europe's best beatboxer Robeat was our guest and showed us some of his best tricks, with which he had already achieved success. I personally found the evenings with Jugend forscht very successful and they rounded off the event wonderfully."
+        },
+        {
+          "type": "image",
+          "src": "/content/jufo-robeat.webp",
+          "text": "Beatboxer Robeat at the Jugend forscht event",
+          "text_de": "Beatboxer Robeat beim Jugend forscht-Event"
         },
         {
             "type": "text",
