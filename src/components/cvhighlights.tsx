@@ -72,7 +72,7 @@ function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
         </div>
 
         <div className="cvGradient h-full w-full absolute -z-10" />
-        <div className="absolute h-fullrounded-3xl -z-20">
+        <div className="absolute h-full rounded-3xl -z-20">
             <Image src={section.img} alt="Image" width={3000} height={1333} className="aspect-[1.5]  object-cover" />
         </div>
 

@@ -76,7 +76,7 @@ export default function Header(props: { lang: Dictionary }) {
             </div>
         }
 
-        <nav className="bg-herobackground shadow-lg w-full sm:h-24 h-22 flex items-center   overscroll-y-none"> {/* Header */}
+        <nav className="bg-herobackground shadow-lg w-full sm:h-24 h-22 flex items-center overscroll-y-none "> {/* Header */}
 
             <div className="my-3 sm:mx-10 mx-3 flex-grow flex flex-row items-center justify-between">
 
