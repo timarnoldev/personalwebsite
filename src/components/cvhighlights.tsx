@@ -73,7 +73,7 @@ function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
 
         <div className="cvGradient h-full w-full absolute -z-10" />
         <div className="absolute h-full rounded-3xl -z-20">
-            <Image src={section.img} alt="Image" width={3000} height={1333} className="aspect-[1.5]  object-cover" />
+            <Image src={section.img} alt="Image" width={3000} height={1333} className="aspect-[1.5] object-cover" />
         </div>
 
 
@@ -126,7 +126,7 @@ function Carousel(props: { lang: Dictionary }) {
 
                 {
                     cvHighlights(props.lang).map(highlight => {
-                        return <div key={highlight.id} className="flex h-full relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
+                        return <div key={highlight.id} className="flex h-full shrink-0 relative flex-col self-center justify-end rounded-3xl xl:w-[80vw] w-[95vw] aspect-[1.5] max-w-[1160px]">
 
 
                             <CVSection lang={props.lang} section={highlight} ></CVSection>
