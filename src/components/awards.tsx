@@ -54,7 +54,7 @@ const awards = (lang:Dictionary) => {
 export default function Awards(props: { lang: Dictionary }) {
     return <div className="flex flex-col w-[99dvw] items-center gap-1 mb-20 ">
 
-        <h2 className="mt-12 3xl:self-center sm:ml-12 ml-6 text-5xl text-[#2e2e2e] font-bold self-start">
+        <h2 className="mt-12 3xl:self-center sm:ml-12 ml-6 md:text-5xl text-4xl text-[#2e2e2e] font-bold self-start">
             {props.lang.furtherAwardsAndAchievements}
         </h2>
 
