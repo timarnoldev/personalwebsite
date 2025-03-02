@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Website - Tim Arnold
+
+Welcome to the repository for my personal website, [tim-arnold.de](https://tim-arnold.de). This website is built using Next.js and Tailwind CSS, providing a fast and modern user experience.
+
+## Features
+
+- 🚀 **Next.js** for a seamless React-based experience
+- 🎨 **Tailwind CSS** for responsive and efficient styling
+- 🔍 **SEO Optimized** for better search engine visibility
+- ⚡ **Fast Performance** with static site generation (SSG) and server-side rendering (SSR)
+- 📱 **Fully Responsive** design to support all screen sizes
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Ensure you have the following installed:
+- [Bun](https://bun.sh/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/timarnoldev/personalwebsite
+   cd personalwebsite
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Install dependencies:
+   ```sh
+   bun install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
+   ```sh
+   bun run dev
+   ```
 
-## Learn More
+   The website will be available at `http://localhost:3000/`
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is deployed using Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Feedback
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you find any issues or have suggestions, feel free to open an issue.
+You can also contact me at [hello@tim-arnold.de](mailto:hello@tim-arnold.de)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is **private** and not licensed for use, modification, or distribution by others.
+
+## Connect
+
+Feel free to reach out or follow me:
+- 🌐 Website: [tim-arnold.de](https://tim-arnold.de)
+- 💼 GitHub: [github.com/timarnoldev](https://github.com/timarnoldev)
+- 🐦 LinkedIn: [@timarnold-](https://linkedin.com/in/timarnold-)
+
+---
+
+Thank you for visiting my personal website! 🎉
+
