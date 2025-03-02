@@ -57,10 +57,8 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo blog={nordic} src={nordicImage} alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
                 <Logo blog={ublox} src={ubloxImage} alt="ublox Logo - Trademark of ublox" height={59.99} width={153.59}/>
                 <Logo blog={stemtutor} src={stemtutorImage} alt="Walter Reis Fundation Logo - Trademark of walter reis fundation" height={59.99} width={180.48}/>
-              {/*  <Logo src="/logos/hss.svg" alt="Hanns Seidel Fundation Logo - Trademark of hanns seidel fundation" height={59.99}  width={104.37}/> */}
                 <Logo blog={jufo} src={jufoImage} alt="Jugend forscht - Trademark of Jugend forscht" height={30.77} enlarge/>
                 <Logo blog={isef} src={isefImage} alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
-
           </Marquee>
         </div>
     </div>

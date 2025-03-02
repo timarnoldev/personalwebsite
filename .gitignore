@@ -10,6 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 bun.lockb
+bun.lock
 
 # testing
 /coverage
