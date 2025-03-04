@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tim-arnold.de
+
+# Sitemaps
+Sitemap: https://tim-arnold.de/sitemap.xml
