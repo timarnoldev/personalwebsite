@@ -36,8 +36,8 @@ export function middleware(request: NextRequest) {
        '/mainimage.webp',
        '/timarnold.webp',
        '/wave.webp',
-       'sitemap.xml',
-       'sitemap-0.xml'
+       '/sitemap.xml',
+       '/sitemap-0.xml'
      ].includes(pathname.toLowerCase())
    )
      return
