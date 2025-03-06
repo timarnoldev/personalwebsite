@@ -58,7 +58,6 @@ export default async function page(props: { params: Promise<{ lang: Locale, arti
                     "@type": "WebPage",
                     "@id": "https://tim-arnold.de"
                 },
-                "
                 "publisher": {
                     "@type": "Organization",
                     "name": "Tim Arnold",
