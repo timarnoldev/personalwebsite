@@ -7,10 +7,15 @@ import { getDictionary } from "@/i18n/get-dictionaries";
 import { Locale } from "@/i18n/i18n-config";
 
 
+export async function generateStaticParams() {
+  return [{ lang: "de" }, { lang: "en" }];
+}
+
 
 export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
 }) {
+
 
   
   const { lang } = await props.params;
