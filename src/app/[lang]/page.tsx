@@ -11,6 +11,8 @@ export async function generateStaticParams() {
   return [{ lang: "de" }, { lang: "en" }];
 }
 
+export const dynamicParams = false 
+
 
 export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
