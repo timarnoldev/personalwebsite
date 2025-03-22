@@ -11,7 +11,7 @@ export function LanguageProvider({ children, lang }: { children: React.ReactNode
 
     useEffect(()=>{
         posthog.capture("language_used", {lang})
-    },[posthog]);
+    },[posthog, lang]);
 
     
   return (
