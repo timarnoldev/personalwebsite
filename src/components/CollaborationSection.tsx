@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image'
-import Modal from './modal'
 import { Blog } from './articles/BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"
 import jufo from "@/content/cv/cv-jugend-forscht.json"
@@ -28,13 +27,14 @@ import ubloxImage from "../../public/logos/ublox.svg"
 import stemtutorImage from "../../public/logos/walterreisstiftung.svg"
 import jufoImage from "../../public/logos/jugendforscht.svg"
 import isefImage from "../../public/logos/societyforscience.svg"
+import BlogModal from './BlogModal'
 
 
-function Logo(props: { src: StaticImageData, alt: string, enlarge?: boolean, height: number, width?: number, blog?:Blog}) {
+function Logo(props: { src: StaticImageData, alt: string, enlarge?: boolean, height: number, width?: number, blog:Blog}) {
     if (props.enlarge) {
-        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer self-center mr-16" /></Modal>
+        return <BlogModal blog={props.blog}><Image src={props.src} height={props.height} width={props.width??280} alt={props.alt} className=" shrink-0 max-h-20 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer self-center mr-16" /></BlogModal>
     } else {
-        return <Modal data={props.blog}><Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer self-center mr-16" /></Modal>
+        return <BlogModal blog={props.blog}><Image src={props.src} height={props.height} width={props.width??200} alt={props.alt} className=" shrink-0 max-h-15 opacity-40 hover:opacity-100 transition-all duration-500 hover:brightness-100 brightness-0 contrast-100 cursor-pointer self-center mr-16" /></BlogModal>
     }
 }
 

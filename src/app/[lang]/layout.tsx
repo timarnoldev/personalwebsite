@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { i18n, Locale } from "@/i18n/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionaries";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { PostHogProvider } from "@/components/PostHogProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,24 @@ export async function generateMetadata({params}: {params?: Promise<{ lang: Local
   return {
     title: "Tim Arnold",
     description: dictionary.metadescription,
-    keywords: ["Tim Arnold", "Portfolio", "Software Developer", "Jugend forscht", "Germany", "Deutschland", "Munich", "München", "Obernburg", "Linkedin", "Tim", "Arnold", "tim arnold websites", "projects", "private", "personal"],
+    keywords: [
+      "Tim Arnold",
+      "Portfolio",
+      "Software Developer",
+      "Jugend forscht",
+      "Germany",
+      "Deutschland",
+      "Munich",
+      "München",
+      "Obernburg",
+      "Linkedin",
+      "Tim",
+      "Arnold",
+      "tim arnold websites",
+      "projects",
+      "private",
+      "personal"
+    ],
   };
 }
 
@@ -47,8 +65,7 @@ export default async function RootLayout({
   return (
     <html lang={slangs?.lang ?? "en"}>
       <head>
-      
-      <script type="application/ld+json">
+        <script type="application/ld+json">
           {
            `{
             "@context": "https://schema.org/",
@@ -62,23 +79,20 @@ export default async function RootLayout({
             "https://tim-arnold.de"
             ]  
            }`
-        }
+          }
         </script>
         <link rel="alternate" hrefLang="en" href="https://tim-arnold.de/en" />
         <link rel="alternate" hrefLang="de" href="https://tim-arnold.de/de" />
         <link rel="alternate" href="https://tim-arnold.de/en" hrefLang="x-default" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <LanguageProvider lang={slangs?.lang ?? "en"}>
-          <Header lang={dictionary} />
-
-          {children}
-          <Footer lang={dictionary} />
-
-        </LanguageProvider>
-
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <PostHogProvider>
+          <LanguageProvider lang={slangs?.lang ?? "en"}>
+            <Header lang={dictionary} />
+            {children}
+            <Footer lang={dictionary} />
+          </LanguageProvider>
+        </PostHogProvider>
       </body>
     </html>
   );

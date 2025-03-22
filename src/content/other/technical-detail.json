@@ -45,6 +45,16 @@
             "text": "GitHub: @timarnoldev",
             "text_de": "GitHub: @timarnoldev",
             "href": "https://github.com/timarnoldev"
+        },
+        {
+            "type": "headline",
+            "text:": "Usage of Posthog",
+            "text_de": "Einsatz von Posthog"
+        },
+        {
+            "type": "text",
+            "text_de": "Ich nutze PostHog, um anonyme Nutzungsdaten meiner Website zu analysieren – ganz ohne Cookies oder persönliche Daten. Das Open-Source-Tool hilft mir, die Benutzererfahrung zu optimieren, indem es aggregierte Informationen und aufgetretene Fehler erfasst. Die Daten werden DSGVO-konform in einem deutschen Rechenzentrum verarbeitet.",
+            "text": "I use PostHog to analyze anonymous usage data of my website - without cookies or personal data. The open-source tool helps me to optimize the user experience by capturing aggregated information and errors that occurred. The data is processed in a German data center in compliance with the GDPR."
         }
 
     ]

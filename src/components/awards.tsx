@@ -1,12 +1,12 @@
 import { Dictionary } from "@/i18n/get-dictionaries";
 import ekes from "@/content/projects/project-ekes.json";
-import Modal from "./modal";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import Image from "next/image";
 import hgsImage from "../../public/awards/hgs.webp"
 import fraunhoferImage from "../../public/awards/fraunhofer.webp"
 import gfbmImage from "../../public/awards/gfbm.webp"
 import hackathonImage from "../../public/awards/hackathon-fulda.svg"
+import BlogModal from "./BlogModal";
 
 const awards = (lang:Dictionary) => {
     return [
@@ -86,7 +86,7 @@ export default function Awards(props: { lang: Dictionary }) {
                             </div>
                            
                             {
-                                    award.reference === "modal" && <Modal data={award.modalData}><div className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmoreaward} <ExternalLink/></div></Modal>
+                                    award.reference === "modal" && <BlogModal blog={award.modalData!}><div className="flex flex-row gap-2 items-center cursor-pointer hover:underline underline-offset-4 font-bold w-fit">{props.lang.learnmoreaward} <ExternalLink/></div></BlogModal>
                                 }
 
                                 {

@@ -43,6 +43,8 @@ export function middleware(request: NextRequest) {
    )
      return
 
+     if(pathname.startsWith("/ingest")) return;
+
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>

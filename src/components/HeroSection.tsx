@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import SocialButtons from './SocialLinks'
-import Modal from './modal'
 import cvJufo from "@/content/cv/cv-jugend-forscht.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 import mainimage from "../../public/mainimage.webp"
+import BlogModal from './BlogModal'
 
 function IntroductionEN() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
@@ -12,7 +12,7 @@ function IntroductionEN() {
         and have a keen interest in AI, full-stack development and automation — especially in
         hardware-related <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">projects</a>.
         Through internships at companies such as <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
-        I have successfully competed in <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">renowned competitions</div></Modal>.
+        I have successfully competed in <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">renowned competitions</div></BlogModal>.
         Additionally, I regularly attend workshops and enjoy working on <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">personal projects</a> to apply my knowledge in practice.
     </div>
 }
@@ -24,7 +24,7 @@ function IntroductionDE() {
         tätig und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
         hardwarebezogenen <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">Projekten</a>.
         Durch Praktika bei Unternehmen wie <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
-        Erfolgreich habe ich an <Modal data={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></Modal> teilgenommen.
+        Erfolgreich habe ich an <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></BlogModal> teilgenommen.
         Außerdem besuche ich Workshops und arbeite gerne an <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">persönlichen Projekten</a>, um mein Wissen in der Praxis anzuwenden.
     </div>
 }
