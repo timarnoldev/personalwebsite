@@ -1,0 +1,47 @@
+{
+    "title": "Long Troubleshooting and Beginning of the Control Software",
+    "date_de": "10. Juni 2024",
+    "date": "June 10, 2024",
+    "slug": "long-troubleshooting-and-beginning-of-the-control-software",
+    "title_de": "Lange Fehlersuche und Beginn der Steuerungs-Software",
+    "image": "/projects/footballai/image_2.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Wie sich herausgestellt hat, gab es mit der Ansteuerung, wie sie im letzten Post angesprochen wurde, noch ein größeres Problem. Bei einigen Bewegungen ist es passiert, dass der Referenzpunkt verloren gegangen ist. Sprich, der Controller wusste nicht mehr, wo sich der Spieler genau befindet. Das Resultat waren ungewollte Sprünge und verfehlte Bälle.",
+            "text": "As it turned out, there was an even bigger problem with the control, as mentioned in the last post. With some movements, the reference point was lost. In other words, the controller no longer knew exactly where the player was. The result was unwanted jumps and missed balls."
+        },
+        {
+            "type": "text",
+            "text_de": "Zunächst war ich sicher, dass es sich dabei um einen Softwarefehler handelt. Sei es eine falsche Motoransteuerung oder ein Problem mit dem Interrupt, der die Software unterbrechen soll, sobald der verbaute Encoder ein Puls ausgibt. Diese Pulse werden (normalerweise) zuverlässig vom eingesetzten Encoder ausgegeben, wenn der Motor den Spieler verschiebt.",
+            "text": "Initially, I was sure that this was a software error. Be it incorrect motor control or a problem with the interrupt that is supposed to interrupt the software as soon as the built-in encoder outputs a pulse. These pulses are (usually) reliably output by the encoder used when the motor moves the player."
+        },
+        {
+            "type": "text",
+            "text_de": "Durch viele Tests konnte ich ermitteln, dass es einen Zusammenhang gibt, zwischen den Sprüngen, bei denen der Controller die Referenzposition verliert, zu Bewegungen um die eigene Achse, wenn zum Beispiel ein Schuss ausgeführt werden soll.",
+            "text": "Through many tests, I was able to determine that there is a connection between the jumps in which the controller loses the reference position and movements around its own axis, for example when a shot is to be executed."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_2.webp",
+            "text_de": "Durch die Rotation verursachten Spannungszusammenbruch",
+            "text": "Voltage breakdown caused by rotation"
+        },
+        {
+            "type": "text",
+            "text_de": "Mein genutztes Labornetzteil schafft es also nicht, den kurzzeitig benötigten Strom für das Servo zu liefern, wodurch auch die Spannungsversorgung des Encoders zusammenbricht, der auch mit diesem Netzteil versorgt wird. Daher werde ich jetzt das Netzteil gegen ein passendes austauschen. Auch das war eine gewisse Herausforderung, da die benötigte Spannung von 8,4 V alles andere als ein Standard ist...",
+            "text": "My lab power supply is therefore not able to supply the briefly required current for the servo, which also causes the power supply to the encoder, which is also supplied with this power supply, to collapse. I will therefore now replace the power supply with a suitable one. That was also a certain challenge, since the required voltage of 8.4 V is anything but standard..."
+        },
+        {
+            "type": "text",
+            "text_de": "Darüberhinaus bin ich jetzt auch dabei die finale PC-Steuerungssoftware zu schreiben. Bisher haben die einzelnen Komponenten als Proof-of-concept in Python existiert. Jetzt werden alle Bausteine kombiniert, sodass ich (hoffentlich) im nächsten Blogpost bereits den ersten Schuss zeigen kann 😉.",
+            "text": "Furthermore, I am now also writing the final PC control software. So far, the individual components have existed as a proof-of-concept in Python. Now all the building blocks are combined so that (hopefully) in the next blog post I can already show the first shot 😉."
+        },
+        {
+            "type": "text",
+            "text_de": "Das Ziel ist es, dass das System auf dem Computer mit 200Hz laufen kann, sodass die Latenz möglichst gering ist. Mit den ersten Tests scheint dieses Ziel realistisch. Ich bin sehr auf die ersten vollständigen Tests gespannt.",
+            "text": "The goal is for the system to be able to run at 200Hz on the computer so that the latency is as low as possible. With the first tests, this goal seems realistic. I am very excited about the first complete tests."
+        }
+    ]
+}

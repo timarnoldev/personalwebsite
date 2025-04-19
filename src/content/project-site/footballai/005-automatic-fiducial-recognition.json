@@ -1,0 +1,54 @@
+{
+    "title": "Automatic Playing Field Recognition using Fiducials",
+    "date_de": "31. Oktober 2023",
+    "date": "October 31, 2023",
+    "slug": "automatic-playing-field-recognition-using-fiducials",
+    "title_de": "Automatische Spielfelderkennung mithilfe von Fiducials",
+    "image": "/projects/footballai/image_5.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Obwohl die Kamera durch zwei Rohre, wie im vorherigen Post beschrieben, befestigt ist, können Vibrationen doch das Sichtfeld verschieben. Für die Auswertung ist dies allerdings fatal, da die genau Position der Männchen des Gegners und des Balls nicht mehr mit der gemessenen Position übereinstimmen. Der Roboter würde so beispielsweise am Ball \"vorbeispielen\".",
+            "text": "Although the camera is attached by two tubes, as described in the previous post, vibrations can still shift the field of view. However, this is fatal for the evaluation, as the exact position of the opponent's mannequins and the ball no longer matches the measured position. For example, the robot would \"miss\" the ball."
+        },
+        {
+            "type": "text",
+            "text_de": "Um dieses Problem zu lösen, habe ich an den Ecken des Spielfelds jeweils einen sog. Fiducial plaziert. Ein solcher Marker kann mit einer Identifikationsnummer eindeutig erkannt werden. Aufgrund der Größe habe ich mich hier für Fiducials des Typs \"ArUco\" entschieden.",
+            "text": "To solve this problem, I placed a so-called fiducial at each corner of the playing field. Such a marker can be uniquely identified with an identification number. Due to the size, I decided to use fiducials of the type \"ArUco\" here."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_5.webp",
+            "text_de": "ArUco-Marker am Rande des Spielfelds",
+            "text": "ArUco markers on the edge of the playing field"
+        },
+        {
+            "type": "text",
+            "text_de": "Der große Vorteile dieser Marker ist die einfache und schnelle Klassifizierung mithilfe einer optischen Kamera. So kann nicht nur die Position des Fiducials im Bild, sondern auch Attribute, wie die 3D-Rotation festgestellt werden. Sind die Lageinformationen der vier Marker am Tischkicker bekannt, kann das Bild so transformiert werden, dass es die Realität maßstabsgetreu wiedergibt.",
+            "text": "The great advantage of these markers is the simple and fast classification using an optical camera. In this way, not only the position of the fiducial in the image, but also attributes such as the 3D rotation can be determined. If the position information of the four markers on the foosball table is known, the image can be transformed in such a way that it reflects reality true to scale."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_6.webp",
+            "text_de": "ArUco-Marker mit der ID 7",
+            "text": "ArUco marker with ID 7"
+        },
+        {
+            "type": "text",
+            "text_de": "Durch die bekannten Abmessungen kann nun jedes Frame der Kamera so angepasst werden, dass die Mitte des Spielfelds auch tatsächlich die Mitte des Fotos ist. Nur so kann das Tracking und die darauf folgende Reaktion des Roboters auch akkurat stattfinden.",
+            "text": "Due to the known dimensions, each frame of the camera can now be adjusted so that the middle of the playing field is actually the middle of the photo. This is the only way the tracking and the subsequent reaction of the robot can take place accurately."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_7.webp",
+            "text_de": "Korrekt ausgeschnittenes Spielfeld",
+            "text": "Correctly cut playing field"
+        },
+        {
+            "type": "text",
+            "text_de": "Dadurch, dass sich das System auch frameübergreifend die genauen Position der Fiducials merkt, stellt es kein Problem dar, sollte der menschliche Spieler beispielsweise mit seiner Hand ein Marker verdecken. In diesem Fall werden einfach die alten Informationen solange benutzt, bis wieder eine aktualisierte Position messbar ist.",
+            "text": "The fact that the system also remembers the exact position of the fiducials across frames means that it is not a problem if the human player covers a marker with their hand, for example. In this case, the old information is simply used until an updated position can be measured again."
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "title": "Development of a PCB for Moving the Players",
+    "date_de": "28. Dezember 2023",
+    "date": "December 28, 2023",
+    "slug": "development-of-a-board-for-moving-the-players",
+    "title_de": "Entwicklung einer Platine zur Bewegung der Spieler",
+    "image": "/projects/footballai/image_3.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Um ein Männchen zu rotieren bzw. linear nach links und rechts zu bewegen, ist eine komplexes Zusammenspiel zwischen einem Motor, dem Drehgeber und einem Servomotor erforderlich. Das Ganze soll mit einem Microcontroller überwacht und gesteuert werden, der jeweils für eine Stange mit ihren Spielern zuständig ist. Wie bereits im ersten Blogpost gezeigt, wird von einer Seite eine Gewindestange im Inneren der Tischkickerstange rotiert. Dadurch kann sich das Männchen bewegen. Für diese Bewegung ist ein Motor erforderlich, der sowohl schnelle Bewegungen durchführen kann, als auch auf den Millimeter genau gebremst werden kann.",
+            "text": "In order to rotate a mannequin or move it linearly to the left and right, a complex interaction between a motor, the rotary encoder and a servo motor is required. The whole thing is to be monitored and controlled with a microcontroller, which is responsible for each bar with its players. As already shown in the first blog post, a threaded rod is rotated inside the foosball rod from one side. This allows the mannequin to move. For this movement, a motor is required that can perform fast movements and can also be braked precisely to the millimeter."
+        },
+        {
+            "type": "text",
+            "text_de": "Damit mein Programm später ermitteln kann, wo sich die Männchen befinden, ist direkt mit dem Motor ein inkrementeller Drehgeber, ein sog. Encoder, verbunden. Dieser gibt beim Feststellen einer Drehung je nach Richtung einen Impuls. Somit kann die genaue Position durch Zählen der Impulse bestimmt werden. Mehr zum Aufbau dieser Hardware in einem der nächsten Blogposts.",
+            "text": "So that my program can later determine where the mannequins are, an incremental rotary encoder, a so-called encoder, is directly connected to the motor. Depending on the direction, this outputs a pulse when a rotation is detected. The exact position can therefore be determined by counting the pulses. More about the structure of this hardware in one of the next blog posts."
+        },
+        {
+            "type": "text",
+            "text_de": "Um einen Schuss auszuführen, müssen sich die Männchen um die eigenen Achse drehen können. Dafür nutze ich ein High-Speed Servomotor, wie er auch in RC-Rennautos zum Einsatz kommt.",
+            "text": "To execute a shot, the mannequins must be able to rotate around their own axis. For this I use a high-speed servo motor, as it is also used in RC racing cars."
+        },
+        {
+            "type": "text",
+            "text_de": "Die Softwareentwicklung setzt einen zuverlässigen Hardwareaufbau voraus. Deswegen haben ich mich für die Konstruktion einer eigenen PCB bzw. Platine entschieden. An diese können übersichtlich alle Aktoren und Sensoren angeschlossen werden. Über einen USB-Anschluss kann der Datenaustausch mit dem Computersystem sichergestellt werden, das später die Spielzüge aus der Auswertung der Kameradaten errechnet. Das Herzstück der Platine ist der Controller \"rp2040\" der Raspberry Pi Foundation.",
+            "text": "Software development requires a reliable hardware setup. That's why I decided to construct my own PCB. All actuators and sensors can be connected to this clearly. The data exchange with the computer system, which later calculates the moves from the evaluation of the camera data, can be ensured via a USB connection. The heart of the board is the rp2040 controller from the Raspberry Pi Foundation."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_3.webp",
+            "text_de": "Um den Mikrocontroller (rp2040) herum sind auf dem Schaltplan die weiteren Komponenten der PCB platziert",
+            "text": "Around the microcontroller (rp2040) are placed on the circuit diagram the other components of the PCB"
+        },
+        {
+            "type": "text",
+            "text_de": "Als der Schaltplan fertiggestellt war, mussten alle eingesetzten Komponenten auf einer Platine so Platz finden, dass die geplanten Verbindungsleitungen die sog. Traces auch tatsächlich physikalisch gelegt werden können. Denn aufgrund des Herstellungsverfahrens der Platine ist es nicht möglich, dass sich Leiterbahnen auf einer Ebene kreuzen, ohne dass sie eine elektrische Verbindung haben.",
+            "text": "When the circuit diagram was finished, all the components used had to find space on a board in such a way that the planned connection lines, the so-called traces, could actually be laid physically. Because due to the manufacturing process of the board, it is not possible for conductor tracks to cross on one level without them having an electrical connection."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_4.webp",
+            "text_de": "Das finale Layout der Platine, wobei die roten Komponenten auf der Ober- und die blauen auf der Unterseite zu finden sind",
+            "text": "The final layout of the board, where the red components are on the top and the blue ones on the bottom"
+        },
+        {
+            "type": "text",
+            "text_de": "Nachdem ich die Platine noch einige Male überprüft hatte, konnte sie zur Fertigung abgesendet werden. Die Herausforderung ist, dass sobald das Layout zur Produktion an eine Spezialfirma in Auftrag gegeben ist, können keine Veränderungen mehr vorgenommen werden. Selbst der kleinste Fehler kann im Extremfall zur Unbenutzbarkeit der Platine führen. Wäre beispielsweise die Belegung des Steckers (unten Links im Bild) vertauscht, ist es nur sehr schwierig möglich Leiterbahnen wieder aufzuritzen und Verbindungen zu ändern.",
+            "text": "After I had checked the board a few more times, it could be sent for production. The challenge is that as soon as the layout is commissioned to a specialist company for production, no changes can be made. Even the smallest error can, in extreme cases, render the board unusable. For example, if the pin assignment of the connector (bottom left in the picture) was swapped, it is only very difficult to scratch conductor tracks again and change connections."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_23.webp",
+            "text_de": "Eingebaute Platine mit der links zu sehenden Kabelbrücke für den Pinbelegungsfehler",
+            "text": "Built-in board with the cable bridge for the pin assignment error visible on the left"
+        },
+        {
+            "type": "text",
+            "text_de": "Im nächsten Schritt muss eine embedded Software entwickelt werden, die den Befehl zum Schuss des Balls entgegennimmt und die Ansteuerung des Motors übernimmt. Diese muss durch das Auslesen des Encoders und die vorgegebene Sollposition durch den Tischkickercomputer ermittelt werden.",
+            "text": "In the next step, embedded software must be developed that receives the command to shoot the ball and takes over the control of the motor. This must be determined by reading out the encoder and the specified target position by the foosball computer."
+        }
+    ]
+}

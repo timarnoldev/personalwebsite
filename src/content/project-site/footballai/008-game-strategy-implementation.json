@@ -1,0 +1,42 @@
+{
+    "title": "Implementation of the Game Strategy in Computer Software",
+    "date_de": "08. Dezember 2024",
+    "date": "December 08, 2024",
+    "slug": "implementation-of-the-game-strategy-in-computer-software",
+    "title_de": "Implementation der Spielstrategie in der Computersoftware",
+    "image": "/projects/footballai/image_1.webp",
+    "hide_image": true,
+    "content": [
+      {
+        "type": "text",
+        "text_de": "Nachdem die lineare Bewegung nun ohne Probleme funktioniert, bin ich aktuell mit der rotativen Bewegung beschäftigt. Die Herausforderungen sind eine entsprechende Reaktionsfähigkeit, als auch eine schnelle Bewegung, um den Ball zu beschleunigen. Aktuell versuche ich durch verschiedene Versuche zu ermitteln, ob ein High-Speed Servo oder ein Schrittmotor für die Anwendung am besten geeignet ist.",
+        "text": "After the linear movement is now working without any problems, I am currently working on the rotational movement. The challenges are a corresponding responsiveness, as well as a fast movement to accelerate the ball. I am currently trying to determine through various experiments whether a high-speed servo or a stepper motor is best suited for the application."
+      },
+      {
+        "type": "text",
+        "text_de": "Im vorherigen Post ging es auch um die Grundlagen für die PC-Software. In der Zwischenzeit habe ich alle Softwarebausteine implementiert. Vom Einlesen des Kamera-Streams mittels der IDS-Softwarebibliothek zur Auswertung der KI-Daten, sind nun alle Softwarebausteine in einzelne Threads separiert. Eine große Herausforderung war dabei die Parallelisierung zur Geschwindigkeitsoptimierung. Sobald ein Bild von der Kamera eintrifft, wird nun gleichzeitig des Spielfelds von einer KI analysiert, als auch die Spielfeldabmessungen mittels Fiducials festgestellt. Damit ist es nun möglich, 200 mal pro Sekunden die Spielsituation neu einzuschätzen. Mithilfe der Analysealgorithmen werden alle dafür nötigen Parameter extrahiert. Das schließt unter anderem die Position und die Geschwindigkeit des Balls, als auch die Position der gegnerischen Spieler mit ein. Folgende Abbildung zeigt das Spielfeld mit dem Overlay, welches die extrahierten Parameter zeigt:",
+        "text": "In the previous post, it was also about the basics for the PC software. In the meantime, I have implemented all the software modules. From reading in the camera stream using the IDS software library to evaluating the AI data, all software modules are now separated into individual threads. A major challenge was parallelization for speed optimization. As soon as an image arrives from the camera, the playing field is analyzed by an AI as well as the playing field dimensions are determined using fiducials. This now makes it possible to reassess the game situation 200 times per second. With the help of the analysis algorithms, all the necessary parameters are extracted. This includes, among other things, the position and speed of the ball, as well as the position of the opposing players. The following figure shows the playing field with the overlay that shows the extracted parameters:"
+      },
+      {
+        "type": "image",
+        "src": "/projects/footballai/image_1.webp",
+        "text_de": "Markierte Positionen des Balls und der gegnerischen Spieler mit extrapolierter Ballposition",
+        "text": "Marked positions of the ball and opposing players with extrapolated ball position"
+      },
+      {
+        "type": "text",
+        "text_de": "Häufig kommt es zu dem Problem, dass der Ball aus der Top-Down Perspektive nicht zu erkennen ist, da er von einer Stange oder einem Spieler verdeckt wird. In diesem Fall ist es erforderlich die Position mathematisch aus der bekannten Geschwindigkeit zu extrapolieren. Einfach die vergangene Zeit mit der Geschwindigkeit zu multiplizieren ist dabei allerdings nicht ausreichend. Mit einigen Störfaktoren, wie Bälle, die unterhalb von einer Stange zum stehen kommen oder welche, die abgelenkt werden, ist ein solch primitiver Ansatz leider nicht geeignet.",
+        "text": "Frequently the ball is not visible from a top-down perspective because it is obscured by a rod or a player. In this case, it is necessary to extrapolate the position mathematically from the known speed. However, simply multiplying the elapsed time by the speed is not sufficient. A primitive approach is unfortunately not suitable with some disturbances, such as balls that come to a standstill under a rod or balls that are deflected."
+      },
+      {
+        "type": "text",
+        "text_de": "Daher suche ich aktuell noch nach Optionen, wie einem Kalman-Filter, um auf nicht messbare Störungen mittels stochastischer Modelle reagieren zu können. Eine mögliche Alternative wäre auch weitere Sensorik zu integrieren, die auch den verdeckten Ball aus einer anderen Perspektive detektieren kann.",
+        "text": "That's why I'm currently looking for options, such as a Kalman filter, to be able to react to unmeasurable disturbances using stochastic models. A possible alternative would also be to integrate additional sensors that can also detect the covered ball from a different perspective."
+      },
+      {
+        "type": "text",
+        "text_de": "Final gilt es noch den Aufbau für die eine Stange auf die drei weiteren Spielerposition zu replizieren. Dafür ist aber eine verlässliche Steuerung erforderlich, die noch durch weitere Tests sichergestellt werden muss. Bis dahin bin ich sehr gespannt, mit welchen Spielstrategien der Roboter später dem Mensch überlegen sein wird.",
+        "text": "Finally, the structure for one bar must be replicated to the three other player positions. But this requires reliable control, which still has to be ensured by further tests. Until then, I am very excited about what game strategies the robot will later be superior to humans."
+      }
+    ]
+  }

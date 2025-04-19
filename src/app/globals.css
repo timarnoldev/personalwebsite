@@ -23,6 +23,8 @@
   --color-test: #e8f1ce;
 
   overflow-x: hidden;
+  scrollbar-gutter: stable;
+
 
   --elastic-out: linear(
       0,

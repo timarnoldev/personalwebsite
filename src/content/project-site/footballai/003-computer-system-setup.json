@@ -1,0 +1,57 @@
+{
+    "title": "Setup of the Computer System for Game Calculation",
+    "date_de": "14. August 2023",
+    "date": "August 14, 2023",
+    "slug": "setup-of-the-computer-system-for-game-calculation",
+    "title_de": "Aufbau des Computersystems zur Spielberechnung",
+    "image": "/projects/footballai/image_21.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Wenn man sich genaue Gedanken darüber macht, was ein Mensch macht, während er Tischkicker spielt, wird deutlich, warum ein solches Projekt so aufwendig ist. Das Verarbeiten der aktuellen Spielsituation, Überlegung der nächsten Aktionen und dann die motorische Ausführung.",
+            "text": "If you think carefully about what a person does while playing foosball, it becomes clear why such a project is so complex. Processing the current game situation, considering the next actions and then the motor execution."
+        },
+        {
+            "type": "text",
+            "text_de": "Um einen Vergleichswert zu haben, habe ich mir als Schätzung zugrundegelegt, dass ein Ball vom Torwart des einen Teams zum anderen Tor circa 100 ms benötigt. Demnach ist eine Berechnungsrate von 200 Hz des aktuellen Spielverlaufs unerlässlich. So fing die Planung eines Computersystems an, welcher diesen Anforderungen gerecht wird. Zunächst war klar, dass die Bilder von einer 200 fps Kamera von der Bandbreite erstmal durch einen Anschluss am PC entgegengenommen werden müssen. In meinem Fall durch USB 3.0.",
+            "text": "In order to have a comparison value, I assumed as an estimate that a ball from the goalkeeper of one team to the other goal takes about 100 ms. Accordingly, a calculation rate of 200 Hz of the current game is essential. So the planning of a computer system began, which meets these requirements. First of all, it was clear that the images from a 200 fps camera must first be received by a connection on the PC due to the bandwidth. In my case through USB 3.0."
+        },
+        {
+            "type": "text",
+            "text_de": "Die nächste Herausforderung ist die Erkennung der Ballposition und der Stellung der einzelnen Spieler. Da dieser Algorithmus auf künstlicher Intelligenz basiert, ist die Berechnung sehr belastend für die Grafikkarte. Die künstliche Intelligenz nimmt dabei das Eingabebild und versucht Rechtecke um die gesuchten Objekte vorherzusagen.",
+            "text": "The next challenge is recognizing the ball position and the position of the individual players. Since this algorithm is based on artificial intelligence, the calculation is very stressful for the graphics card. The artificial intelligence takes the input image and tries to predict rectangles around the objects you are looking for."
+        },
+        {
+            "type": "text",
+            "text_de": "Nach diesem Benchmark für die KI habe ich mich für eine RTX 4070 TI entschieden, die beim kleinsten (und damit ungenausten) \"yolov8n\"-Framework ca. 1000 fps berechnen kann. Somit dürfte genügend Rechenleistung für diese Art der Anwendung vorhanden sein.",
+            "text": "Following this benchmark for the AI, I decided on an RTX 4070 TI, which can calculate approx. 1000 fps for the smallest (and therefore most inaccurate) \"yolov8n\" framework. This should provide enough computing power for this type of application."
+        },
+        {
+            "type": "text",
+            "text_de": "Die Wahl der restlichen Komponenten sind auf kompatible handelsübliche Komponenten gefallen, da mein Projekt hier keine außergewöhnliche Anforderungen hat.",
+            "text": "The choice of the remaining components fell on compatible commercially available components, as my project has no extraordinary requirements here."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_21.webp",
+            "text_de": "Übersicht der verbauten Komponenten im Computer-System",
+            "text": "Overview of the components installed in the computer system"
+        },
+        {
+            "type": "text",
+            "text_de": "Liste der Komponenten:",
+            "text": "List of components:"
+        },
+        {
+            "type": "text",
+            "text_de": "- AMD Ryzen 7 7700X\n- GeForce RTX 4070 TI\n- ASUS TUF B650-PLUS\n- Sharkoon SH Netzteil\n- Crucial DDR5-Arbeitsspeicher\n- be quiet! Pure Rock Slim 2, CPU Kühler",
+            "text": "- AMD Ryzen 7 7700X\n- GeForce RTX 4070 TI\n- ASUS TUF B650-PLUS\n- Sharkoon SH power supply\n- Crucial DDR5 memory\n- be quiet! Pure Rock Slim 2, CPU cooler"
+        },
+        {
+            "type": "text",
+            "text_de": "Bei den genannten Produktnamen kann es sich um eingetragene Marken des jeweiligen Herstellers handeln.",
+            "text": "The product names mentioned may be registered trademarks of the respective manufacturer."
+        }
+    ]
+}

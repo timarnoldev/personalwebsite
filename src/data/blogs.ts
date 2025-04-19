@@ -15,6 +15,17 @@ import colUblox from "@/content/collaboration/col-ublox.json"
 import colNordicSemi from "@/content/collaboration/col-nordicsemi.json"
 import colDeutscheBank from "@/content/collaboration/col-deutschebank.json"
 import technicalDetails from "@/content/other/technical-detail.json"
+
+import mechanicalPrototype from "@/content/project-site/footballai/001-mechanical-prototype.json";
+import firstTestOnAi from "@/content/project-site/footballai/002-first-test-on-ai.json";
+import computerSystemSetup from "@/content/project-site/footballai/003-computer-system-setup.json";
+import mountingTheCamera from "@/content/project-site/footballai/004-mounting-the-camera.json";
+import automaticFiducialRecognition from "@/content/project-site/footballai/005-automatic-fiducial-recognition.json";
+import pcbDevelopment from "@/content/project-site/footballai/006-pcb-development.json";
+import developmentOfTheControlSoftware from "@/content/project-site/footballai/007-development-of-the-control-software.json";
+import gameStrategyImplementation from "@/content/project-site/footballai/008-game-strategy-implementation.json";
+import redesignOfTheMotorController from "@/content/project-site/footballai/009-redesign-of-the-motor-controller.json";
+
 export const blogs = [
     rekariBlog,
     foosballBlog,
@@ -35,5 +46,18 @@ export const blogs = [
     colDeutscheBank,
     colASC,
 
-    technicalDetails
+    technicalDetails,
+
+];
+
+export const project_footballai = [
+    redesignOfTheMotorController,
+    gameStrategyImplementation,
+    developmentOfTheControlSoftware,
+    pcbDevelopment,
+    automaticFiducialRecognition,
+    mountingTheCamera,
+    computerSystemSetup,
+    firstTestOnAi,
+    mechanicalPrototype
 ];

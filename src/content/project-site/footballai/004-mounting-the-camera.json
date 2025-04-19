@@ -1,0 +1,87 @@
+{
+    "title": "Mounting the IDS Camera above the Foosball Table",
+    "date_de": "03. Oktober 2023",
+    "date": "October 03, 2023",
+    "slug": "mounting-the-ids-camera-above-the-foosball-table",
+    "title_de": "Montage der IDS Kamera über dem Tischkicker",
+    "image": "/projects/footballai/image_8.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Die Kamera erfüllt eine wichtige Aufgabe in diesem Projekt. Nur durch sie kann der Algorithmus auf dem Computer erfahren, in welcher Position sich die Spieler befinden und wie der Ball gerade rollt. Neben der optimalen Perspektive, um das ganze Feld zu überblicken, ist es wichtig, dass die Befestigung möglichst Stoßfest ist. Damit kann das Bild auch bei intensiveren Spielen immer zentral das Spielfeld zeigen.",
+            "text": "The camera fulfills an important task in this project. Only through it can the algorithm on the computer know the position of the players and how the ball is currently rolling. In addition to the optimum perspective to view the entire field, it is important that the mounting is as shockproof as possible. This ensures that the image always shows the playing field centrally, even during more intensive games."
+        },
+        {
+            "type": "text",
+            "text_de": "Um dies zu erreichen, habe ich zwei Rohre über den Tischkicker gebogen, sodass diese auf beiden Seiten des Tisches mit einem Flansch montiert werden können. Dafür wurden die Rohre über eine Holzform gezogen, um zwei identische auf der gleichen Höhe zu haben. Am obersten Punkt der beiden Stangen kann auf diese Weise ein Holzbrett mit der Kamera befestigt werden.",
+            "text": "To achieve this, I bent two tubes over the foosball table so that they can be mounted on both sides of the table with a flange. For this purpose, the tubes were pulled over a wooden form in order to have two identical ones at the same height. At the top point of the two rods, a wooden board with the camera can be attached in this way."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_9.webp",
+            "text_de": "Form zum Biegen der Rohre",
+            "text": "Form to bend the tubes"
+        },
+        {
+            "type": "text",
+            "text_de": "Mithilfe von Spanngurten konnten die Stangen an die Form gepresst werden. Mit einem Heißluftföhn habe ich anschließend die Position fixiert und ein zurückspringen verhindert.",
+            "text": "The rods could be pressed onto the mould using tension straps. I then used a heat gun to fix the position and prevent it from springing back."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_10.webp",
+            "text_de": "Fertig gebogenes Rohr mit genutzter Form",
+            "text": "Finished bent tube with used form"
+        },
+        {
+            "type": "text",
+            "text_de": "Damit die Rohre im richtigen Winkel auf den Seitenteilen des Tischkickers geschraubt werden können, wurden Holzzylinder im richten Grad angeschliffen, sodass diese einfach aufgeschraubt werden können.",
+            "text": "So that the tubes can be screwed onto the side parts of the foosball table at the correct angle, wooden cylinders were sanded at the correct degree so that they can be easily screwed on."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_11.webp",
+            "text_de": "Passender Holzflansch für Montage der Rohre",
+            "text": "Matching wooden flange for mounting the pipes"
+        },
+        {
+            "type": "text",
+            "text_de": "Mit schwarzem Lack konnte ich die Flansche noch farblich passend an den Tischkicker anpassen. Zur zusätzlichen Stabilität werden die Rohre noch von Metallfassungen gehalten.",
+            "text": "I was able to adapt the flanges to the foosball table in a color that matched the black paint. For additional stability, the tubes are still held by metal sockets."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_12.webp",
+            "text_de": "Beide Stangen montiert mit den Holzflanschen",
+            "text": "Both rods mounted with the wooden flanges"
+        },
+        {
+            "type": "text",
+            "text_de": "Mit Rohrschellen konnte an der Spitze des Bogens ein Brett mit der Kamera befestigt werden. Gehalten mit zwei Schrauben, ist die Kamera im Schlitz des Holzes frei justierbar.",
+            "text": "A board with the camera can be attached to the top of the arc using pipe clamps. Held with two screws, the camera is freely adjustable in the slot of the wood."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_22.webp",
+            "text_de": "Kamera von IDS an der Spitze, um das Spielgeschehen zu verfolgen",
+            "text": "IDS camera at the top to follow the game"
+        },
+        {
+            "type": "text",
+            "text_de": "Die Daten können mit einer USB 3.0 Anbindung über USB-C direkt an den Computer abgegriffen werden, wo sie anschließend verarbeitet werden. Mit ca. 200 FPS kann auch ein schneller Ball genau verfolgt werden, sodass der Roboter immer reaktionsfähig bleibt.",
+            "text": "The data can be tapped directly to the computer with a USB 3.0 connection via USB-C, where it is then processed. With approx. 200 FPS, even a fast ball can be tracked precisely so that the robot always remains responsive."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_8.webp",
+            "text_de": "Befestigung der Kamera an einem Holzbrett",
+            "text": "Befestigung der Kamera an einem Holzbrett"
+        },
+        {
+            "type": "text",
+            "text_de": "Vielen Dank nochmal an IDS Imaging für die Bereitstellung einer High-Speed Kamera für dieses Projekt. In weiteren Blogposts wird auf die softwareseitige Ansteuerung eingegangen und wie die Erkennung des Tisches funktioniert.",
+            "text": "Thanks again to IDS Imaging for providing a high-speed camera for this project. Further blog posts will go into the software-side control and how the recognition of the table works."
+        } 
+    ]
+}

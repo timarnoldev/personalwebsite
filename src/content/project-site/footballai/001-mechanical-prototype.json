@@ -2,9 +2,10 @@
     "title": "First mechanical prototype",
     "date_de": "04. August 2023",
     "date": "August 04, 2023",
-    "slug": "erster-prototyp-mechanik",
+    "slug": "first-mechanical-prototype",
     "title_de": "Erster Prototyp der Mechanik",
-    "image": "https://blogger.googleusercontent.com/img/a/AVvXsEgOn_Z6MRJ4jR5zOQDPvS45uKqtli1cbbxa_spFxE3sSQYdWEOzSg9DGhAqoJVnTULoY9vPUIQ8CEiaN_GTrIeyHNhkiFMCozlQ4OPa1FsAlyEdi8uNxoz4rM5DSOhvdnFEOB0QokSk2hvQlawqsPRy8tnYnswUkIQQV1Ms-yWrp0UGiBrMHBju5MgVz-w=w507-h381",
+    "image": "/projects/footballai/image_15.webp",
+    "hide_image": true,
     "content": [
         {
             "type": "text",
@@ -23,7 +24,7 @@
         },
         {
             "type": "image",
-            "src": "",
+            "src": "/projects/footballai/image_15.webp",
             "text_de": "Befestigungsschraube für den Spieler im ersten Prototypen",
             "text": "Mounting screw for the player"
         },
@@ -39,7 +40,7 @@
         },
         {
             "type": "image",
-            "src": "",
+            "src": "/projects/footballai/image_16.webp",
             "text_de": "Skizze: Aufbau einer Stange",
             "text": "Sketch: Structure of a rod"
         },
@@ -50,7 +51,7 @@
         },
         {
             "type": "image",
-            "src": "",
+            "src": "/projects/footballai/image_17.webp",
             "text_de": "Detailansicht vom Innenaufbau der Tischkicker-Stange",
             "text": "Detailed view of the interior structure of the foosball rod"
         },
@@ -61,14 +62,9 @@
         },
         {
             "type": "image",
-            "src": "",
+            "src": "/projects/footballai/image_18.webp",
             "text_de": "Provisorische Montage des Motors für erste Tests",
             "text": "Provisional assembly of the engine for first tests"
-        },
-        {
-            "type": "text",
-            "text_de": "Tim Arnold",
-            "text": "Tim Arnold"
         }
     ]
 }

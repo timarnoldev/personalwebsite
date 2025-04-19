@@ -1,0 +1,53 @@
+{
+    "title": "Redesign of the Motor Control",
+    "date_de": "18. April 2025",
+    "date": "April 18, 2025",
+    "slug": "redesign-of-the-motor-control",
+    "title_de": "Neuentwicklung der Motoransteuerung",
+    "image": "/projects/footballai/image_24.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Die aktuelle Spieleransteuerung hat nach einigen Tests viele Probleme aufgezeigt. Zum einen war mir die Schussgeschwindigkeit zu gering und zum anderen hat der lineare Antrieb zu sehr gestottert. Zunächst bin ich davon ausgegangen, dass das ein mechanisches Problem ist und die Bewegung durch noch bestehende Toleranzen einfach sehr laut verläuft. Als ich nun aber mich mit dem Redesign der Platine beschäftigt habe, um einen anderen Motor für die Schussbewegung zu nutzen, ist mir aufgefallen, dass es in der Software noch einen Logikfehler bei der Motoransteuerung gab.",
+            "text": "After some testing, the current player control system has revealed many problems. On the one hand, the shot speed was too low for me, and on the other hand, the linear drive stuttered too much. At first, I assumed that this was a mechanical problem and that the movement was simply very loud due to existing tolerances. But as I was working on redesigning the board to use a different motor for the shooting movement, I noticed that there was a logic error in the software for the motor control."
+        },
+        {
+            "type": "text",
+            "text_de": "Grundsätzlich war der Gedanken sowohl für die Schussbewegung, als auch für die lineare Stellung den gleichen schnellen Motor zu verwenden. Dieser ist gekoppelt mit einem Encoder, der mit einem optischen Verfahren die aktuellen Position an den Microcontroller zurückliefert. Mein Gedanke war, wenn auf beiden Seiten die gleiche Hardware genutzt wird, sollte es auch möglich sein, den entsprechenden Softwarebaustein zu duplizieren. Im ersten Praxistest hat das allerdings sehr geruckelt. Ich hielt das erst für ein Hardwareproblem. Nach genauerer Analyse stellte sich allerdings heraus, dass der PID Regler mit einem Logikfehler implementiert gewesen ware. Fälschlicherweise wurde der Fehler zwischen Momentan-Geschwindigkeit und Soll-Geschwindigkeit durch den Regler direkt als Ansteuerung für den Motor genutzt. Folglich würde eine Spannung von 0V angelegt werden, hat der Motor die richtige Geschwindigkeit, was ihn natürlich sofort wieder entschleunigt. Das führt dann wieder zu einer neuen Beschleunigung, da die Geschwindigkeit zu gering war. Nachdem das Ganze mit 1 kHz passiert, sieht das praktisch wie ein Ruckeln aus.",
+            "text": "Basically, the idea was to use the same fast motor for both the shooting movement and the linear positioning. This is coupled with an encoder, which uses an optical process to return the current position to the microcontroller. My thought was that if the same hardware is used on both sides, it should also be possible to duplicate the corresponding software module. However, in the first practical test, it jerked a lot. At first I thought this was a hardware problem. However, after closer analysis, it turned out that the PID controller had been implemented with a logic error. Incorrectly, the error between the instantaneous speed and the target speed was used directly by the controller as a control for the motor. Consequently, a voltage of 0V would be applied if the motor had the correct speed, which would of course immediately decelerate it again. This then leads to a new acceleration, as the speed was too low. Since this all happens at 1 kHz, it practically looks like jerking."
+        },
+        {
+            "type": "text",
+            "text_de": "Der neue Ansatz ist die Kaskadierung zweier Regler. Einer Überwacht die Position und der andere Be- und Entschleunigt den Motor entsprechend. In der Praxis hat das allerdings bei jeglichen Regelwerten zu einem Überschwingen geführt. Der entscheidende Faktor war es einen asymmetrischen PID Regler zu implementieren. Dieser interpretiert den Beschleunigungsvorgang separat von einer Entschleunigung und nutzt dementsprechend andere dafür optimierte Regelwerte. Dieses Grundgerüst sorgt für eine schnelle Bewegung zur entsprechenden Position. Ich bin sehr optimistisch, dass es damit nun möglich ist einen Schuss zu produzieren, der im Spiel wettbewerbsfähig ist. Manchmal muss man einen Schritt zurückgehen, um zwei nach vorne zu kommen...",
+            "text": "The new approach is the cascading of two controllers. One monitors the position and the other accelerates and decelerates the motor accordingly. In practice, however, this led to overshoot with all control values. The decisive factor was to implement an asymmetrical PID controller. This interprets the acceleration process separately from deceleration and accordingly uses other control values optimized for this. This basic structure ensures a fast movement to the corresponding position. I am very optimistic that it will now be possible to produce a shot that is competitive in the game. Sometimes you have to take a step back to take two steps forward..."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_24.webp",
+            "text_de": "Layout der neuen PCB, die zwei Motoren unterstützt",
+            "text": "Layout of the new PCB that supports two motors"
+        },
+        {
+            "type": "text",
+            "text_de": "Da ich nun zwei Motoren statt einem Motor und einem Servo einsetzen, ist eine Neuentwicklung der Platine notwendig. Es muss vom Microcontroller ein weiterer Encoder eingelesen werden und es braucht einen zweiten Anschluss für den Motortreiber. Zusätzlich nutze ich das Redesign, um weitere Probleme zu beseitigen: Falsche Pinbelegungen, wie in einem vorherigen Blogpost erwähnt, werde ich verbessern, genauso wie es die Möglichkeit geben wird, die PCBs zu Daisy Chainen. Das Design ist soweit abgeschlossen und ich werde sie in den nächsten Tagen in Auftrag geben.",
+            "text": "Since I now use two motors instead of one motor and one servo, a new development of the board is necessary. The microcontroller needs to read in another encoder and it needs a second connection for the motor driver. In addition, I'm using the redesign to fix other problems: I will improve incorrect pin assignments, as mentioned in a previous blog post, as well as there will be the possibility to daisy chain the PCBs. The design is now complete and I will commission it in the next few days."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_25.webp",
+            "text_de": "Schaltplan der neuentwickelten Platine",
+            "text": "Circuit diagram of the newly developed board"
+        },
+        {
+            "type": "text",
+            "text_de": "Den erhöhten Strombedarf der Motoren kann über jeweils ein Traco Power Netzteil gedeckt werden, welche mir die Firma dankenswerterweise für das Projekt zur Verfügung gestellt hat.",
+            "text": "The increased power requirements of the motors can be covered by a Traco Power power supply, which the company has kindly provided for the project."
+        },
+        {
+            "type": "text",
+            "text_de": "Im nächsten Schritt werde ich die Hardware vom aktuellen Test in den Tischkicker integrieren und die Software auf die Verwendung zweier Motoren anpassen.",
+            "text": "In the next step, I will integrate the hardware from the current test into the foosball table and adapt the software to use two motors."
+        }
+    ]
+}
