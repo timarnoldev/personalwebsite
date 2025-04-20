@@ -1,0 +1,43 @@
+{
+    "title": "First Tests on AI Tracking",
+    "date_de": "04. August 2023",
+    "date": "August 04, 2023",
+    "slug": "first-tests-on-ai-tracking",
+    "title_de": "Erste Tests zum KI-Tracking",
+    "image": "/projects/footballai/image_13.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Damit das System zu jeder Zeit genau weiß, wo die einzelnen Spieler sich befinden und wie der Ball rollt, befindet sich über dem Tischkicker eine Kamera, die mit einer hohen Bildwiederholrate auch schnelle Bälle erkennen kann. Um das System möglichst zuverlässig zu gestalten, sodass es bei verschiedenen Spiel- und Lichtbedingungen zuverlässig funktioniert, soll ein yolov8 Netzwerk eingesetzt werden.",
+            "text": "In order for the system to know exactly where the individual players are and how the ball is rolling at all times, there is a camera above the foosball table that can detect even fast balls with a high frame rate. In order to make the system as reliable as possible so that it works reliably under different playing and lighting conditions, a yolov8 network is to be used."
+        },
+        {
+            "type": "text",
+            "text_de": "Mithilfe von über 3000 manuell markierten Bildern aus der Vogelperspektive konnten die KI lernen den Ball und die Männchen zuverlässig zu erkennen.",
+            "text": "With the help of over 3000 manually marked images from a bird's eye view, the AI was able to learn to reliably recognize the ball and the mannequins."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_13.webp",
+            "text_de": "Vollständig markiertes Bild mit roten und schwarzen Spieler und dem Ball",
+            "text": "Fully marked image with red and black players and the ball"
+        },
+        {
+            "type": "text",
+            "text_de": "Nach einiger Trainingszeit konnte das neuronale Netzwerk eine Genauigkeit von 98% erreichen. Beeindruckend ist, dass die künstliche Intelligenz sogar in der Lage ist durch Stangen verdeckte Bälle, als auch durch Bewegungsunschärfe verzogene Bälle zu detektieren. Das ist insbesondere dann wichtig, wenn schnelle Bälle von der einen Seite auf die andere geschossen werden und das System entsprechen reagieren muss. Im folgenden Bild lässt sich gut erkennen, welche verdeckten Bälle das System noch erkennen kann.",
+            "text": "After some training time, the neural network was able to achieve an accuracy of 98%. Impressively, the artificial intelligence is even able to detect balls covered by rods, as well as balls distorted by motion blur. This is particularly important when fast balls are shot from one side to the other and the system has to react accordingly. The following picture clearly shows which covered balls the system can still recognize."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_14.webp",
+            "text_de": "Vollständig richtig markiertes Bild mit verdecktem Ball",
+            "text": "Fully correctly marked image with covered ball"
+        },
+        {
+            "type": "text",
+            "text_de": "Wenn man davon ausgeht, dass ein Ball mit voller Geschwindigkeit circa 100 ms von der einen Seite zur anderen benötigt, ist es wichtig, dass das neuronale Netz mit entsprechend geringer Latenz daher kommt. Ich hatte das Ganze auf einem Computer mit einer geringer Anzahl an FLOPs getestet und konnte trotzdem mit nur 16 ms ein Bild berechnen. Das sind ungefähr 60 Bilder pro Sekunde. Auf dem finalen Computersystem dürfte das nochmal deutlich schneller möglich sein.",
+            "text": "Assuming that a ball takes about 100 ms from one side to the other at full speed, it is important that the neural network has a correspondingly low latency. I had tested the whole thing on a computer with a small number of FLOPs and was still able to calculate an image with only 16 ms. That's about 60 frames per second. This should be possible much faster on the final computer system."
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "title": "First mechanical prototype",
+    "date_de": "04. August 2023",
+    "date": "August 04, 2023",
+    "slug": "first-mechanical-prototype",
+    "title_de": "Erster Prototyp der Mechanik",
+    "image": "/projects/footballai/image_15.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Das Ziel: Ein autonomer Tischkicker-Roboter! Ein menschlicher Mitspieler soll durch einen Roboter ersetzt werden. Es gilt zunächst die Mechanik und Elektronik zu entwerfen, sodass die Maschine die gleichen Möglichkeiten, wie der Mensch hat. Im folgenden Schritt soll dann das Programm, welches den Roboter steuert, solange optimiert werden, bis der Mensch geschlagen werden kann. Dafür verfolgt eine Kamera das Spielgeschehen und trackt Spieler und Ball in Echtzeit. Mithilfe von künstlicher Intelligenz kann der Spielverlauf der nächsten Sekunden vorhergesagt und entsprechend gehandelt werden.",
+            "text": "The goal: An autonomous foosball table robot! A human player was replaced by a robot. The first thing to do was to design the mechanics and electronics so that the machine has the same capabilities as a human. Furthermore, the program that controls the robot should be optimized until the human can be beaten. A high-speed camera actively follows the game and tracks the player and the ball in real time. Leveraging artificial intelligence the next seconds of the game can be predicted and the accordingly."
+        },
+        {
+            "type": "headline",
+            "text_de": "Erste Idee des Prototyps",
+            "text": "First Prototype Idea"
+        },
+        {
+            "type": "text",
+            "text_de": "An allen vier Stangen benötigt der Roboter die Möglichkeit die Männchen nach links und rechts zu bewegen sowie zu drehen, um einen Schuss durchzuführen. Um die Technik möglichst kompakt zu halten, war das die ersten Idee des Prototypen:",
+            "text": "On all four rods, the robots need the ability to move the players left and right and rotate them in order to fire a shot. In order to keep the technology as compact as possible, this was the first idea of the prototype:"
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_15.webp",
+            "text_de": "Befestigungsschraube für den Spieler im ersten Prototypen",
+            "text": "Mounting screw for the player"
+        },
+        {
+            "type": "headline",
+            "text_de": "Technische Umsetzung",
+            "text": "Technical Implementation"
+        },
+        {
+            "type": "text",
+            "text_de": "Durch die hohlen Stangen läuft eine Steilgewindespindel. Für jedes Männchen läuft darauf eine Spindelmutter. Um durch die äußere Stange das Männchen mit der Spindelmutter zu verbinden, wurde ein Gewinde in diese geschnitten. Mit einem Schlitz in der äußeren Stange wird dann das Männchen mit einer Schraube an der Spindelmutter befestigt. Folgende Skizze zeigt den Aufbau schematisch:",
+            "text": "A high-helix threaded rod runs through the hollow rods. There is a spindle for each player. In order to connect the player to the spindle through the outer rod, a thread was cut into it. Using a slot in the outer rod, the player is then attached to the spindle with a screw. The following sketch shows the structure schematically:"
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_16.webp",
+            "text_de": "Skizze: Aufbau einer Stange",
+            "text": "Sketch: Structure of a rod"
+        },
+        {
+            "type": "text",
+            "text_de": "Gestrichelt ist in der Mitte die Gewindestange dargestellt. Darauf läuft die Mutter, die mit einer Schraube nach außen verbunden ist.",
+            "text": "The threaded rod is shown dashed in the middle. The nut or spindle, which is connected to the outside with a screw, is mounted on it."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_17.webp",
+            "text_de": "Detailansicht vom Innenaufbau der Tischkicker-Stange",
+            "text": "Detailed view of the interior structure of the foosball rod"
+        },
+        {
+            "type": "text",
+            "text_de": "Um nun die Figur zu bewegen, wird mit einem Motor die Gewindestange gedreht, bis die gewünschte Position erreicht ist. Damit die Figur aber auch um ihre eigene Achse gedreht werden kann, gibt es auf der gegenüberliegenden Seite einen weiteren Motor, der die äußere Stange drehen kann. Durch den Schlitz wird die Figur mitgenommen und ein Schuss kann ausgeführt werden.",
+            "text": "In order to move the figure, a motor is used to rotate the threaded rod until the desired position is reached. However, to also allow the figure to rotate around its own axis, there is another motor on the opposite side that can rotate the outer rod. The figure is engaged through the slot and a shot can be executed."
+        },
+        {
+            "type": "image",
+            "src": "/projects/footballai/image_18.webp",
+            "text_de": "Provisorische Montage des Motors für erste Tests",
+            "text": "Provisional assembly of the engine for first tests"
+        }
+    ]
+}

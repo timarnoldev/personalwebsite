@@ -63,6 +63,27 @@
 
     "aboutme": "About me",
     "achievements": "Achievements",
-    "projects": "Projects"
+    "projects": "Projects",
+
+    "footballai_desc": "The goal: An autonomous foosball (table soccer) robot! A human player is to be replaced by a robot. First, the mechanics and electronics must be designed so that the machine has the same capabilities as a human. In the next step, the program controlling the robot will then be optimized until the human can be beaten. To achieve this, a camera monitors the gameplay and tracks the players and the ball in real-time.",
+    "footballai": "AI Football Table",
+
+    "sponsoredby": "Sponsored by",
+    "sponsors": "Sponsors",
+    "lookingforsponsors": "I'm looking for sponsors to support my project. If you are interested, please contact me.",
+
+
+    "wriSponsorText": "Special thanks go to the - Walter Reis Institute - in Obernburg for the financial support of my project. The funding allowed me to acquire, among other things, a computer system for calculating the next move, as well as components for the robot's mechanics.",
+    "wriSponsor": "Walter Reis Institute",
+    "tracopowerSponsorText": "- Traco Power - significantly contributed to the realization of the project by providing high-quality power supplies. These specialized devices are not only capable of handling load peaks during gameplay but also stand out for their high efficiency. A heartfelt thank you to Traco Power for this support.",
+    "tracopowerSponsor": "Traco Power",
+    "carromcoSponsorText": "Many thanks to - carromco - for providing a high-quality foosball table. It offers not only the necessary stability for even the most intense matches but also the required modularity for such a project.",
+    "carromcoSponsor": "Carromco",
+    "stemmerSponsorText": "A big thank you also goes to the - Wilhelm Stemmer Foundation - for providing financial resources to acquire necessary equipment, such as threaded rods, motors, and many other components required for a project like this.",
+    "stemmerSponsor": "Wilhelm Stemmer Foundation",
+    "idsSponsorText": "A heartfelt thank you also goes to the company - IDS Imaging - for providing a high-speed camera. It is not only capable of viewing the entire playing field with a suitable lens but also captures every fast ball movement at over 200 frames per second. This makes it perfectly suited for use in my project.",
+    "idsSponsor": "IDS Imaging",
+
+    "overview": "Overview"
 
 }

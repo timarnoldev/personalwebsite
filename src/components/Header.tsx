@@ -7,6 +7,7 @@ import LanguageSelector from './LanguageSelector';
 import { useEffect, useState } from 'react';
 import timarnold from "../../public/timarnold.webp"
 import wave from "../../public/wave.webp"
+import { useRouter } from 'next/navigation';
 
 function smoothScroll (event: React.UIEvent<HTMLAnchorElement, UIEvent>) {
 
@@ -29,6 +30,7 @@ function smoothScroll (event: React.UIEvent<HTMLAnchorElement, UIEvent>) {
 export default function Header(props: { lang: Dictionary }) {
     const [isLanguageSelectorOpen, setIsLanguageSelectorOpen] = useState(false);
     const [isUserLanguageGerman, setIsUserLanguageGerman] = useState(false);
+    const router = useRouter()
 
     function toggleLanguageSelector() {
         setIsLanguageSelectorOpen(!isLanguageSelectorOpen);
@@ -47,13 +49,13 @@ export default function Header(props: { lang: Dictionary }) {
         
         //if on root page, add the language to the url
         if (window.location.pathname === "/") {
-            window.location.href = `/${lang}${window.location.pathname}`;
+            router.push(`/${lang}${window.location.pathname}`)
         }
         //if on a subpage, replace the slug which is the first location in the url
         else {
             const url = window.location.pathname;
             const newUrl = url.replace(props.lang.lang, lang);
-            window.location.href = newUrl;
+            router.push(newUrl);
         }
       
     }

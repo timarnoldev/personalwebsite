@@ -100,8 +100,9 @@
     },
     {
       "type": "link",
-      "href": "https://fussball.arnold-tim.de/",
-      "text": "fussball.arnold-tim.de"
+      "href": "/docs/aifootball",
+      "text": "AI Football Table Blog",
+      "text_de": "Tischfußball-Blog"
     }
   ]
 }

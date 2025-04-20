@@ -5,20 +5,39 @@ import { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 
 interface ModalProps {
-    children: ReactNode;
+
+    children?: ReactNode;
     data?: ReactNode;
     onOpen?: () => void;
     onClose?: () => void;
+    external_open?: boolean
 }
 
-export default function Modal({ children, data, onOpen, onClose }: ModalProps) {
+export default function Modal({ children, data, onOpen, onClose, external_open }: ModalProps) {
 
     const [open, setOpen] = useState(false)
     const [rollup, setRollup] = useState(true)
 
 
 
+    useEffect(() => {
+        if (external_open) {
+            setOpen(true);
+            document.documentElement.style.overflowY = "hidden"
+            setRollup(true);
+            setTimeout(() => {
+                setRollup(false);
+            }, 100);
+        } else {
+            setOpen(false);
+            document.documentElement.style.overflowY = "auto"
+        }
+    }, [external_open]);
+
+
+
    const close = useCallback(() => {
+
         setRollup(true);
         setTimeout(() => {
             setOpen(false);
@@ -56,9 +75,15 @@ export default function Modal({ children, data, onOpen, onClose }: ModalProps) {
     }, [close]);
 
 
+    if(children && !React.isValidElement(children)){
+        console.error("Modal children must be a valid react element ");
+        
+    }
+
+
     return <>
 
-        {React.isValidElement(children) && React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
+        {children && (React.isValidElement(children) && React.cloneElement(children as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
             onClick: () => {
                 openModal();
             },
@@ -76,7 +101,7 @@ export default function Modal({ children, data, onOpen, onClose }: ModalProps) {
             "aria-modal": "true",
             "aria-labelledby": "modal-title",
             "aria-describedby": "modal-description",
-        })}
+        }))}
 
 
         {

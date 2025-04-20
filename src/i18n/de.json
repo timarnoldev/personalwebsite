@@ -65,5 +65,25 @@
 
     "aboutme": "Über mich",
     "achievements": "Erfolge",
-    "projects": "Projekte"
+    "projects": "Projekte",
+
+    "footballai_desc": "Das Ziel: Ein autonomer Tischkicker-Roboter! Ein menschlicher Mitspieler soll durch einen Roboter ersetzt werden. Es gilt zunächst die Mechanik und Elektronik zu entwerfen, sodass die Maschine die gleichen Möglichkeiten, wie der Mensch hat. Im folgenden Schritt soll dann das Programm, welches den Roboter steuert solange optimiert werden, bis der Mensch geschlagen werden kann. Dafür verfolgt eine Kamera das Spielgeschehen und trackt Spieler und Ball in Echtzeit.",
+    "footballai": "Tischfußball Roboter",
+
+    "sponsoredby": "Gesponsert von",
+    "sponsors": "Sponsoren",
+    "lookingforsponsors": "Ich suche noch Sponsoren, die mein Projekt unterstützen. Wenn Sie interessiert sind, kontaktieren Sie mich gerne.",
+
+    "wriSponsorText": "Ein besonderer Dank gilt dem - Walter-Reis-Institut - in Obernburg für die finanzielle Unterstützung meines Vorhabens. Die Fördermittel konnte ich unter anderem für ein Computer-System zur Berechnung des nächsten Spielzugs, als auch für die Mechanik des Roboters einsetzen.",
+    "wriSponsor": "Walter Reis Institut",
+    "tracopowerSponsorText": "Zur Realisation des Projekts hat - Traco Power - maßgeblich durch die Bereitstellung hochwertiger Netzteile beigetragen. Die Spezialgeräte sind nicht nur in der Lage, Belastungsspitzen während des Spiels zu tragen, sondern überzeugen auch durch eine hohe Effizienz. Eine herzliches Dankeschön an Traco Power für diese Unterstützung.",
+    "tracopowerSponsor": "Traco Power",
+    "carromcoSponsorText": "Vielen Dank an  - carromco - für die Bereitstellung eines qualitativ hochwertigen Tischkickers. Dieser bringt nicht nur die nötigen Stabilität für auch hitzigere Partien sondern auch die nötige Modularität für solch ein Projekt mit sich.",
+    "carromcoSponsor": "Carromco",
+    "stemmerSponsorText": "Ein großen Dank geht auch an die - Wilhelm-Stemmer-Stiftung - für die Bereitstellung von finanziellen Mitteln zum Erwerb von notwendigem Equipment, wie den Gewindestangen, Motoren und viele weitere Bauteile, die bei einem solchen Projekt benötigt werden.",
+    "stemmerSponsor": "Wilhelm-Stemmer-Stiftung",
+    "idsSponsorText": "Ein herzliches Dankeschön geht auch an die Firma - IDS Imaging - für die Bereitstellung einer High-Speed Kamera, die nicht nur in der Lage ist, das gesamte Spielfeld mit einem passenden Objektiv zu überblicken, sondern auch mit über 200 Bildern pro Sekunde jede schnelle Ballbewegung registriert. Somit ist sie perfekt für den Einsatz in meinem Projekt geeignet.",
+    "idsSponsor": "IDS Imaging",
+
+    "overview": "Übersicht"
 }
