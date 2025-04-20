@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Blog } from "./BlogEntry";
 import { Locale } from "@/i18n/i18n-config";
-import Modal from "../modal";
+import BlogModal from "../BlogModal";
 
 export default function BlogEntryPreviewWithModal(props: {data: Blog, lang: Locale}) {
 
@@ -15,7 +15,7 @@ export default function BlogEntryPreviewWithModal(props: {data: Blog, lang: Loca
         text = text!.substring(0, text!.lastIndexOf(" ", 200)) + "..."
     }
 
-   return <Modal data={props.data}> 
+   return <BlogModal blog={props.data}> 
    <div className="group cursor-pointer flex flex-row justify-between p-4 rounded-xl">
         <div className="flex md:flex-row flex-col justify-center gap-4 items-start">
             {
@@ -38,6 +38,6 @@ export default function BlogEntryPreviewWithModal(props: {data: Blog, lang: Loca
 
         </div>
 
-    </div></Modal> 
+    </div></BlogModal> 
   
 }

@@ -5,7 +5,6 @@ import Modal from "./modal";
 
 export default function BlogModal(props: {blog:Blog, children: React.ReactElement}) {
 
-
     const posthog = usePostHog();
 
     return <Modal onOpen={()=>{

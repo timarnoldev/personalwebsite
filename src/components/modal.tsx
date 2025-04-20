@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 interface ModalProps {
 
-    children: ReactNode;
+    children?: ReactNode;
     data?: ReactNode;
     onOpen?: () => void;
     onClose?: () => void;
@@ -76,8 +76,7 @@ export default function Modal({ children, data, onOpen, onClose, external_open }
 
 
     if(children && !React.isValidElement(children)){
-        console.error("Modal children must be a valid react element " + data?.title);
-        console.error(typeof children);
+        console.error("Modal children must be a valid react element ");
         
     }
 
