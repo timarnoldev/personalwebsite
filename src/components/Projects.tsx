@@ -1,6 +1,5 @@
 import { Plus } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image'
-import Modal from './modal';
 import rekariBlog from "@/content/projects/project-rekari.json"
 import foosballBlog from "@/content/projects/project-foosball.json"
 import ekesBlog from "@/content/projects/project-ekes.json"
@@ -9,6 +8,7 @@ import { Blog } from './articles/BlogEntry';
 import rekariImage from "../../public/projects/rekari.webp"
 import foosballImage from "../../public/projects/foosball.webp"
 import ekesImage from "../../public/projects/ekes.webp"
+import BlogModal from './BlogModal';
 
 const projects = (lang:Dictionary)=>{
     return [
@@ -55,7 +55,7 @@ type Project = {
 }
 
 const ListItem = (item: Project) => {
-    return <Modal data={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
+    return <BlogModal blog={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
 
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">
             <p className='text-l text-white font-bold'>{item.desc}</p>
@@ -74,7 +74,7 @@ const ListItem = (item: Project) => {
             <Image src={item.img} width={744} height={1360} alt='asd' className="" />
         </div>
 
-    </div></Modal>
+    </div></BlogModal>
 
 }
 

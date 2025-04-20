@@ -3,7 +3,7 @@ import { Dictionary } from "@/i18n/get-dictionaries";
 import SocialButtons from "./SocialLinks";
 import technicalDetails from "@/content/other/technical-detail.json"
 import imprint from "@/content/other/imprint.json"
-import Modal from "./modal";
+import BlogModal from "./BlogModal";
 
 export default function Footer(props: { lang: Dictionary }) {
     return <div className="flex flex-col w-full">
@@ -29,12 +29,12 @@ export default function Footer(props: { lang: Dictionary }) {
                 </div>
                 <div className="flex flex-row sm:gap-14 gap-8  text-lg ">
                     <a className="text-white hover:underline underline-offset-4" href={"/" + props.lang.lang + "/articles/"}>{props.lang.articles}</a>
-                    <Modal data={technicalDetails}>
+                    <BlogModal blog={technicalDetails}>
                         <div className="text-white hover:underline underline-offset-4 cursor-pointer">{props.lang.technicalDetails}</div>
-                    </Modal>
-                    <Modal data={imprint}>
+                    </BlogModal>
+                    <BlogModal blog={imprint}>
                         <div className="text-white hover:underline underline-offset-4 cursor-pointer" >{props.lang.imprint}</div>
-                    </Modal>
+                    </BlogModal>
                 </div>
             </div>
 

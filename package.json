@@ -17,6 +17,8 @@
     "negotiator": "^1.0.0",
     "next": "15.1.6",
     "next-sitemap": "^4.2.3",
+    "posthog-js": "^1.232.4",
+    "posthog-node": "^4.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",

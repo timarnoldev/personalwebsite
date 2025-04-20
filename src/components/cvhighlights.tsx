@@ -3,13 +3,13 @@ import { ExternalLink, Pause, Play } from "lucide-react";
 import Image from 'next/image'
 import { useCallback, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import Modal from "./modal";
 import jufoBlog from "@/content/cv/cv-jugend-forscht.json"
 import isefBlog from "@/content/cv/cv-isef.json"
 import stemtutor from "@/content/cv/cv-bufdi.json"
 import abitur from "@/content/cv/cv-abitur.json"
 import { Blog } from "./articles/BlogEntry";
 import { Dictionary } from "@/i18n/get-dictionaries";
+import BlogModal from "./BlogModal";
 
 const cvHighlights = (lang:Dictionary) => {
     return [
@@ -68,7 +68,7 @@ function CVSection(props: { section: CVSectionProps, lang: Dictionary }) {
         <div className="flex flex-col sm:gap-4 gap-0 sm:ml-20 ml-10 sm:mb-20 mb-10">
             <h3 className="text-white sm:text-5xl text-xl font-bold md:max-w-[80%] w-full">{section.headline}</h3>
             <p className="text-white text-lg w-[55%] min-w-140 hidden md:block">{section.text}</p>
-            <Modal data={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex-row gap-2 items-center w-fit cursor-pointer flex">{props.lang.moreInformation} <ExternalLink /></div></Modal>
+            <BlogModal blog={props.section.blogPost}><div  tabIndex={0} className="text-[#61ab21] hover:underline underline-offset-4 font-bold flex-row gap-2 items-center w-fit cursor-pointer flex">{props.lang.moreInformation} <ExternalLink /></div></BlogModal>
         </div>
 
         <div className="cvGradient h-full w-full absolute -z-10" />

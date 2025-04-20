@@ -19,7 +19,7 @@
 }
 
 :root {
-  
+
   --background: #fffcfa;
   --foreground: #171717;
   --color-test: #e8f1ce;
@@ -30,8 +30,7 @@
   scrollbar-gutter: stable;
 
 
-  --elastic-out: linear(
-      0,
+  --elastic-out: linear(0,
       0.2178 2.1%,
       1.1144 8.49%,
       1.2959 10.7%,
@@ -56,8 +55,7 @@
       1.0012 68.14%,
       1.0056 72.24%,
       0.9981 86.66%,
-      1
-    );
+      1);
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -70,13 +68,15 @@
 
 
 
+
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
- .speechbubble:after {
+.speechbubble:after {
   z-index: 999;
   content: "";
   position: absolute;
@@ -90,20 +90,20 @@ body {
   text-shadow: none;
   background: var(--color-herobackgroundhover);
   transform: rotate(45deg);
-  border-top:inherit;
-  border-left:inherit;
+  border-top: inherit;
+  border-left: inherit;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
-  
+
 @media screen and (max-width: 640px) {
   .speechbubble:after {
     left: 17%;
   }
-  
+
 }
 
 .fade-out-container {
-  mask: linear-gradient(90deg,#0000,#000 5% 95%,#0000);
+  mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -113,8 +113,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 
@@ -124,8 +126,7 @@ body {
 }
 
 .textreadabilityGradient {
-  background: linear-gradient(
-      to top,
+  background: linear-gradient(to top,
       hsla(0, 0%, 0%, 0) 0%,
       hsla(0, 0%, 0%, 0.005) 8.1%,
       hsla(0, 0%, 0%, 0.019) 15.5%,
@@ -141,17 +142,15 @@ body {
       hsla(0, 0%, 0%, 0.358) 77.5%,
       hsla(0, 0%, 0%, 0.381) 84.5%,
       hsla(0, 0%, 0%, 0.395) 91.9%,
-      hsla(0, 0%, 0%, 0.4) 100%
-    );
-  
+      hsla(0, 0%, 0%, 0.4) 100%);
+
 }
 
 .cvGradient {
 
-  
+
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       hsla(0, 0%, 0%, 0) 0%,
       hsla(0, 0%, 0%, 0.008) 9.5%,
       hsla(0, 0%, 0%, 0.029) 17.5%,
@@ -167,7 +166,6 @@ body {
       hsla(0, 0%, 0%, 0.601) 70%,
       hsla(0, 0%, 0%, 0.653) 78.3%,
       hsla(0, 0%, 0%, 0.697) 88.2%,
-      hsla(0, 0%, 0%, 0.73) 100%
-    );
-  
-  }
+      hsla(0, 0%, 0%, 0.73) 100%);
+
+}
