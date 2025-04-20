@@ -6,6 +6,8 @@
   --color-herotext: #332E2E;
   --color-wavebackground: #00000046;
   --color-primary: #607f05;
+  --color-primary-light: #a3d510;
+
   --color-primary-hover: #4f6c00;
 
   --color-cardbackground: #f8fdeb;
@@ -21,6 +23,8 @@
   --background: #fffcfa;
   --foreground: #171717;
   --color-test: #e8f1ce;
+
+  --color-tasdasd: #a3d510;
 
   overflow-x: hidden;
   scrollbar-gutter: stable;

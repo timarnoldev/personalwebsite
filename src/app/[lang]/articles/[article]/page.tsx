@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionaries";
 import { Locale } from "@/i18n/i18n-config";
 import { blogs } from "@/data/blogs";
 import BlogEntryPreview from "@/components/articles/BlogEntryPreview";
+import Link from "next/link";
 
 export async function generateStaticParams() {
     const articles: Array<{ lang: string, article: string }> = [];
@@ -30,7 +31,7 @@ export default async function page(props: { params: Promise<{ lang: Locale, arti
     return <div className=" mt-20  flex flex-col items-center justify-center">
 
         <div className="flex items-center gap-2 mt-10 mb-5 sm:ml-30 ml-5  self-start">
-            <a href={"/" + language + "/articles"} className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"><ArrowLeft />{dictionary.back} </a>
+            <Link href={"/" + language + "/articles"} className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"><ArrowLeft />{dictionary.back} </Link>
         </div>
 
         {

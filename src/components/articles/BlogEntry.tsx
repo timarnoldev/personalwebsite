@@ -12,6 +12,8 @@ export interface Blog {
     image: string | null,
     company_image?: string | null,
     hide_image?: boolean,
+    date?: string,
+    date_de?: string,
 }
 export default function BlogEntry(props: { data: Blog, large?: boolean }) {
     const language = useContext(LanguageContext);
@@ -25,7 +27,15 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
         }
 
         <article className="flex flex-col gap-4 sm:p-12 px-4 p-12 sm:w-[70%] self-center" key={"article"}>
-            <h1 className="sm:text-4xl text-3xl font-bold text-gray-800 mb-4" key={"title"}>{language === "de" ? props.data.title_de ?? props.data.title : props.data.title}</h1>
+            <div className="flex flex-col gap-2">
+            <h1 className="sm:text-4xl text-3xl font-bold text-gray-800" key={"title"}>{language === "de" ? props.data.title_de ?? props.data.title : props.data.title}</h1>
+            {
+                props.data.date && <h3 className=" text-gray-700">{language === "de" ? props.data.date_de ?? props.data.date : props.data.date}</h3>
+            }
+
+            <div className="mb-4"/>
+
+            </div>
 
             {
                 props.large && props.data.image && !props.data.hide_image && <Image src={props.data.image} alt={"Image of Blog Post"} width={1966} height={1106} className="w-full h-auto rounded-xl" key={"mainimage"} />

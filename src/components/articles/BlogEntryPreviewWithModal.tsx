@@ -1,7 +1,7 @@
+"use client";
 import Image from "next/image";
 import { Blog } from "./BlogEntry";
 import { Locale } from "@/i18n/i18n-config";
-import Link from "next/link";
 import Modal from "../modal";
 
 export default function BlogEntryPreviewWithModal(props: {data: Blog, lang: Locale}) {
