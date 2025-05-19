@@ -11,6 +11,28 @@
     },
     {
       "type": "headline",
+      "text_de": "Auszeichnung als nationaler MINT-Botschafter",
+      "text": "Awarded as a National STEM Ambassador"
+    },
+    {
+      "type": "text",
+      "text_de": "Im Rahmen meiner Tätigkeit am WRI wurde ich als nationaler MINT-Botschafter ausgezeichnet. Diese Auszeichnung wird an Personen verliehen, die sich besonders für die Förderung von MINT-Themen einsetzen. Ich bin stolz darauf, Teil der Initiative MINT Zukunft schaffen zu sein und dazu beizutragen, das Interesse an MINT-Fächern zu fördern. Getragen wird die Initiative unter der Schirmherrschaft des deutschen Bundeskanzlers.",
+      "text": "As part of my role at WRI, I was awarded as a national STEM ambassador. This recognition is given to individuals who are particularly committed to promoting STEM topics. I am proud to be part of the MINT Zukunft schaffen initiative and contribute to fostering interest in STEM subjects. The initiative is supported by the German Chancellor."
+    },
+    {
+      "type": "image",
+      "src": "/content/bufdi-mintbotschafter.webp",
+      "text_de": "Auszeichnung als nationaler MINT-Botschafter",
+      "text": "Awarded as a National STEM Ambassador"
+    },
+    {
+      "type": "link",
+      "text_de": "MINT-Botschafter Tim Arnold im Interview",
+      "text": "STEM Ambassador Tim Arnold in Interview",
+      "href": "https://mintzukunftschaffen.de/2025/05/15/mint-botschafter-tim-arnold-im-interview/"
+    },
+    {
+      "type": "headline",
       "text": "Bringing STEM to Life: Workshops and Hands-on Learning",
       "text_de": "MINT erlebbar machen: Workshops und praktisches Lernen"
     },
@@ -37,9 +59,27 @@
     },
     {
       "type": "text",
-      "text": "Beyond teaching, my involvement at WRI has allowed me to engage with experts and industry leaders. I have had the chance to interact with professionals from diverse fields, including members of the Walter Reis Foundation's board. These conversations have provided me with insights into technological advancements, entrepreneurship, and the broader impact of STEM education.",
-      "text_de": "Über das Unterrichten hinaus ermöglichte mir meine Tätigkeit am WRI den Austausch mit Experten und führenden Persönlichkeiten aus der Industrie. Ich hatte die Gelegenheit, mit Fachleuten aus verschiedenen Bereichen, darunter Mitglieder des Stiftungsrat der Walter-Reis-Stiftung, ins Gespräch zu kommen. Diese Gespräche gaben mir wertvolle Einblicke in technologische Entwicklungen, Unternehmertum und die weitreichenden Auswirkungen der MINT-Bildung."
+      "text": "Beyond teaching, my involvement at WRI has allowed me to engage with experts and industry leaders. I have had the chance to interact with professionals from diverse fields, including members of the Walter and Gabriele Reis Foundation's board. These conversations have provided me with insights into technological advancements, entrepreneurship, and the broader impact of STEM education.",
+      "text_de": "Über das Unterrichten hinaus ermöglichte mir meine Tätigkeit am WRI den Austausch mit Experten und führenden Persönlichkeiten aus der Industrie. Ich hatte die Gelegenheit, mit Fachleuten aus verschiedenen Bereichen, darunter Mitglieder des Stiftungsrat der Walter und Gabriele Reis Stiftung, ins Gespräch zu kommen. Diese Gespräche gaben mir wertvolle Einblicke in technologische Entwicklungen, Unternehmertum und die weitreichenden Auswirkungen der MINT-Bildung."
     },
+
+    {
+      "type": "headline",
+      "text_de": "Wissen für Alle: 10-Jahre Stiftungsjubiläum"
+    },
+    {
+      "type": "text",
+      "text_de": "Mit dem 10-jährigen Stiftungsjubiläum feierte die Walter und Gabriele Reis Stiftung auch eine besondere Ausgabe der Vortragsreihe \"Wissen für Alle\". Diese Vortragsreihe ist ein wichtiger Bestandteil der Stiftung und bietet eine Plattform für Experten, um ihr Wissen und ihre Erfahrungen zu teilen. Das Besondere: Im Anschluss an die Vorträge haben die Teilnehmer die Möglichkeit, ihre Fragen zu stellen und mit den Referenten zu diskutieren. Zum Jubiläum hielt die Börsenexpertin Anja Kohl einen spannenden Vortrag über die aktuelle politische und wirtschaftliche Lage. Als Teil der Stiftung fand ich es besonders spannend, nach den Vorträgen die Referenten persönlich kennenzulernen und mit ihnen ins Gespräch zu kommen.",
+      "text": "With the 10th anniversary of the foundation, the Walter and Gabriele Reis Foundation also celebrated a special edition of the lecture series \"Knowledge for All\". This lecture series is an important part of the foundation and provides a platform for experts to share their knowledge and experiences. The special feature: After the lectures, participants have the opportunity to ask questions and discuss with the speakers. For the anniversary, stock market expert Anja Kohl gave an exciting lecture on the current political and economic situation. As part of the foundation, I found it particularly exciting to meet the speakers personally after the lectures and engage in discussions with them."
+    },
+    {
+      "type": "image",
+      "src": "/content/bufdi-wissen-fuer-alle.webp",
+      "text": "Anja Kohl at the 10th anniversary of the Walter and Gabriele Reis Foundation",
+      "text_de": "Anja Kohl bei der 10-jähriges Stiftungsjubiläum der Walter und Gabriele Reis Stiftung"
+    },
+
+  
     {
       "type": "headline",
       "text": "Inspiring the Next Generation of Innovators",

@@ -40,7 +40,7 @@ function Logo(props: { src: StaticImageData, alt: string, enlarge?: boolean, hei
 
 
 export default function CollaborationSection(props: {lang: Dictionary}) {
-    return <div className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 mx-2 overflow-hidden ">
+    return <div className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 mx-2 overflow-hidden">
         <div>
             <h2 className="text-2xl font-bold sm:ml-20  text-center self-center text-gray-600">{props.lang.collaborationSection}</h2>
         </div>
