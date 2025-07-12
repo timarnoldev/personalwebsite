@@ -25,6 +25,7 @@ import pcbDevelopment from "@/content/project-site/footballai/006-pcb-developmen
 import developmentOfTheControlSoftware from "@/content/project-site/footballai/007-development-of-the-control-software.json";
 import gameStrategyImplementation from "@/content/project-site/footballai/008-game-strategy-implementation.json";
 import redesignOfTheMotorController from "@/content/project-site/footballai/009-redesign-of-the-motor-controller.json";
+import firstShot from "@/content/project-site/footballai/010-great-milestone-first-shot.json";
 
 export const blogs = [
     rekariBlog,
@@ -51,6 +52,7 @@ export const blogs = [
 ];
 
 export const project_footballai = [
+    firstShot,
     redesignOfTheMotorController,
     gameStrategyImplementation,
     developmentOfTheControlSoftware,

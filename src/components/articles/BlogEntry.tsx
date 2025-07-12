@@ -67,6 +67,13 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
                         </div>
                     }
 
+                     if(element.type === "ytembed") {
+                        return <div className="w-full flex flex-col gap-2" key={index}>
+                            <iframe src={element.src!} title={language === "de" ? element.text_de ?? element.text : element.text} className="w-full h-[500px] rounded-xl" allowFullScreen/>
+                            <p>{language === "de" ? element.text_de ?? element.text : element.text}</p>
+                        </div>
+                    }
+
                     return <></>
 
                 })

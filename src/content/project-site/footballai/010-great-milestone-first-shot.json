@@ -1,0 +1,51 @@
+{
+    "title": "Great Milestone: First Shot",
+    "date_de": "12. Juli 2025",
+    "date": "Juli 12, 2025",
+    "slug": "great-milestone-first-shot",
+    "title_de": "Großer Meilenstein: Erster Schuss",
+    "image": "/projects/footballai/image_26.webp",
+    "hide_image": true,
+    "content": [
+        {
+            "type": "text",
+            "text_de": "Nach der Neuentwicklung der Motoransteuerung kann ich nun endlich den ersten großen Meilenstein präsentieren: Die finalisierte Hardware und embedded Software. Wie im letzten Post erwähnt, war ich nie mit der Geschwindigkeit des eingesetzten Servomotors für die Schussbewegung zufrieden. Daher habe ich erst mit einem High-Speed Schrittmotor experimentiert. Dieser konnte allerdings nicht die nötige Kraft für die Bewegung aufbringen. Die neue Idee war die Nutzung des gleichen Motors, wie für die Linearbewegung. Während der ersten Konzeption hatte ich das bewusst nicht gemacht, da ich der Meinung war, dass der Motor für diese Bewegung nicht schnell genug beschleunigen kann. Mit der richtigen Reglungstechnik ist aber nun genau das möglich.",
+            "text": "After redeveloping the motor control system, I can finally present the first major milestone: the finalized hardware and embedded software. As mentioned in the last post, I was never satisfied with the speed of the servo motor used for the shooting motion. So I first experimented with a high-speed stepper motor. However, it wasn’t able to deliver the necessary force for the movement. The new idea was to use the same motor that’s used for the linear motion. During the initial design phase, I had deliberately avoided this because I believed the motor wouldn’t be able to accelerate fast enough for this movement. But with the right control technique, that’s now exactly what’s possible."
+        },
+
+        {
+            "type": "headline",
+            "text_de": "Neuimplementierung des PID-Reglers",
+            "text": "Reimplementation of the PID Controller"
+        },
+        {
+            "type": "text",
+            "text_de": "Während zuvor in der Software nur ein einfacher PID-Regler eingesetzt wurde, der den Motor nur ruckelig ansteuern konnte, habe ich jetzt mit der Erfahrung aus meinem Drohnen-Projekt zwei kaskadierte asymmetrische PID-Regler implementiert, deren Ergebnis auf die Variable akkumuliert wird, die im Code den PWM-Dutycycle (vereinfacht die Motorgeschwindigkeit) repräsentiert. Der erste der beiden Regler ermittelt aus dem Positionierungsfehler eine Sollgeschwindigkeit. Der zweite nutzt diese Sollgeschwindigkeit, um eine Änderung der Geschwindigkeit zu berechnen. Die Asymmetrie ist wichtig, da der Motor sich beim Be- und Entschleunigen jeweils anders verhält. Vereinfacht heißt das, dass je nachdem, ob der Fehler im Regler positiv oder negativ ist, andere Regelwerte genutzt werden. Mit einer Frequenz von ca. einem Kilohertz wird dabei die Spannung für die Motoren angepasst. Mit der neuen Regelung ist es möglich, einen Schuss mit einer Geschwindigkeit von bis zu 600 Grad pro Sekunde durchzuführen.",
+            "text": "While the software previously used only a simple PID controller that could drive the motor somewhat jerkily, I have now, using the experience from my drone project, implemented two cascaded asymmetric PID controllers. Their output is accumulated onto the variable in the code that represents the PWM duty cycle (which, simply put, controls the motor speed).  The first of the two controllers calculates a target velocity based on the positioning error. The second controller uses this target velocity to compute a change in speed. The asymmetry is important because the motor behaves differently during acceleration and deceleration. In simple terms, this means that depending on whether the error in the controller is positive or negative, different control parameters are used.  The motor voltage is adjusted at a frequency of around one kilohertz. With this new control system, it is now possible to perform a shot at speeds of up to 600 degrees per second."
+        },
+        {
+            "type": "headline",
+            "text_de": "Endlich: Positionsgenaue Schüsse",
+            "text": "Finally: Position-Accurate Shots"
+        },
+        {
+            "type": "text",
+            "text_de": "Mit dem neuen System ist es jetzt möglich eine genaue Position vorzugeben, die später vom Kamera KI-System kommt, an der ein beliebiger Spieler ein Schuss durchführt. Im ersten Testdurchlauf habe ich die Schusspositionen manuell vorgegeben und sie dann von der Regelung anfahren lassen. Der folgende Clip zeigt eine Auswahl an Schüssen, Rückpässe und Blockmanöver. Gut zu sehen ist die schnelle Reaktionszeit, in der das Männchen in ca. 100ms die Distanz von rechts zur Mitte zurücklegt. Alle Clips werden in Echtzeit abgespielt.",
+            "text": "With the new system, it’s now possible to specify an exact target position -which will later be provided by the camera AI system - where any player can execute a shot.  In the first test run, I manually defined the shot positions and had them approached by the control system. The following clip shows a selection of shots, passes, and blocking maneuvers.  The quick reaction time is clearly visible: the figure covers the distance from the right side to the center in about 100 milliseconds. All clips are shown in real time."
+        },
+
+        {
+            "type": "ytembed",
+            "src": "https://www.youtube.com/embed/Egt0z8qNaZ0",
+            "text_de": "Erster Testlauf mit der neuen Motoransteuerung",
+            "text": "First test run with the new motor control system"
+        },
+
+        {
+            "type": "text",
+            "text_de": "Durch dieses großartige Ergebnis kann jetzt die finale Hardware auf den drei weiteren Stangen repliziert werden, für einen weiteren Schritt in Richtung völlig automatischem Spiel.",
+            "text": "Thanks to this excellent result, the finalized hardware can now be replicated on the three remaining rods - marking another step toward fully automated gameplay."
+        }
+       
+    ]
+}
