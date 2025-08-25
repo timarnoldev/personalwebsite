@@ -1,0 +1,51 @@
+{
+    "title": "Internship as Software Engineer at QAware",
+    "slug": "qaware",
+    "title_de": "Praktikum als Software Engineer bei QAware",
+    "company_image": "/logos/qaware.svg",
+    "image": null,
+    "content": [
+        {
+            "type": "text",
+            "text": "In the weeks leading up to my studies starting in October, I used the time to dive deep into practice - at QAware, a company that implements innovative software projects in a wide variety of contexts. My internship was deliberately chosen to be interdisciplinary, allowing me to experience different facets of modern software development.",
+            "text_de": "Die letzten Wochen vor meinem Studienstart im Oktober habe ich genutzt, um tief in die Praxis einzutauchen - bei QAware, einem Unternehmen, das innovative Softwareprojekte in unterschiedlichsten Kontexten umsetzt. Mein Praktikum war bewusst interdisziplinär gewählt."
+        },
+        {
+            "type": "text",
+            "text": "In the enterprise context, I was allowed to implement fullstack adjustments to the Telekom Security compliance portal to adapt requirements of the upcoming AI Act. This allowed me not only to work with modern web technologies, but also to experience how complex security and compliance requirements are integrated into existing architectures.",
+            "text_de": "Im Enterprise-Kontext durfte ich im Fullstack-Bereich Anpassungen am Compliance Portal der Telekom-Security umsetzen, um dabei Anforderungen des kommenden AI-Acts anzupassen. Dabei konnte ich nicht nur mit modernen Webtechnologien arbeiten, sondern auch erleben, wie komplexe Sicherheits- und Compliance-Vorgaben in bestehende Architekturen integriert werden."
+        },
+        {
+            "type": "image",
+            "src": "/content/qaware-office.webp",
+            "text": "QAware office in Munich",
+            "text_de": "QAware Office in München"
+        },
+        {
+            "type": "text",
+            "text": "In parallel, I was able to work on a startup project: In the web app of 2NA-Fish, it was about implementing dynamic calculations of optical parameters based on metadata. The company has set itself the goal of significantly accelerating the diagnosis of cancer mutations. With my changes, the team hopes to improve the detection accuracy of biomarkers once again.",
+            "text_de": "Parallel durfte ich an einem Startup-Projekt mitarbeiten: In der Web-App von 2NA-Fish ging es um die Implementation dynamischer Berechnungen optischer Parameter, die auf Metadaten basieren. Das Unternehmen hat sich dabei das Ziel gesetzt, die Diagnose von Krebs-Mutationen deutlich zu beschleunigen. Mit meiner Änderung erhofft sich das Team die Erkennungsgenauigkeit der Biomarker noch einmal zu verbessern."
+        },
+        {
+            "type": "text",
+            "text": "Another highlight was working on an internal R&D proof-of-concept: Graphs are often used for legacy systems to visualize software dependencies. The project involved VR representation of such structures in a three-dimensional environment. Finally, I was able to evaluate the concept using VisionOS on an Apple Vision Pro.",
+            "text_de": "Ein weiteres Highlight war die Mitarbeit in einem internen R&D-Proof-of-Concept: Für Legacy-Systeme werden häufig Graphen genutzt, um Softwareabhängigkeiten zu visualisieren. Im Projekt ging es um die VR-Darstellung solcher Strukturen in einer dreidimensionalen Umgebung. Final durfte ich das Konzept mithilfe von VisionOS auf einer Apple Vision Pro evaluieren."
+        },
+        {
+            "type": "image",
+            "src": "/content/development-avp.webp",
+            "text": "Development environment for Apple Vision Pro applications",
+            "text_de": "Entwicklungsumgebung in der Apple Vision Pro"
+        },
+        {
+            "type": "text",
+            "text": "What was particularly fascinating for me was comparing the different working methods: from the rapid iterations in the startup environment to the structured, highly planned approach in enterprise applications. Nevertheless, the projects are managed in an agile manner thanks to daily coordination in scrum meetings.",
+            "text_de": "Besonders faszinierend war für mich der Vergleich der Arbeitsweisen: Von den schnellen Iterationen im Startup-Umfeld bis zur strukturierten, stark durchgeplanten Vorgehensweise in Enterprise-Anwendungen. Trotzdem werden die Projekte dank täglicher Absprachen im Scrum-Meeting agil geführt."
+        },
+        {
+            "type": "text",
+            "text": "My personal conclusion: In addition to many technical skills, I take with me above all the value of an open, collaborative team culture. At QAware, I was involved in the tasks from day one, taken seriously and inspired. A big thank you to the entire team for this valuable experience!",
+            "text_de": "Mein persönliches Fazit: Neben vielen technischen Skills nehme ich vor allem den Wert einer offenen, kollaborativen Teamkultur mit. Bei QAware wurde ich vom ersten Tag an in die Aufgaben miteingebunden, ernst genommen und inspiriert. Ein großes Dankeschön an das gesamte Team für diese wertvolle Erfahrung!"
+        }
+    ]
+}
