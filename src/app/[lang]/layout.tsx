@@ -87,7 +87,7 @@ export default async function RootLayout(props: RootLayoutProps) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <PostHogProvider>
-          <LanguageProvider lang={slangs?.lang ?? "en"}>
+          <LanguageProvider lang={lang}>
             <Header lang={dictionary} />
             {children}
             <Footer lang={dictionary} />
