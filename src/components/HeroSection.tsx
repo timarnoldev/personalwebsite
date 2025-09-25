@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image'
 import SocialButtons from './SocialLinks'
 import cvJufo from "@/content/cv/cv-jugend-forscht.json"

@@ -9,25 +9,38 @@ export async function generateStaticParams() {
     return [{ lang: "de" }, { lang: "en" }];
 }
 
-export default async function AIFootball(props: {
-    params: Promise<{ lang: Locale }>;
+// Flexible props typing to support both promised and direct params delivery by Next.js
+type AIFootballLayoutProps = {
     children: React.ReactNode;
-}) {
-    const language = await props.params;
-    const dictionary = await getDictionary(language.lang);
+    params?: Promise<{ lang: string }>;
+};
 
+export default async function AIFootball(props: AIFootballLayoutProps) {
+    const awaited = props.params ? await props.params : { lang: "en" };
+    const lang: Locale = awaited.lang === "de" || awaited.lang === "en" ? awaited.lang : "en";
+    const dictionary = await getDictionary(lang);
 
-    return <div className="flex flex-col mt-30 items-center gap-4 mb-10">
+    return (
+        <div className="flex flex-col mt-30 items-center gap-4 mb-10">
         <div className="flex items-center gap-2  mb-5 sm:ml-30 ml-5  self-start">
-            <Link href={"/"+language.lang+"/"} className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"><ArrowLeft/>{dictionary.back} </Link>
+                <Link
+                    href={`/${lang}/`}
+                    className="text-xl font-bold text-gray-600 flex flex-row gap-2 items-center underline-offset-4 hover:underline"
+                >
+                    <ArrowLeft />
+                    {dictionary.back}
+                </Link>
         </div>
-        <h1 className="text-5xl font-bold text-center text-herotext max-w-[90%]">{dictionary.footballai}</h1>
-        <p className="max-w-200 w-[90%] text-lg sm:text-center">{dictionary.footballai_desc}</p>
+            <h1 className="text-5xl font-bold text-center text-herotext max-w-[90%]">
+                {dictionary.footballai}
+            </h1>
+            <p className="max-w-200 w-[90%] text-lg sm:text-center">
+                {dictionary.footballai_desc}
+            </p>
 
         <AIFootballNavigation language={dictionary} />
 
         {props.children}
-
-
     </div>
+    );
 }

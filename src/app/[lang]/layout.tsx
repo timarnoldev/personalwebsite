@@ -19,9 +19,8 @@ const geistMono = Geist_Mono({
 
 export const dynamic = 'force-static';
 
-export async function generateMetadata({params}: {params?: Promise<{ lang: Locale }>}) {
-  const slangs = await params;
-  const dictionary = await getDictionary(slangs?.lang ?? "en");
+export async function generateMetadata({params}: {params: { lang: Locale }}) {
+  const dictionary = await getDictionary(params.lang ?? "en");
   return {
     title: "Tim Arnold",
     description: dictionary.metadescription,
@@ -50,20 +49,21 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default async function RootLayout({
-  children,
-  params
-}: Readonly<{
+type LangParam = { lang: string };
+type RootLayoutProps = {
   children: React.ReactNode;
-  params?: Promise<{ lang: Locale }>;
-}>) {
-  const slangs = await params;
+  params?: Promise<LangParam>;
+};
 
-  const dictionary = await getDictionary(slangs?.lang ?? "en");
+export default async function RootLayout(props: RootLayoutProps) {
+  const { children } = props;
+  const rawParams = props.params ? await props.params : { lang: "en" };
+  const lang: Locale = rawParams.lang === "de" || rawParams.lang === "en" ? rawParams.lang : "en";
+  const dictionary = await getDictionary(lang);
 
 
   return (
-    <html lang={slangs?.lang ?? "en"}>
+  <html lang={lang}>
       <head>
         <script type="application/ld+json">
           {

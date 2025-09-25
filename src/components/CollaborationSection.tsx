@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from 'next/image'
 import { Blog } from './articles/BlogEntry'
 import stemtutor from "@/content/cv/cv-bufdi.json"

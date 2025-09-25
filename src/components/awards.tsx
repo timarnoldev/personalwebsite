@@ -1,3 +1,4 @@
+"use client";
 import { Dictionary } from "@/i18n/get-dictionaries";
 import ekes from "@/content/projects/project-ekes.json";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";

@@ -1,3 +1,4 @@
+"use client";
 import { Plus } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image'
 import rekariBlog from "@/content/projects/project-rekari.json"
