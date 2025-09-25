@@ -7,9 +7,9 @@ import BlogModal from './BlogModal'
 
 function IntroductionEN() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
-        Since 2024, I have been
-        a <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">STEM coach at the Walter-Reis-Institute </a>
-        and have a keen interest in AI, full-stack development and automation — especially in
+        Since 2025 I have been studying <a href="https://www.linkedin.com/posts/timarnold-_%F0%9D%90%92%F0%9D%90%AD%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%9E%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AE%F0%9D%90%9E%F0%9D%90%A7-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%A9%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC-activity-7376613341525491712-x6Iq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSu4HEBeWq4rMe9nu6eQ-6PyVFrYPaG3bA" target="_blank" className="hover:underline underline-offset-4 font-bold">Engineering Science</a> at TUM
+        in Munich
+        and have a keen interest in AI, full-stack development and automation - especially in
         hardware-related <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">projects</a>.
         Through internships at companies such as <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
         I have successfully competed in <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">renowned competitions</div></BlogModal>.
@@ -19,9 +19,8 @@ function IntroductionEN() {
 
 function IntroductionDE() {
     return <div className="text-lg text-gray-500 mt-4 max-w-200">
-        Seit 2024 bin ich
-        als <a href="https://www.linkedin.com/posts/timarnold-_mint-bildung-innovation-activity-7257803861682196480-WC-K" target="_blank" className="hover:underline underline-offset-4 font-bold">MINT-Tutor am Walter-Reis-Institut </a>
-        tätig und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
+        Seit 2025 studiere ich <a href="https://www.linkedin.com/posts/timarnold-_%F0%9D%90%92%F0%9D%90%AD%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%9E%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AE%F0%9D%90%9E%F0%9D%90%A7-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%A9%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC-activity-7376613341525491712-x6Iq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSu4HEBeWq4rMe9nu6eQ-6PyVFrYPaG3bA" target="_blank" className="hover:underline underline-offset-4 font-bold">Ingenieurwissenschaften</a> an
+        der TUM in München und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
         hardwarebezogenen <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">Projekten</a>.
         Durch Praktika bei Unternehmen wie <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
         Erfolgreich habe ich an <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></BlogModal> teilgenommen.
