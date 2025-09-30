@@ -13,6 +13,7 @@ import st from "@/content/collaboration/col-st.json"
 import nordic from "@/content/collaboration/col-nordicsemi.json"
 import deutschebank from "@/content/collaboration/col-deutschebank.json"
 import ublox from "@/content/collaboration/col-ublox.json"
+import qaware from "@/content/collaboration/col-qaware.json"
 import { Dictionary } from '@/i18n/get-dictionaries'
 import Marquee from "react-fast-marquee";
 
@@ -28,6 +29,8 @@ import ubloxImage from "../../public/logos/ublox.svg"
 import stemtutorImage from "../../public/logos/walterreisstiftung.svg"
 import jufoImage from "../../public/logos/jugendforscht.svg"
 import isefImage from "../../public/logos/societyforscience.svg"
+import qawareImage from "../../public/logos/qaware.svg"
+
 import BlogModal from './BlogModal'
 
 
@@ -48,11 +51,14 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
 
         <div className="fade-out-container overflow-hidden " >
             <Marquee className="" autoFill={true}>
+
                 <Logo blog={microsoft} src={microsoftImage} alt="Microsoft Logo - Trademark of microsoft" height={43.65} />
                 <Logo blog={framatome} src={framatomeImage} alt="Framatome Logo - Trademark of framatome" height={31.25}/>
                 <Logo blog={deutschebank} src={deutschebankImage} alt="Deutsche Bank Logo - Trademark of deutsche bank" height={60} width={60}/>
                 <Logo blog={rohdeundschwarz} src={rohdeundschwarzImage} alt="Rohde und Schwarz Logo - Trademark of rohdeundschwarz" height={58.82}/>
                 <Logo blog={asc} src={ascImage} alt="ASC Technologies Logo - Trademark of asc technologies" height={59.99} width={108.62}/>
+                <Logo blog={qaware} src={qawareImage} alt="QAware Logo - Trademark of QAware" height={122} width={85} />
+
                 <Logo blog={st} src={stImage} alt="STMicroelectronics Logo - Trademark of STMicroelectronics" height={79.99} width={104.04} enlarge/>
                 <Logo blog={productware} src={productwareImage} alt="Productware Logo - Trademark of productware" height={46} width={138}/>
                 <Logo blog={nordic} src={nordicImage} alt="Nordic semiconductor Logo - Trademark of nordic semiconductor" height={53.13} width={62}/>
