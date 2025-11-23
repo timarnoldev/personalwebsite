@@ -14,6 +14,7 @@ import colASC from "@/content/collaboration/col-asc.json"
 import colST from "@/content/collaboration/col-st.json"
 import colUblox from "@/content/collaboration/col-ublox.json"
 import colNordicSemi from "@/content/collaboration/col-nordicsemi.json"
+import colQAware from "@/content/collaboration/col-qaware.json"
 import colDeutscheBank from "@/content/collaboration/col-deutschebank.json"
 import technicalDetails from "@/content/other/technical-detail.json"
 import { getDictionary } from "@/i18n/get-dictionaries";
@@ -53,6 +54,7 @@ export default async function page(  props: {params: Promise<{ lang: Locale }>})
                 <BlogSeparator id="collaborationSection" text={dictionary.collaborationSection}></BlogSeparator>
                 <BlogEntryPreview lang={language.lang} data={colMicrosoft} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colRohdeUndSchwarz} ></BlogEntryPreview>
+                <BlogEntryPreview lang={language.lang} data={colQAware} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colST} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colNordicSemi} ></BlogEntryPreview>
                 <BlogEntryPreview lang={language.lang} data={colProductware} ></BlogEntryPreview>

@@ -12,7 +12,7 @@ function IntroductionEN() {
         in Munich
         and have a keen interest in AI, full-stack development and automation - especially in
         hardware-related <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">projects</a>.
-        Through internships at companies such as <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies, and Framatome</a>, I gained valuable hands-on experience.
+        Through internships at companies such as <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, QAware, and Framatome</a>, I gained valuable hands-on experience.
         I have successfully competed in <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">renowned competitions</div></BlogModal>.
         Additionally, I regularly attend workshops and enjoy working on <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">personal projects</a> to apply my knowledge in practice.
     </div>
@@ -23,7 +23,7 @@ function IntroductionDE() {
         Seit 2025 studiere ich <a href="https://www.linkedin.com/posts/timarnold-_%F0%9D%90%92%F0%9D%90%AD%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%9E%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%A7%F0%9D%90%9E%F0%9D%90%AE%F0%9D%90%9E%F0%9D%90%A7-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%A9%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC-activity-7376613341525491712-x6Iq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSu4HEBeWq4rMe9nu6eQ-6PyVFrYPaG3bA" target="_blank" className="hover:underline underline-offset-4 font-bold">Ingenieurwissenschaften</a> an
         der TUM in München und interessiere mich für KI, Full-Stack-Entwicklung und Automatisierung - insbesondere in
         hardwarebezogenen <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4">Projekten</a>.
-        Durch Praktika bei Unternehmen wie <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, ASC Technologies und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
+        Durch Praktika bei Unternehmen wie <a href="/articles#collaborationSection" target="_blank" className="hover:underline underline-offset-4 font-bold">Rohde & Schwarz, QAware und Framatome</a> konnte ich wertvolle Erfahrungen sammeln.
         Erfolgreich habe ich an <BlogModal blog={cvJufo}><div className="hover:underline underline-offset-4 font-bold cursor-pointer inline">bekannten Wettbewerben</div></BlogModal> teilgenommen.
         Außerdem besuche ich Workshops und arbeite gerne an <a href="https://github.com/timarnoldev" target="_blank" className="hover:underline underline-offset-4 font-bold">persönlichen Projekten</a>, um mein Wissen in der Praxis anzuwenden.
     </div>
