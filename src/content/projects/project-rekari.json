@@ -5,6 +5,14 @@
     "image": "/content/rekari-large.webp",
     "content": [
       {
+        "type": "link_component",
+        "cta": "Learn more about Rekari",
+        "cta_de": "Erfahre mehr über Rekari",
+        "href": "https://rekari.de",
+        "text": "rekari.de",
+        "skip_in_preview": true
+      },
+      {
         "type": "text",
         "text": "In an increasingly digital world, effective documentation and real-time data sharing are crucial. Rekari offers an intuitive, cloud-based solution designed to bring collaborative data collection and analysis to the smartphone. By leveraging smartphone sensors and a drone integration, Rekari transforms traditional jobsite workflows into seamless, efficient operations.",
         "text_de": "In einer zunehmend digitalen Welt sind eine effektive Dokumentation und der Austausch von Daten in Echtzeit entscheidend. Rekari bietet eine intuitive, cloud-basierte Lösung, die die kollaborative Datenerfassung und -analyse auf das Smartphone bringen. Durch den Einsatz von Smartphone-Sensoren und einer Drohnenintegration transformiert Rekari herkömmliche Arbeitsabläufe bei der Einsatzstelle in nahtlose, effiziente Workflows."

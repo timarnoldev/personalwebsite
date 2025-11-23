@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function BlogEntryPreview(props: {data: Blog, lang: Locale}) {
 
     let text = props.lang === "de"
-        ? props.data.content.find(item => item.type !== "headline" && item.type !== "link")?.text_de ?? props.data.content.find(item => item.type !== "headline"  && item.type !== "link")?.text
-        : props.data.content.find(item => item.type !== "headline"  && item.type !== "link")?.text;
+        ? props.data.content.find(item => item.type !== "headline" && item.type !== "link" && !item.skip_in_preview)?.text_de ?? props.data.content.find(item => item.type !== "headline"  && item.type !== "link" && !item.skip_in_preview)?.text
+        : props.data.content.find(item => item.type !== "headline"  && item.type !== "link" && !item.skip_in_preview)?.text;
     const title = props.lang==="de"?props.data.title_de??props.data.title:props.data.title;
     //limit text to 200 characters but only cut off at a space
     if(text!.length > 200) {

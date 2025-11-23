@@ -5,6 +5,14 @@
   "image": "/content/ekes-large.webp",
   "content": [
     {
+      "type": "link_component",
+      "cta": "Start the Live Simulation",
+      "cta_de": "Starte die Live-Simulation",
+      "href": "http://ekes.tim-arnold.de",
+      "text": "ekes.tim-arnold.de",
+      "skip_in_preview": true
+    },
+    {
       "type": "text",
       "text": "EKES is a computer-based simulation that models an ecosystem where virtual creatures evolve based on genetic algorithms. These creatures move, reproduce, and survive in a digital environment, with energy limitations that mimic the challenges of real-world ecosystems. As creatures evolve, their neural networks undergo mutations, improving their survival strategies and 'intelligence' over time.",
       "text_de": "EKES ist eine computergestützte Simulation, die ein Ökosystem modelliert, in dem virtuelle Kreaturen auf der Grundlage genetischer Algorithmen simuliert werden. Diese Kreaturen bewegen sich, reproduzieren sich und überleben in einer digitalen Umgebung mit Energiebegrenzungen, die den Herausforderungen realer Ökosysteme nachempfunden sind. Während sich die Kreaturen weiterentwickeln, durchlaufen ihre neuronalen Netzwerke Mutationen, die ihre Überlebensstrategien und ihre 'Intelligenz' im Laufe der Zeit verbessern."
@@ -64,11 +72,6 @@
       "type": "text",
       "text": "View Live Simulation here:",
       "text_de": "Live-Simulation hier ansehen:"
-    },
-    {
-      "type": "link",
-      "text": "ekes.tim-arnold.de",
-      "href": "http://ekes.tim-arnold.de"
     }
   ]
 }

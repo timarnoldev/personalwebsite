@@ -5,8 +5,11 @@
   "image": "/content/foosball-large.webp",
   "content": [
      {
-      "type": "link",
+      "type": "link_component",
       "href": "/docs/aifootball",
+      "cta": "See the development progress now",
+      "skip_in_preview": true,
+      "cta_de": "Sieh dir jetzt den Entwicklungsfortschritt an",
       "text": "AI Football Table Blog",
       "text_de": "Tischfußball-Blog"
     },

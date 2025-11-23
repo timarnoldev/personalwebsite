@@ -1,6 +1,6 @@
 "use client";
 import { LanguageContext } from "@/context/LanguageContext";
-import { ExternalLink } from "lucide-react"
+import { ArrowUpRight, ExternalLink, MoveUpRight } from "lucide-react"
 import Image from "next/image"
 import { useContext } from "react";
 
@@ -8,7 +8,7 @@ export interface Blog {
     title: string,
     slug: string,
     title_de?: string,
-    content: Array<{ type: string, text?: string, href?: string, src?: string, text_de?: string }>,
+    content: Array<{ type: string, text?: string, href?: string, src?: string, text_de?: string, cta?: string, cta_de?: string, skip_in_preview?: boolean }>,
     image: string | null,
     company_image?: string | null,
     hide_image?: boolean,
@@ -28,12 +28,12 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
 
         <article className="flex flex-col gap-4 sm:p-12 px-4 p-12 sm:w-[70%] self-center" key={"article"}>
             <div className="flex flex-col gap-2">
-            <h1 className="sm:text-4xl text-3xl font-bold text-gray-800" key={"title"}>{language === "de" ? props.data.title_de ?? props.data.title : props.data.title}</h1>
-            {
-                props.data.date && <h3 className=" text-gray-700">{language === "de" ? props.data.date_de ?? props.data.date : props.data.date}</h3>
-            }
+                <h1 className="sm:text-4xl text-3xl font-bold text-gray-800" key={"title"}>{language === "de" ? props.data.title_de ?? props.data.title : props.data.title}</h1>
+                {
+                    props.data.date && <h3 className=" text-gray-700">{language === "de" ? props.data.date_de ?? props.data.date : props.data.date}</h3>
+                }
 
-            <div className="mb-4"/>
+                <div className="mb-4" />
 
             </div>
 
@@ -60,6 +60,28 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
                         return <a className="hover:underline w-fit underline-offset-4 font-bold flex flex-row gap-2 items-center" key={index} href={element.href} target="_blank">{language === "de" ? element.text_de ?? element.text : element.text}<ExternalLink /></a>
                     }
 
+                    if (element.type == "link_component") {
+                        return <a
+                            key={index}
+                            href={element.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="group flex w-full max-w-lg items-center justify-between rounded-2xl bg-gradient-to-r from-primary-200/50 to-primary-200 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                        >
+                            <div className="flex flex-col">
+                                <span className="text-sm font-semibold uppercase tracking-wide text-primary-700">
+                                    {language === "de" ? element.cta_de ?? element.cta : element.cta}
+                                </span>
+                                <span className="text-base text-gray-600">
+                                    {language === "de" ? element.text_de ?? element.text : element.text}
+                                </span>
+                            </div>
+                            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary shadow transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                                <ArrowUpRight className="size-5" />
+                            </span>
+                        </a>
+                    }
+
                     if (element.type === "image") {
                         return <div className="w-full flex flex-col gap-0" key={index}>
                             <Image src={element.src!} alt={(language === "de" ? element.text_de ?? element.text : element.text) ?? "Blog post image"} width={1966} height={1106} className="w-full h-auto rounded-xl" />
@@ -67,9 +89,9 @@ export default function BlogEntry(props: { data: Blog, large?: boolean }) {
                         </div>
                     }
 
-                     if(element.type === "ytembed") {
+                    if (element.type === "ytembed") {
                         return <div className="w-full flex flex-col gap-2" key={index}>
-                            <iframe src={element.src!} title={language === "de" ? element.text_de ?? element.text : element.text} className="w-full h-[500px] rounded-xl" allowFullScreen/>
+                            <iframe src={element.src!} title={language === "de" ? element.text_de ?? element.text : element.text} className="w-full h-[500px] rounded-xl" allowFullScreen />
                             <p>{language === "de" ? element.text_de ?? element.text : element.text}</p>
                         </div>
                     }
