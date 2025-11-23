@@ -1,6 +1,6 @@
 "use client";
 import { LanguageContext } from "@/context/LanguageContext";
-import { ArrowUpRight, ExternalLink, MoveUpRight } from "lucide-react"
+import { ArrowUpRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import { useContext } from "react";
 
