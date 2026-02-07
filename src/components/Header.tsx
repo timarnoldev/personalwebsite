@@ -78,7 +78,7 @@ export default function Header(props: { lang: Dictionary }) {
             </div>
         }
 
-        <nav className="bg-herobackground shadow-lg w-full sm:h-24 h-22 flex items-center overscroll-y-none "> {/* Header */}
+        <nav className="bg-herobackground/85 backdrop-blur-xl border-b border-black/[0.04] w-full sm:h-24 h-22 flex items-center overscroll-y-none "> {/* Header */}
 
             <div className="my-3 sm:mx-10 mx-3 flex-grow flex flex-row items-center justify-between">
 
@@ -96,8 +96,8 @@ export default function Header(props: { lang: Dictionary }) {
 
                         </div>
                         <div className="sm:flex hidden flex-col gap-0.5 items-start justify-center">
-                            <p className="text-xl font-bold text-herotext ml-5 leading-none">Tim</p>
-                            <p className="text-xl font-bold text-herotext ml-5 leading-none">Arnold</p>
+                            <p className="text-xl font-bold text-herotext ml-5 leading-none font-heading">Tim</p>
+                            <p className="text-xl font-bold text-herotext ml-5 leading-none font-heading">Arnold</p>
                         </div>
 
 
@@ -157,12 +157,12 @@ export default function Header(props: { lang: Dictionary }) {
                 <div className="flex flex-row items-center sm:gap-6 gap-2"> {/* Header Links */}
 
                     <div className="flex-row items-center gap-6 hidden sm:flex">
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#aboutme" className="hover:underline underline-offset-4 transition-all text-nowrap">{props.lang.aboutme}</a>
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#achievements" className="hover:underline underline-offset-4 transition-all text-nowrap hidden md:block">{props.lang.achievements}</a>
-                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#projects" className="hover:underline underline-offset-4 transition-all text-nowrap">{props.lang.projects}</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#aboutme" className="hover:underline underline-offset-4 transition-all text-nowrap font-heading font-medium">{props.lang.aboutme}</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#achievements" className="hover:underline underline-offset-4 transition-all text-nowrap hidden md:block font-heading font-medium">{props.lang.achievements}</a>
+                        <a onClick={smoothScroll} onKeyDown={(e)=>{if(e.key === "Enter") smoothScroll(e)}} href="#projects" className="hover:underline underline-offset-4 transition-all text-nowrap font-heading font-medium">{props.lang.projects}</a>
                     </div>
 
-                    <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap">{props.lang.contactme}</a>
+                    <a title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' className="bg-primary transition-colors text-white rounded-3xl pb-2 pt-2 pl-4 pr-4 hover:bg-primary-hover cursor-pointer text-nowrap font-heading font-medium">{props.lang.contactme}</a>
 
                     <div className='relative '>
                         <Globe onClick={toggleLanguageSelector}  tabIndex={0} onKeyDown={(e)=>{if(e.key === "Enter") toggleLanguageSelector()}} className="text-gray-500 cursor-pointer" />

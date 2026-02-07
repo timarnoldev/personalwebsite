@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Instrument_Serif, Outfit, Figtree } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
@@ -7,14 +7,22 @@ import { getDictionary } from "@/i18n/get-dictionaries";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { PostHogProvider } from "@/components/PostHogProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const dynamic = 'force-static';
@@ -85,7 +93,7 @@ export default async function RootLayout(props: RootLayoutProps) {
         <link rel="alternate" hrefLang="de" href="https://tim-arnold.de/de" />
         <link rel="alternate" href="https://tim-arnold.de/en" hrefLang="x-default" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${instrumentSerif.variable} ${outfit.variable} ${figtree.variable} antialiased`}>
         <PostHogProvider>
           <LanguageProvider lang={lang}>
             <Header lang={dictionary} />

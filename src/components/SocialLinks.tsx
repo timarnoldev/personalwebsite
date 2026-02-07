@@ -39,7 +39,7 @@ export default function SocialButtons(props: {enableMotion: boolean, lang: Dicti
         }} onPointerLeave={()=>{
             x.set(0)
             y.set(0)
-        }} title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' target="_blank" className='bounce flex flex-row  whitespace-nowrap items-center justify-center gap-2 px-8 py-3 bg-primary rounded-3xl text-white cursor-pointer hover:bg-primary-hover transition-colors select-none'>
+        }} title="hello@tim-arnold.de" href='mailto:hello@tim-arnold.de' target="_blank" className='bounce flex flex-row  whitespace-nowrap items-center justify-center gap-2 px-8 py-3 bg-primary rounded-3xl text-white cursor-pointer hover:bg-primary-hover transition-colors select-none font-heading font-medium'>
             <motion.div className='flex flex-row items-center gap-2 bounce' style={{ x:textX, y:textY}}>
             <Mail />
             {
@@ -48,7 +48,7 @@ export default function SocialButtons(props: {enableMotion: boolean, lang: Dicti
             </motion.div>
         </motion.a>
 
-        <a href="https://www.linkedin.com/in/timarnold-/" target="_blank" className='flex flex-row whitespace-nowrap items-center justify-center gap-2 px-8 py-3 border-2  border-primary hover:text-white rounded-3xl text-primary cursor-pointer hover:bg-primary transition-colors select-none'>
+        <a href="https://www.linkedin.com/in/timarnold-/" target="_blank" className='flex flex-row whitespace-nowrap items-center justify-center gap-2 px-8 py-3 border-2  border-primary hover:text-white rounded-3xl text-primary cursor-pointer hover:bg-primary transition-colors select-none font-heading font-medium'>
             <Linkedin />
             Connect on LinkedIn
         </a>

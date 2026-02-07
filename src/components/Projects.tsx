@@ -10,6 +10,7 @@ import rekariImage from "../../public/projects/rekari.webp"
 import foosballImage from "../../public/projects/foosball.webp"
 import ekesImage from "../../public/projects/ekes.webp"
 import BlogModal from './BlogModal';
+import ScrollReveal from './ScrollReveal';
 
 const projects = (lang:Dictionary)=>{
     return [
@@ -59,8 +60,8 @@ const ListItem = (item: Project) => {
     return <BlogModal blog={item.blogContent}><div tabIndex={0} className=" flex flex-col shadow rounded-3xl h-[70vh] max-h-170 w-auto aspect-[0.55] relative justify-between gap-12 cursor-pointer hover:scale-[101.6%] transition-transform will-change-transform duration-300">
 
         <div className="pl-6 pt-6 flex flex-col items-start gap-0 max-w-[90%]">
-            <p className='text-l text-white font-bold'>{item.desc}</p>
-            <h3 className="text-3xl text-white font-bold">{item.title}</h3>
+            <p className='text-l text-white font-medium'>{item.desc}</p>
+            <h3 className="text-3xl text-white font-bold font-heading">{item.title}</h3>
         </div>
 
         
@@ -82,12 +83,14 @@ const ListItem = (item: Project) => {
 export default function Projects(props: {lang: Dictionary}) {
     return <div id="projects" className="flex flex-col 3xl:mt-20 mb-5 items-center gap-1 ">
 
-        <h2 className="mt-12 ml-12 text-5xl text-[#2e2e2e] font-bold self-start 3xl:ml-[30vw]">
-           {props.lang.recentProjects}
-        </h2>
+        <ScrollReveal>
+            <h2 className="mt-12 ml-12 text-5xl text-herotext font-bold self-start 3xl:ml-[30vw] font-heading">
+               {props.lang.recentProjects}
+            </h2>
+        </ScrollReveal>
 
         {/*Has page width*/}
-        <div className="w-dvw  overflow-x-auto pl-12 3xl:pl-[30vw]">
+        <ScrollReveal delay={0.15} className="w-dvw  overflow-x-auto pl-12 3xl:pl-[30vw]">
             <div className="flex flex-row w-max gap-8 mt-5 mb-5 pr-12"> {/*Has width of all children*/}
                 {projects(props.lang).map((project) => (
                     <ListItem key={project.id} {...project} />
@@ -95,7 +98,7 @@ export default function Projects(props: {lang: Dictionary}) {
 
             </div>
 
-        </div>
+        </ScrollReveal>
 
     </div>
 }

@@ -32,6 +32,7 @@ import isefImage from "../../public/logos/societyforscience.svg"
 import qawareImage from "../../public/logos/qaware.svg"
 
 import BlogModal from './BlogModal'
+import ScrollReveal from './ScrollReveal'
 
 
 function Logo(props: { src: StaticImageData, alt: string, enlarge?: boolean, height: number, width?: number, blog:Blog}) {
@@ -44,9 +45,9 @@ function Logo(props: { src: StaticImageData, alt: string, enlarge?: boolean, hei
 
 
 export default function CollaborationSection(props: {lang: Dictionary}) {
-    return <div className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 mx-2 overflow-hidden">
+    return <ScrollReveal className="flex flex-col items-center sm:items-start gap-6 sm:mx-10 mt-10 mx-2 overflow-hidden">
         <div>
-            <h2 className="text-2xl font-bold sm:ml-20  text-center self-center text-gray-600">{props.lang.collaborationSection}</h2>
+            <h2 className="text-2xl font-bold sm:ml-20  text-center self-center text-gray-600 font-heading">{props.lang.collaborationSection}</h2>
         </div>
 
         <div className="fade-out-container overflow-hidden " >
@@ -68,5 +69,5 @@ export default function CollaborationSection(props: {lang: Dictionary}) {
                 <Logo blog={isef} src={isefImage} alt="Society for science - Trademark of Society for science" width={223} height={48.77} />
           </Marquee>
         </div>
-    </div>
+    </ScrollReveal>
 }
