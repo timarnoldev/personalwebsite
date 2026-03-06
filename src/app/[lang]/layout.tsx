@@ -29,27 +29,36 @@ export const dynamic = 'force-static';
 
 export async function generateMetadata({params}: {params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang ?? "en");
+  const lang = params.lang ?? "en";
+  const title = lang === "de"
+    ? "Tim Arnold – Software-Entwickler & Ingenieurstudent an der TUM"
+    : "Tim Arnold – Software Developer & Engineering Student at TUM";
   return {
-    title: "Tim Arnold",
+    metadataBase: new URL("https://tim-arnold.de"),
+    title,
     description: dictionary.metadescription,
-    keywords: [
-      "Tim Arnold",
-      "Portfolio",
-      "Software Developer",
-      "Jugend forscht",
-      "Germany",
-      "Deutschland",
-      "Munich",
-      "München",
-      "Obernburg",
-      "Linkedin",
-      "Tim",
-      "Arnold",
-      "tim arnold websites",
-      "projects",
-      "private",
-      "personal"
-    ],
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        en: "/en",
+        de: "/de",
+      },
+    },
+    openGraph: {
+      title,
+      description: dictionary.metadescription,
+      url: `https://tim-arnold.de/${lang}`,
+      siteName: "Tim Arnold",
+      images: [{ url: "https://tim-arnold.de/mainimage.webp", width: 1400, height: 1400 }],
+      locale: lang === "de" ? "de_DE" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: dictionary.metadescription,
+      images: ["https://tim-arnold.de/mainimage.webp"],
+    },
   };
 }
 
@@ -81,17 +90,21 @@ export default async function RootLayout(props: RootLayoutProps) {
             "name": "Tim Arnold",
             "url": "https://tim-arnold.de",
             "image": "https://tim-arnold.de/mainimage.webp",
+            "jobTitle": "Engineering Science Student",
+            "description": "Software developer and engineering student at TUM with interests in AI, full-stack development, and automation.",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Technical University of Munich"
+            },
+            "knowsAbout": ["Artificial Intelligence", "Full-Stack Development", "Automation", "Embedded Systems"],
             "sameAs": [
-            "https://www.linkedin.com/in/timarnold-/",
-            "https://github.com/timarnoldev",
-            "https://tim-arnold.de"
-            ]  
+              "https://www.linkedin.com/in/timarnold-/",
+              "https://github.com/timarnoldev",
+              "https://tim-arnold.de"
+            ]
            }`
           }
         </script>
-        <link rel="alternate" hrefLang="en" href="https://tim-arnold.de/en" />
-        <link rel="alternate" hrefLang="de" href="https://tim-arnold.de/de" />
-        <link rel="alternate" href="https://tim-arnold.de/en" hrefLang="x-default" />
       </head>
       <body className={`${instrumentSerif.variable} ${outfit.variable} ${figtree.variable} antialiased`}>
         <PostHogProvider>
