@@ -91,7 +91,7 @@ export default async function RootLayout(props: RootLayoutProps) {
             "url": "https://tim-arnold.de",
             "image": "https://tim-arnold.de/mainimage.webp",
             "jobTitle": "Engineering Science Student",
-            "description": "Software developer and engineering student at TUM with interests in AI, full-stack development, and automation.",
+            "description": "Engineering student at TUM with interests in AI, full-stack development, and automation.",
             "alumniOf": {
               "@type": "CollegeOrUniversity",
               "name": "Technical University of Munich"
