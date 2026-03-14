@@ -31,8 +31,8 @@ export async function generateMetadata({params}: {params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang ?? "en");
   const lang = params.lang ?? "en";
   const title = lang === "de"
-    ? "Tim Arnold – Software-Entwickler & Ingenieurstudent an der TUM"
-    : "Tim Arnold – Software Developer & Engineering Student at TUM";
+    ? "Tim Arnold – Ingenieurstudent an der TUM"
+    : "Tim Arnold – Engineering Student at TUM";
   return {
     metadataBase: new URL("https://tim-arnold.de"),
     title,
